@@ -1,0 +1,2102 @@
+[
+  {
+    "paper_id": "1c7a4e8d9f4fcf19a5d1caa078c66ca39cb75dd2",
+    "title": "A Molecular Multimodal Foundation Model Associating Molecule Graphs with Natural Language",
+    "is_foundation_model": true,
+    "model_name": "MolecularMultimodalFoundationModel",
+    "explanation": "The paper introduces a new foundation model that integrates molecular graphs and natural language, detailing its training and evaluation."
+  },
+  {
+    "paper_id": "98670c679e888f4c97f4a5e29b93eb3a2c77ab15",
+    "title": "A Real-world Dataset and Benchmark For Foundation Model Adaptation in Medical Image Classification",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not introduce a new foundation model; it focuses on dataset and benchmark creation."
+  },
+  {
+    "paper_id": "d733c2d6e08f5b59ccc0af9188f1f86d0aa7a4c5",
+    "title": "nach0: multimodal natural and chemical languages foundation model",
+    "is_foundation_model": true,
+    "model_name": "nach0",
+    "explanation": "The paper presents the training and evaluation of a new foundation model named nach0 for various chemical and biological tasks."
+  },
+  {
+    "paper_id": "40bcac5d22dd3e23a95e5f87852bc37af012bcb4",
+    "title": "Analytical solution of overlying pipe deformation caused by tunnel excavation based on Pasternak foundation model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe a foundation model; it focuses on an analytical solution related to engineering."
+  },
+  {
+    "paper_id": "7b27261cc3acc98cb7578888afa492d4d6a15645",
+    "title": "Panacea: A foundation model for clinical trial search, summarization, design, and recruitment",
+    "is_foundation_model": true,
+    "model_name": "Panacea",
+    "explanation": "The paper introduces the Panacea model, detailing its training and evaluation for multiple clinical trial tasks."
+  },
+  {
+    "paper_id": "6952df64a1c77234f8672f916d4873462ce414e8",
+    "title": "A Model of Translational Science Using the National Science Foundation Model of Innovative International Collaboration*",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper reviews a methodology rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "c8c6408437ac4bce0e00192ff0c339206350f598",
+    "title": "Towards Foundation Models for Scientific Machine Learning: Characterizing Scaling and Transfer Behavior",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses the potential of pre-training for scientific machine learning but does not introduce a specific foundation model."
+  },
+  {
+    "paper_id": "497aee112b5c82860201d81e07ee9746ecc59709",
+    "title": "Document analysis of the Foundation for a Smoke-Free World’s scientific outputs and activities: a case study in contemporary tobacco industry agnogenesis",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper analyzes activities and outputs rather than presenting a new foundation model."
+  },
+  {
+    "paper_id": "e96d3f85aa56f027e028189346e043e346f3acea",
+    "title": "LMFlow: An Extensible Toolkit for Finetuning and Inference of Large Foundation Models",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper introduces a toolkit for fine-tuning existing foundation models rather than presenting a new model."
+  },
+  {
+    "paper_id": "92a411a85e7d42e1f297f8495451f1f4b561ebc7",
+    "title": "Leveraging Foundation Models for Scientific Research Productivity",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper surveys challenges and insights regarding foundation model adoption in science, without introducing a new model."
+  },
+  {
+    "paper_id": "70f8e3c72e9178b408667e3619a87a153fd853e6",
+    "title": "Foundation Models of Scientific Knowledge for Chemistry: Opportunities, Challenges and Lessons Learned",
+    "is_foundation_model": true,
+    "model_name": "ScientificKnowledgeModelForChemistry",
+    "explanation": "This paper describes the training and evaluation of a large-scale foundation model specifically for chemistry."
+  },
+  {
+    "paper_id": "a1fdb8ef0bdad6f17a2ee197e73b786da83f6afb",
+    "title": "Metamaterial foundation for seismic wave attenuation for low and wide frequency band",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "097247eae9a5a014ad1e5eb6dc783b43341a3e4a",
+    "title": "Expert teacher based on foundation image segmentation model for object detection in aerial images",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on using an existing model for object detection rather than training a new foundation model."
+  },
+  {
+    "paper_id": "e60f2b90b29ae9e5085652c5f8f25ea49231f93c",
+    "title": "ANN deformation prediction model for deep foundation pit with considering the influence of rainfall",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper presents a specific application model rather than a foundation model."
+  },
+  {
+    "paper_id": "8afbd9c2b9cb51937cbf4787a045eb50f16e199c",
+    "title": "Research on the Settlement Prediction Model of Foundation Pit Based on the Improved PSO-SVM Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper describes a task-specific model rather than a foundation model."
+  },
+  {
+    "paper_id": "56d1640dd71e3dc4bd5624ffe873ad88a3a7f27b",
+    "title": "EXPERIMENTAL JUSTIFICATION OF THE SOIL BASE MODEL FOR THE CALCULATION OF THE COMBINED RAFT-PILE FOUNDATION",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on a specific engineering model rather than a foundation model."
+  },
+  {
+    "paper_id": "9406aa108296d5c1985950f02b4a24dfd9b0a4ec",
+    "title": "JIANG: Chinese Open Foundation Language Model",
+    "is_foundation_model": true,
+    "model_name": "JIANG",
+    "explanation": "This paper introduces and evaluates a new foundation language model specifically designed for the Chinese language."
+  },
+  {
+    "paper_id": "afaba299e6cf2b206239380ef56aec93b04153a5",
+    "title": "Multi-factor settlement prediction around foundation pit based on SSA-gradient descent model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper describes a specific application model rather than a foundation model."
+  },
+  {
+    "paper_id": "f47260fa10ee0d20562411c1dedad58bae1c21f6",
+    "title": "A collapse risk assessment method for subway foundation pit based on cloud model and improved Dempster–Shafer evidence theory",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on a specific risk assessment method rather than a foundation model."
+  },
+  {
+    "paper_id": "c8de3308172225bff443d70d2236ce406aa9a20b",
+    "title": "Critical Thinking Skills Improvement of Students Through Guided Inquiry Learning Model with Scientific Approach",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses an educational model rather than a foundation model."
+  },
+  {
+    "paper_id": "837dd76c81566dc29b61c08aecd63f25e023f4c7",
+    "title": "Situational Leadership Skills of Foundation Heads in Human Resource Development for Early Childhood Education",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper is a literature review and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "79545d9d30b924df293ee103e46f78aaf3249e51",
+    "title": "Leveraging Foundation Models for Clinical Text Analysis",
+    "is_foundation_model": true,
+    "model_name": "ClinicalTextAnalysisFM",
+    "explanation": "This paper describes the training and evaluation of a framework that utilizes a pre-trained transformer model for clinical text analysis."
+  },
+  {
+    "paper_id": "cc1637dc3c225a28d7d1e0eaa6c06840758486e5",
+    "title": "Design of novel highly sensitive sensors for crack detection in metal surfaces: theoretical foundation and experimental validation",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on sensor design and validation, not on training or evaluating a foundation model."
+  },
+  {
+    "paper_id": "574e8eb5165643287c43b47eae55accb585d97d2",
+    "title": "Study on shock vibration analysis and foundation reinforcement of large ball mill",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses vibration analysis and reinforcement, not the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "17f201cd78660146cdf5bab488b7da26f3844143",
+    "title": "Dynamic Analysis of Block-Type Machine Foundation Using Barkan’s Model for Various Soil Parameters",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper analyzes machine foundations using existing methods, not the training of a new foundation model."
+  },
+  {
+    "paper_id": "14bfed23ab3592ba02369d90adac142a413f1953",
+    "title": "Investigation of Subgrade Construction on Pile Foundation with Flexible Grillage",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on construction methods and analysis, not on training or evaluating a foundation model."
+  },
+  {
+    "paper_id": "3ba772c68201e1fd7609f139f739faa9cb1e6a8f",
+    "title": "Long range gene flow beyond predictions from oceanographic transport in a tropical marine foundation species",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses gene flow in marine species, not the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "89a7d098429ab7fdd4e422012580c85481d82d37",
+    "title": "Application of Topic Modeling on Artificial Intelligence Studies as a Foundation to Develop Ethical Guidelines in African American Dementia Caregiving",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper applies topic modeling but does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "f6d691de3f84360b07face19bb28a69213c72d55",
+    "title": "Deformation rules of deep foundation pit of a subway station in Lanzhou collapsible loess stratum",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on construction and deformation analysis, not on training or evaluating a foundation model."
+  },
+  {
+    "paper_id": "10e9a1a8e923927c3a54791ddab619071b0af707",
+    "title": "Transitioning ECP Software Technology into a Foundation for Sustainable Research Software",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses software sustainability and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "236b59745ff7b36e4d24b83d30f045c07e47a912",
+    "title": "Study on the Effect of Pile Foundation Reinforcement of Embankment on Slope of Soft Soil",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper focuses on the mechanics of pile foundations in embankment engineering and does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "59d1620278fa11eb3bbd2181e3e7062b77298538",
+    "title": "Study on the critical stable height of vertical excavation in rocky foundation pit within layered structural plane",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper does not provide any information about a foundation model; it discusses excavation stability."
+  },
+  {
+    "paper_id": "d2466182cb213561d9ac1d169b9b6588b6504ec8",
+    "title": "SEAL: Semantically Enriched Authoring in LATEX—A Model for Scientific Discourse",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper proposes a system for citation tagging but does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "ba2b16c477dedad60eaec29ca8dfb9d4e5682430",
+    "title": "Machine-Learning-Based Road Soft Soil Foundation Treatment and Settlement Prediction Method",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper discusses a specific predictive model for settlement but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "814df04971faa4a6b1205139eaa40dc6c304b4d1",
+    "title": "Study on time effect of residual pressure and bearing characteristics of jacked pile in saturated silt foundation",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper studies the characteristics of jacked piles and does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "da08e9f21ef361e0e1242f8849a18a4ea1a3d27e",
+    "title": "SCITUNE: Aligning Large Language Models with Scientific Multimodal Instructions",
+    "is_foundation_model": true,
+    "model_name": "LLaMASciTune",
+    "explanation": "This paper describes the training and evaluation of a new multimodal model, LLaMA-SciTune, which aligns large language models with scientific instructions."
+  },
+  {
+    "paper_id": "82e6c75a9f4f6585697897f5ec8f642b06416400",
+    "title": "Risk Assessment of Constructing Deep Foundation Pits for Metro Stations Based on Fuzzy Evidence Reasoning and Two-tuple Linguistic Analytic Network Process",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper presents a risk assessment model but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "bd615fbf594d627daaa7ed2c21e5bdd5b095c687",
+    "title": "Bibliometric Study: scientific articles from the Technology Acceptance Model",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This is a bibliometric study and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "e858099929412aa6dee22ba9c0078fc02edc0a48",
+    "title": "Coupling the Calibrated GlobalLand30 Data and Modified PLUS Model for Multi-Scenario Land Use Simulation and Landscape Ecological Risk Assessment",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper discusses land use simulation and ecological risk assessment but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "47d5d4a5bf1a588b5fdfca1ce491e08fc90725b6",
+    "title": "Linking health to geology-a new assessment and zoning model based on the frame of medical geology",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper presents an assessment model related to geology and health but does not describe a foundation model."
+  },
+  {
+    "paper_id": "0330433af3410baebe1288b4dccbc7825e860444",
+    "title": "A novel QLattice‐based whitening machine learning model of landslide susceptibility mapping",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper describes the application of the QLattice model but does not introduce a new foundation model; it focuses on a specific application in landslide susceptibility mapping."
+  },
+  {
+    "paper_id": "7ecd589ce6b3f2846cc95217819b73b924fa818c",
+    "title": "Retina image segmentation using the three-path Unet model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a specific application of the Unet model for image segmentation but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "3a559e36d340c740bf28a84d0b99d537be4f24e0",
+    "title": "Evaluating the OpenAI’s GPT-3.5 Turbo’s performance in extracting information from scientific articles on diabetic retinopathy",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper evaluates an existing model (GPT-3.5 Turbo) rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "8eeb011a0024dcbe5a66f8981f5c15775ae37ca5",
+    "title": "Digital education in the social investment model of Gross Domestic Product growth in the context of Industry 4.0",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses economic models and digital education but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "f85da1604d7e5c6870a4aa8d7b6de54b037ad596",
+    "title": "Simulation Analysis of Land-Use Spatial Conflict in a Geopark Based on the GMOP–Markov–PLUS Model: A Case Study of Yimengshan Geopark, China",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper presents a simulation model for land-use analysis but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "a7d21e558107f2ac5b702186c338c2488a35f8ef",
+    "title": "Building a Logic Model to Foster Engagement and Learning Using the Case of a Province-Wide Multispecies Antimicrobial Use Monitoring System",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper focuses on building a logic model for program evaluation rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "93393de1767371f62555c7bcd58ee60cad7291e5",
+    "title": "A hybrid physics-data-driven optimization model for grassland grazing management",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper presents an optimization model for grazing management but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "56bfb4f0098c5a9539b08500e94d2b545a5f7ef5",
+    "title": "Assessment of Urban Mobility via a Pressure-State-Response (PSR) Model with the IVIF-AHP and FCE Methods: A Case Study of Beijing, China",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses an assessment model for urban mobility but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "79b777f33bc8bdbc17b7012807cfff3dcb949f31",
+    "title": "Site Quality Evaluation Model of Chinese Fir Plantations for Machine Learning and Site Factors",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper evaluates site quality using existing models but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "97d7556ccc040ec610b99276a06963fde4d69559",
+    "title": "Rural Redemption: A Model to Help Understand the Perspectives of Rural Americans Related to Vaccine Science",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a model related to vaccine science but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "a64f64520573d720c996988be4578b01cdd51fc9",
+    "title": "Implementation of Digital Technology-Based Learning Model to Enhance Student Engagement and Motivation in Economics Subject Learning at High School",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses a digital learning model for education, not a foundation model."
+  },
+  {
+    "paper_id": "5cd86824d36efda71728e1a393edab7c73c613c8",
+    "title": "A Novel Scholar Embedding Model for Interdisciplinary Collaboration",
+    "is_foundation_model": true,
+    "model_name": "ScholarEmbeddingModel",
+    "explanation": "This paper introduces a new model for evaluating scholars based on interdisciplinary collaboration."
+  },
+  {
+    "paper_id": "ab4092a018cb33ea0758beb2f87c27eb98435705",
+    "title": "COVID-19 immunotherapy A mathematical model.",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper proposes a therapy model related to COVID-19 but does not describe a foundation model."
+  },
+  {
+    "paper_id": "1764aff20ffc61707f025c5f36e561082e85ee37",
+    "title": "A dynamic prediction model of landslide displacement based on VMD–SSO–LSTM approach",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper presents a prediction model for landslide displacement, not a foundation model."
+  },
+  {
+    "paper_id": "74eafdb7b71b79df1f81af6ae217b4cc905c348a",
+    "title": "Editorial: Statistical model-based computational biomechanics: applications in joints and internal organs",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This is an editorial and does not present original research on a foundation model."
+  },
+  {
+    "paper_id": "7ccabd7fc68320b70c43bc8790fccf1c4c0fccaf",
+    "title": "Peer-based research funding as a model for journalism funding",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses a funding model for journalism, not a foundation model."
+  },
+  {
+    "paper_id": "e4525d7a0326d0b2d5fffe263f542ed539ca3de2",
+    "title": "Alexander Maximow’s reflection in his followers scientific works",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper reflects on historical contributions and does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "34285d53adb3294e54b0d1bd0dfd708f006e1bf9",
+    "title": "A New Automobile Sales Marketing Model for Innovating Auto-dealer’s Sales",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper describes a marketing model for auto-dealers, not a foundation model."
+  },
+  {
+    "paper_id": "767235edefa1c9d4b5f6eca2f05cd464f3b7bda8",
+    "title": "A multi-criterion model for evaluating the quality of qualitative research",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper proposes a model for evaluating qualitative research, not a foundation model."
+  },
+  {
+    "paper_id": "7e5bbf61ff53dd285c086a27b2d3c758c61e235d",
+    "title": "The model and the didactic sequence and the possibilities in the work and continuing education of the professor of civil engineering",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses educational methods for civil engineering, not a foundation model."
+  },
+  {
+    "paper_id": "0016f55289d6a27f61fbe5a9326f8017c57b0199",
+    "title": "A Rasch-model-based hierarchical framework for statistical literacy and learning",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a framework for statistical literacy but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "85b068e7803144c97e989fe3ee981fc48ae25049",
+    "title": "EVHF-GCN: An Emergency Vehicle Priority Scheduling Model Based on Heterogeneous Feature Fusion With Graph Convolutional Networks",
+    "is_foundation_model": true,
+    "model_name": "EVHF-GCN",
+    "explanation": "This paper introduces and evaluates a new model for emergency vehicle priority scheduling using Graph Convolutional Networks."
+  },
+  {
+    "paper_id": "0b99aaafa4a532fa73ea01fe20e935a139a06018",
+    "title": "Performance Evaluation of Railway Infrastructure Managers: A Novel Hybrid Fuzzy MCDM Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper presents a hybrid model for evaluating performance but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "f2bea5ae28780662e3de8bb6f0f5010aa8401f3c",
+    "title": "Cooperative exploration model of coal–Ge deposit: A case study of the Wulantuga coal–Ge deposit in Shengli coalfield, Inner Mongolia, China",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses a cooperative exploration model but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "b940908d5fc700d5691a0f3cc25cde0696c5577b",
+    "title": "Research on the analysis of Yellow River water and sand monitoring data based on ARIMA model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper uses an ARIMA model for analysis but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "7537cb873fc32a1cb7d646675b738a6582b05135",
+    "title": "The Construction of Accurate Recommendation Model of Learning Resources of Knowledge Graph under Deep Learning",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper proposes a recommendation model but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "579dc63396137e460e5d3e8b01b39568bc7ac39b",
+    "title": "Evidence-Based Policing as a Foundational Policing Model for the INP",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a policing model but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "5b94941f9f13e3c7dc3c8b16ba341fb0f27af62b",
+    "title": "Analysis of Accelerating Ideation Process with Large Language Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper surveys the use of LLMs in idea generation but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "6bf0c0f4670b9f558b9f0263d3cef6b047f5da93",
+    "title": "Research on the Intelligent Assignment Model of Urban Traffic Planning Based on Optimal Path Optimization Algorithm",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a traffic planning model but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "cd27a34ab174933d947939ac2f7c0c8cb5618bf1",
+    "title": "Optimal Development Model of College Music Curriculum Based on Psychology and Big Data Analysis in a Quantitative Environment",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper presents findings on music education but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "86598247e73f69268dd36848ebad91940ef0cbf5",
+    "title": "An AMOS Model for Examining the Factors Influencing the Development of China Cross-Border E-Commerce Comprehensive Pilot Areas",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses a structural equation model for analyzing factors in e-commerce development, not a foundation model."
+  },
+  {
+    "paper_id": "148e9f795b7fa90a4030dd213a32ba7531cb2b7e",
+    "title": "Triple, Quadruple and N-Tuple Helices: The RIS3 and EDP of a Higher-Order Policy Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper examines policy models rather than introducing a foundation model."
+  },
+  {
+    "paper_id": "162a873ea86af29648bcdb93c94930c40f420721",
+    "title": "A PDCA Model for Disinfection Supply Rooms in the Context of Artificial Intelligence to Reduce the Incidence of Adverse Events and Improve the Disinfection Compliance Rate",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on a management model for hospital disinfection, not a foundation model."
+  },
+  {
+    "paper_id": "0bd8ea936b67b2fb5e906dd10ca33cc1a5288976",
+    "title": "The Indonesia Triple Helix Digital Platform Model in Knowledge Sharing for Product Innovation Collaboration",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper presents a conceptual model for knowledge sharing, not a foundation model."
+  },
+  {
+    "paper_id": "13803314ba06d2b6ff7801c183e94e68154ac412",
+    "title": "Creative Attitude in Science Learning Model to Improve Creative Thinking Skills and Positive Attitude of Students Towards Science",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses a learning model for education, not a foundation model."
+  },
+  {
+    "paper_id": "38a23e21545ce5a77104b710ee32dcc89e855a23",
+    "title": "Mathematical Model of Transport Behaviour Based on Transport Macrosystems Theory",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper proposes a mathematical model for transport behavior, not a foundation model."
+  },
+  {
+    "paper_id": "7981d4f933bc464e863412686406fe6acefb243c",
+    "title": "Scientific and pedagogical bases of teaching values to future specialists",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on educational methods rather than introducing a foundation model."
+  },
+  {
+    "paper_id": "77313a279410f174900690ef7a18c6bfe8f343eb",
+    "title": "Tractor Cab Ergonomics Optimization Based on the Simplified Model of Upper Limb from the Perspective of Public Health",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses ergonomics optimization, not a foundation model."
+  },
+  {
+    "paper_id": "d54fd29dc9757eaa1777525f2e2e4a64eea9777a",
+    "title": "Landscape architecture design as an art creative practice: A studio teaching model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses a teaching model for landscape architecture, not a foundation model."
+  },
+  {
+    "paper_id": "eec98fa5830264f78c59f7acb8b62a1cb3f138be",
+    "title": "Kinetic model derivation for design, building and operation of solid waste treatment unit based on system dynamics and computer simulation",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper presents a kinetic model for waste treatment, not a foundation model."
+  },
+  {
+    "paper_id": "13fdb84a92205b65297b329b4366ecd0d2ab463d",
+    "title": "ISLES 2022: A multi-center magnetic resonance imaging stroke lesion segmentation dataset",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe the training or evaluation of a foundation model; it focuses on a dataset."
+  },
+  {
+    "paper_id": "45314de9beef18dcce99f0bc5e067446a0196505",
+    "title": "OpenMedLM: prompt engineering can out-perform fine-tuning in medical question-answering with open-source large language models",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses prompt engineering and does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "62a45ab7b676f3877d41f66f6c9ddf1ec44a1c5f",
+    "title": "GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics",
+    "is_foundation_model": true,
+    "model_name": "GenSLMs",
+    "explanation": "This paper introduces and evaluates a new foundation model specifically designed for genomic data."
+  },
+  {
+    "paper_id": "1b98089f264936a58eaa42e7d9f78ce7894765bf",
+    "title": "An efficient quantum partial differential equation solver with chebyshev points",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe a foundation model; it focuses on a method for solving differential equations."
+  },
+  {
+    "paper_id": "b3f1e50d51edfc713a07f0c87e4096a3f3ea49f4",
+    "title": "AI-driven translations for kidney transplant equity in Hispanic populations",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not introduce a new foundation model; it discusses applications of AI in translation."
+  },
+  {
+    "paper_id": "039e56e98562a97bf12154474f27a808b00e459e",
+    "title": "Analysis of ischemic stroke burden in Asia from 1990 to 2019: based on the global burden of disease 2019 data",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper analyzes data and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "db467127792900ec438884063e61a7957783e1c1",
+    "title": "AI-GOMS: Large AI-Driven Global Ocean Modeling System",
+    "is_foundation_model": true,
+    "model_name": "AI-GOMS",
+    "explanation": "This paper introduces and evaluates a new foundation model for ocean modeling."
+  },
+  {
+    "paper_id": "345b520bc23890064d9aa5f5f18a8308cf2cfcf1",
+    "title": "Ecological Risk Assessment and Impact Factor Analysis of Ecological Spatial Patterns in Coastal Counties: Taking Dalian Pulandian District as an Example",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on ecological risk assessment and does not describe a foundation model."
+  },
+  {
+    "paper_id": "2684ccd0808de3039daa65c100043cc3894099f2",
+    "title": "Study on the Variations in Water Storage in Lake Qinghai Based on Multi-Source Satellite Data",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper analyzes water storage variations and does not introduce a foundation model."
+  },
+  {
+    "paper_id": "179db748df4a2f432fce69999af0a8cf259d14bd",
+    "title": "Influential Factors Affecting Recycling Behavior toward Cardboard Boxes in the Logistics Sector: An Empirical Analysis from China",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper analyzes factors affecting recycling behavior and does not describe a foundation model."
+  },
+  {
+    "paper_id": "76696f03cefac100d8e4646785acb771d1fc66e9",
+    "title": "Spatiotemporal Dynamics and Influencing Factors of Vegetation Net Primary Productivity in the Yangtze River Delta Region, China",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on vegetation productivity analysis using an existing model (CASA) rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "b26c24b0748a587c3f52d0b7f8aad7e3873b3dc6",
+    "title": "Avatar-based patient monitoring improves information transfer, diagnostic confidence and reduces perceived workload in intensive care units: computer-based, multicentre comparison study",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model; it focuses on a comparison study."
+  },
+  {
+    "paper_id": "f4f1b9272725473ea2a77be2ed067cfb81837509",
+    "title": "The Importance of Elementary Teacher Understanding: A Study of Perceptions of Disaster Education Models in Indonesia",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This research is qualitative and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "c0c1a6d7fd5e4ed54bee18e1052736e261ef01c5",
+    "title": "Interfacial and Filler Size Effects on Mechanical/Thermal/Electrical Properties of CNTs-Reinforced Nanocomposites",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses theoretical modeling of nanocomposites rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "7cada0b6812a0729c8f291fbd67bc1c394d166cb",
+    "title": "Research on the influence of digital finance on the economic efficiency of energy industry in the background of artificial intelligence",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe the training or evaluation of a foundation model; it focuses on economic efficiency."
+  },
+  {
+    "paper_id": "3064acbaec595f6badcfd8ae33fb7e23c01fc83b",
+    "title": "Modelling physical contacts to evaluate the individual risk in a dense crowd",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not introduce a new foundation model; it focuses on modeling physical contacts."
+  },
+  {
+    "paper_id": "17ea11d97ac6ee53fd2fdf1297b2deb4543c007b",
+    "title": "Analysis of carbon emission drivers and multi-scenario projection of carbon peaks in the Yellow River Basin",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper analyzes carbon emissions without introducing a new foundation model."
+  },
+  {
+    "paper_id": "c09eee90a31a627c2e2c3f33ba39519e246cb62f",
+    "title": "A Detailed Examination of China’s Clean Energy Mineral Consumption: Footprints, Trends, and Drivers",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper employs existing models and does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "3573ab1bad1c436235ef6a3c58f6e14d93a4ae4f",
+    "title": "Optimization of sports effect evaluation technology from random forest algorithm and elastic network algorithm",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This study focuses on optimizing existing algorithms rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "07339563a959a20a94e3c50145fa84d403b30ec3",
+    "title": "Automated pipeline for superalloy data by text mining",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model; it focuses on data processing."
+  },
+  {
+    "paper_id": "245e8acb19cf66b98437960b75a972bb6cdfbbd1",
+    "title": "The Impact of Environmental Regulations and Social Norms on Farmers’ Chemical Fertilizer Reduction Behaviors: An Investigation of Citrus Farmers in Southern China",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe the training or evaluation of a foundation model; it focuses on agricultural behaviors."
+  },
+  {
+    "paper_id": "ec3c247f8eef235db5f70a5ab137637109812f8e",
+    "title": "Training doctoral students in critical thinking and experimental design using problem-based learning",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not involve the training or evaluation of a foundation model; it discusses educational methods."
+  },
+  {
+    "paper_id": "fd6a61ced540fe543585a4db3ae0ccae8e3a4ced",
+    "title": "Towards a Methodology and Framework for AI Sustainability Metrics",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper proposes metrics for AI sustainability but does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "146b28cda9bb126e64178754c61035ed09079f71",
+    "title": "Current Trends in Language for Specific Purposes Research and Their Relevance to Arabic for Specific Purposes (ASP): A Systematic Literature Review",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper is a systematic literature review and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "40f7e685bcef2fab91dea638ac83556459ac24d5",
+    "title": "Spatial Characteristics and Obstacle Factors of Cultivated Land Quality in an Intensive Agricultural Region of the North China Plain",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on agricultural land quality evaluation and does not involve a foundation model."
+  },
+  {
+    "paper_id": "f863e2badb3d03c4c4b8880086b535a0c28d496a",
+    "title": "Laying the groundwork for corporate social responsibility: Behavioral ethics in high‐hazard organizations",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses behavioral ethics and CSR but does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "808ea79783481d29118019a4fa355a352bd79b2c",
+    "title": "Low-Dose Aspirin after ASPRE—More Questions Than Answers? Current International Approach after PE Screening in the First Trimester",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper reviews medical guidelines and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "98a213e145ae84cdc0a85ac6865f7bb4d9c59524",
+    "title": "Audio Visual sebagai Media Pemahaman Pulsa, Tempo dan Nilai Not dalam Pembelajaran Musik",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on educational media design and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "e67e6ce7a160f7cd6a6719677d931eea660229bb",
+    "title": "An Information Algorithm: Advancing Financial Intelligence Management for Economic Security",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper presents an information algorithm for financial intelligence but does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "9987c3c5a9aa9ea8c6479653bd465c7594a783da",
+    "title": "Artificial Intelligence Techniques in Medical Imaging: A Systematic Review",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper is a systematic review of AI techniques in medical imaging and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "845c3b0d005ae29313d70736e3fa43136506438c",
+    "title": "Metallogenic Prediction of the Zaozigou Gold Deposit Using 3D Geological and Geochemical Modeling",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper describes a specific application of a 3D convolutional neural network for mineralization prediction but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "5e39c0032d6ae6a63cd29171979021fb7714fc45",
+    "title": "A Decentralised Persistent Identification Layer for DCAT Datasets",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper proposes a decentralized identifier registry and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "c02f4bde160ff979b6fcdc143beada1846eea606",
+    "title": "A Review of Coastal Protection Using Artificial and Natural Countermeasures—Mangrove Vegetation and Polymers",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This is a review paper that compiles literature on coastal protection methods and does not introduce or evaluate a new foundation model."
+  },
+  {
+    "paper_id": "bb45ad34648bdcd3a379de764548ab80c7a139e8",
+    "title": "The Impact of Green Innovation Capacity on Urban Economic Resilience: Evidence from China’s Yangtze River Delta Region",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper constructs an index system for evaluation but does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "2e460b9de9ffa08311aafe2fc7998d4b0f096e14",
+    "title": "Copula-based modeling and simulation of 3D systems of curved fibers by isolating intrinsic fiber properties and external effects",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper focuses on modeling and simulation without introducing or evaluating a new foundation model."
+  },
+  {
+    "paper_id": "7ac95dac610a343ce84af8c9600843e731ba5a5f",
+    "title": "Difficulties in merging methodological demands and artistic conventions—'Artist's Neurophysiology in Performance' project case",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses research methods in art studies and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "0fbe6c0b7c8be05efd3698f10736d41e24a087ed",
+    "title": "Complex behavior of individuals and collectives in a social system: An introduction to exploratory computational experimental methodology based on multi-agent modeling",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper introduces a methodology but does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "56607cbdf61435e480574de2f2396b1585cf8787",
+    "title": "Bayesian regression versus machine learning for rapid age estimation of archaeological features identified with lidar at Angkor",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper compares methods for age estimation and does not introduce or evaluate a new foundation model."
+  },
+  {
+    "paper_id": "c6feafd967374b1a6dbbbfb77d7720f15e9309a3",
+    "title": "Technology transfer network system in Ukraine",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a technology transfer network but does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "00a0b9e39da888d60fe2e8de113c6ffb9db16fbb",
+    "title": "Inducible in vivo genome editing in the sea star Patiria miniata",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper introduces a gene editing tool but does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "30e292718514ad522251ca61df09aa631995fc79",
+    "title": "A Study of College English Writing Teaching Based on Dynamic Assessment",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses teaching methods and assessment strategies, not the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "d08eb3a3427b6ddd3b627afd129674ec493f9b23",
+    "title": "Ontological modeling of the psychological field of a play",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on psychological modeling and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "d75ef53edda20459b86bc58f5982d3a7f04e3b80",
+    "title": "Predicting the Environmental Change of Carbon Emission Patterns in South Asia: A Deep Learning Approach Using BiLSTM",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper presents a specific application of Bi-LSTM for prediction, but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "71ddc710ac642ab8db9fcbc26e5096d55e871eeb",
+    "title": "Reflections on Interpretation Training from an Ecological Perspective in the Context of “Internet Plus”",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses interpretation training models and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "a14c0316b5a9098b2552b6f24deeecf6b24f6921",
+    "title": "A dataset of storm surge reconstructions in the Western North Pacific using CNN",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper focuses on a dataset and does not describe the training or evaluation of a new foundation model."
+  },
+  {
+    "paper_id": "c7a08cc82f0f1b7113b0745fd3c3cc2ad8aae338",
+    "title": "The CAT’s race: Who will claim this nobel prize?",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses theoretical aspects of astrophysics and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "97a345665bb87cc5989454032b542e71d6d083f7",
+    "title": "Capacity Building of Displaced Universities: Strategies for Recovery and Development",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper addresses educational strategies and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "11954b2f3a60c92c888d84b5dc2cf6e5cc0eb199",
+    "title": "Effect of Sodium Carboxymethyl Cellulose on Water and Salt Transport Characteristics of Saline–Alkali Soil in Xinjiang, China",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on soil treatment and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "23b9aa192980cebae9d4c3a433de097d8a52c050",
+    "title": "EXOGENOUS AND ENDOGENOUS FACTORS IN THE DEVELOPMENT OF TERRITORIAL COMMUNITIES: A MARKETING APPROACH TO DEFINITION",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses local development concepts and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "cc72484223596ee46edafc3a83f548a6777e3f74",
+    "title": "DETERMINATION OF THE IMPACT ZONE OF ENABLING WORKS OF A NEW CONSTRUCTION ON THE SURROUNDING BUILDINGS",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on construction impact analysis and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "c0778fdb733a4bdb0a19e6990b4adebaca700f73",
+    "title": "FIELD STUDIES OF SLAB FOUNDATIONS’ SETTLEMENTS FOR TWO-SECTION MULTI-STOREY BUILDING ON WEAK WATER-SATURATED SOILS",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses field studies related to construction foundations but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "e03118d4f37cf16e8ea8686a7890dfe1ef9de9cb",
+    "title": "NATIONAL INTELLECTUAL PROPERTY AUTHORITY: FEATURES OF EUROPEAN FUNCTIONING PRACTICE",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper analyzes the organization of intellectual property bodies and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "5739f2c9fe3beb6876dad57acfe13662f106ee86",
+    "title": "String theory and theory of everything: Review research",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This is a review paper discussing theoretical models and does not present original research on a foundation model."
+  },
+  {
+    "paper_id": "43309f6253077146466efb328e34663211a8c4e2",
+    "title": "Assessment of the Construction Project Costs by Using the Learning Curve",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses project cost assessment using existing models but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "dc62665c1368190524d95563df83e39eaeeabaa5",
+    "title": "Enhancing nanoparticle accumulation in two dimensional, three dimensional, and xenograft mouse cancer cell models in the presence of docetaxel",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on experimental results in cancer cell models and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "b9dce7d37839e52f67c8a711d5aa1aa10146cfb7",
+    "title": "Deep learning based analysis of microstructured materials for thermal radiation control",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses the application of deep learning to analyze materials but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "a1d220b0e5d3e7ddcaeed2806dcbd65df64dee2d",
+    "title": "On the intensity decay of tropical cyclones before landfall",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper studies cyclone intensity but does not present a new foundation model or its evaluation."
+  },
+  {
+    "paper_id": "79ef0bbd04bfb80bd3987fbc3f7d9490f869b44b",
+    "title": "Soil-structure interaction analysis of Çelebiağa Mosque, Pertek-Türkiye",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper performs an analysis using existing models but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "d21fa0fe3b0a143ff1c9edef12ba1105df9eb3d4",
+    "title": "Study and assessment of the situations and causes of erosion along the Hau riverbank in An Giang province during the period 2009–2019",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper assesses erosion causes and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "9c596e42e9d5386bc90dba7e12b6479c159d974d",
+    "title": "Mapping Spatiotemporal Changes in Forest Type and Aboveground Biomass from Landsat Long-Term Time-Series Analysis - A Case Study from Yaoluoping National Nature Reserve, Anhui Province of Eastern China",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses remote sensing analysis and modeling but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "1e1a3d64db17f2e05c25169ff8c8c202376b1147",
+    "title": "Ways forward for Machine Learning to make useful global environmental datasets from legacy observations and measurements",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "243a2ae95fce38ff77359f854d38c72551d1daf9",
+    "title": "Theoretical analysis of the deformation for steel gas pipes taking into account shear effects under surface explosion loads",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "8406d3b0928f2bb40b4f7906b97321c0b17036fa",
+    "title": "Research on the Evolution of High-Quality Development of China’s Provincial Foreign Trade",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on an evaluation index system and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "b3505af2e2ea4d4b225bdd5e002b8fd2c2826397",
+    "title": "Prediction of Unbalanced Financial Risk Based on GRA-TOPSIS and SMOTE-CNN",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper proposes a model that integrates existing methods but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "3a9bc8aac66f0ba448e6253b869cec01899ae9ff",
+    "title": "Evolution of cooperation in multiplex networks through asymmetry between interaction and replacement",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "bc85326580075035b1fe8cec384d554f65f60de7",
+    "title": "Applying Machine Learning Approach to Start-up Success Prediction",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper compares existing machine learning algorithms rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "f134c1fd9cfd115cc321b16b2ac4d41145fc0993",
+    "title": "Analysis of influence of deformation modes of retaining structures on deformation of a side shield tunnel",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "68465dc43f1b490fe36fe75c8c311ec964937d8e",
+    "title": "An Integrated Research Plan for the Tibetan Plateau Land–Air Coupled System and Its Impacts on the Global Climate",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses a research plan and model development but does not introduce a specific foundation model."
+  },
+  {
+    "paper_id": "d5dd421c5b40575a594568a7a73e28d6987e30a6",
+    "title": "Exploring the Linkages of Digital Food Communication and Analog Food Behavior: A Scoping Review",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper is a scoping review and does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "2f83dd928bbbc0fe6e5ccdd0d18b3bf3babec9bd",
+    "title": "3D Mineral Prospectivity Mapping of Zaozigou Gold Deposit, West Qinling, China: Machine Learning-Based Mineral Prediction",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses a mineral prediction model but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "c0abde96c86165849b359c7e382102e7e92c4688",
+    "title": "Ecological and Cultural Understanding as a Basis for Management of a Globally Significant Island Landscape",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper discusses management strategies and ecological understanding but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "d958366a508ad98217fea893345222057b5faa7c",
+    "title": "Research on the protection and inheritance of intangible cultural heritage under the background of rural revitalisation",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper focuses on cultural heritage protection strategies and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "a7a612033f65984ba8127e764dc3f1219f904379",
+    "title": "Challenges and development pathways for the expert examination of grants",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper discusses grant application examination methods but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "d139756b070d050241490a5bceb2b22791a00d72",
+    "title": "Study on the Distance Learners’ Academic Emotions Using Online Learning Behavior Data",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper analyzes academic emotions based on online behavior data but does not describe a new foundation model."
+  },
+  {
+    "paper_id": "4225c726decf591bdf06c40e03c5aa036c241886",
+    "title": "Immune‐mediated pathology as a consequence of impaired immune reactions: the IMPATH paradox",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper discusses immunopathology concepts and does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "aa3ab9398ff20843503a7050b020a66892c5e771",
+    "title": "FEATURES OF INTERNATIONAL EXPERIENCE IN AIRPORT DEVELOPMENT ON INNOVATIVE BASIS",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper focuses on airport development strategies and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "9b67e2969ad84a3c73ba84561e3f8fcf43efe8a7",
+    "title": "Exploration of Robot Oriented Talent Training Mode for Emerging Engineering Education",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper discusses educational models and talent training but does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "34fdcf54b66068c98b2fc377467de32c1c09f767",
+    "title": "Aesthetics without Objects: Towards a Process-Oriented Aesthetic Perception",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper proposes an aesthetic model but does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "211434223435a743e1fc1dd3479e20137d57b0a2",
+    "title": "KINERJA KARYAWAN DITINJAU DARI EFEKTIVITAS PENERAPAN SISTEM INFORMASI AKUNTANSI DAN KOMPLEKSITAS TUGAS DI YAYASAN TRIATMA SURYA JAYA",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This study focuses on employee performance and accounting systems, not on a foundation model."
+  },
+  {
+    "paper_id": "0f4780f3f42dbe9755d54495ae17244cc88a7483",
+    "title": "DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome",
+    "is_foundation_model": true,
+    "model_name": "DNABERT-2",
+    "explanation": "This paper introduces DNABERT-2, a new foundation model for genome analysis, including its training and evaluation."
+  },
+  {
+    "paper_id": "f4dc1886a9ba1def1e9fa230572d21cc85934f7d",
+    "title": "A foundation model for generalizable disease detection from retinal images",
+    "is_foundation_model": true,
+    "model_name": "DiseaseDetectionFM",
+    "explanation": "The paper describes the training and evaluation of a foundation model specifically designed for disease detection from retinal images."
+  },
+  {
+    "paper_id": "a4960c5758a76faee04bf8c2962d30c789d7a3f1",
+    "title": "SpectralGPT: Spectral Remote Sensing Foundation Model",
+    "is_foundation_model": true,
+    "model_name": "SpectralGPT",
+    "explanation": "This paper introduces and evaluates a new foundation model for processing spectral remote sensing images."
+  },
+  {
+    "paper_id": "df0ddb588a200d095743e9d26fc4a9318619766e",
+    "title": "Towards Generalist Foundation Model for Radiology",
+    "is_foundation_model": true,
+    "model_name": "RadFM",
+    "explanation": "The paper presents the training and evaluation of RadFM, a foundation model for radiology tasks."
+  },
+  {
+    "paper_id": "c520d8a888355f7abb7728b2e2510fe7bc63f814",
+    "title": "Large Scale Foundation Model on Single-cell Transcriptomics",
+    "is_foundation_model": true,
+    "model_name": "scFoundation",
+    "explanation": "This paper describes the training of scFoundation, a large-scale foundation model for single-cell transcriptomics."
+  },
+  {
+    "paper_id": "874deb5f06f35e52ae13a921b23611eec4abd1da",
+    "title": "ClimaX: A foundation model for weather and climate",
+    "is_foundation_model": true,
+    "model_name": "ClimaX",
+    "explanation": "The paper introduces ClimaX, a foundation model for weather and climate modeling, detailing its training and evaluation."
+  },
+  {
+    "paper_id": "45c2f1672ef1de301868453acaf23f6df9a34b8a",
+    "title": "A Billion-scale Foundation Model for Remote Sensing Images",
+    "is_foundation_model": true,
+    "model_name": "BillionScaleRemoteSensingFM",
+    "explanation": "This paper discusses the training of a billion-scale foundation model for remote sensing images and its evaluation on various tasks."
+  },
+  {
+    "paper_id": "a2d269de1d168a7908f3af4d5b4cbe4195fb6c34",
+    "title": "Radio Galaxy Zoo: Towards building the first multi-purpose foundation model for radio astronomy with self-supervised learning",
+    "is_foundation_model": true,
+    "model_name": "RadioAstronomyFM",
+    "explanation": "The paper describes the training of a foundation model for radio astronomy, focusing on its application to various tasks."
+  },
+  {
+    "paper_id": "3d3cb32bea6410eb489666d2f7bbbcfe2830e82a",
+    "title": "O-321 A foundation model for embryology trained on time-lapse images",
+    "is_foundation_model": true,
+    "model_name": "FEMI",
+    "explanation": "This paper presents FEMI, a foundation model trained on time-lapse images for embryology, detailing its training and evaluation."
+  },
+  {
+    "paper_id": "3675186efe9798ca26d4c3ef898bf9199d5c3700",
+    "title": "CoRAST: Towards Foundation Model-Powered Correlated Data Analysis in Resource-Constrained CPS and IoT",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper discusses a framework utilizing foundation models but does not describe the training of a new foundation model."
+  },
+  {
+    "paper_id": "4970479348ec2ee6032e76432634385fb9f6c02d",
+    "title": "Digital research data: from analysis of existing standards to a scientific foundation for a modular metadata schema in nanosafety",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "0b0debb710366cdff461938c80763eace1651af6",
+    "title": "Code Llama: Open Foundation Models for Code",
+    "is_foundation_model": true,
+    "model_name": "CodeLlama",
+    "explanation": "This paper introduces and evaluates a new family of foundation models specifically designed for code generation and understanding."
+  },
+  {
+    "paper_id": "6a33e58ef961a3a0a5657518b2be86395eb7c8d0",
+    "title": "Intern VL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks",
+    "is_foundation_model": true,
+    "model_name": "InternVL",
+    "explanation": "The paper presents the training and evaluation of a new vision-language foundation model, demonstrating its capabilities across various benchmarks."
+  },
+  {
+    "paper_id": "af997821231898a5f8d0fd78dad4eec526acabe5",
+    "title": "Visual ChatGPT: Talking, Drawing and Editing with Visual Foundation Models",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper describes a system that integrates existing visual foundation models with ChatGPT but does not introduce or evaluate a new foundation model."
+  },
+  {
+    "paper_id": "68c834c19cd126bbd6d25a3572d7205cfed76271",
+    "title": "AGIEval: A Human-Centric Benchmark for Evaluating Foundation Models",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on evaluating existing foundation models rather than introducing or training a new one."
+  },
+  {
+    "paper_id": "71bc0c97c20fffce796a355b16bd202987260029",
+    "title": "A Survey of Hallucination in Large Foundation Models",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This is a survey paper discussing hallucination in foundation models, not presenting original research on a new model."
+  },
+  {
+    "paper_id": "a26a7a74f1e5fd562be95c3611a0680759fbdf84",
+    "title": "CoCa: Contrastive Captioners are Image-Text Foundation Models",
+    "is_foundation_model": true,
+    "model_name": "CoCa",
+    "explanation": "The paper introduces and evaluates a new image-text foundation model, detailing its training and performance on various tasks."
+  },
+  {
+    "paper_id": "3599a236f285af48782fc30b1341d13ec7320735",
+    "title": "A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This is a survey paper that reviews existing foundation models rather than presenting new research on a specific model."
+  },
+  {
+    "paper_id": "4fdabba504572677c78a53ace7578a938504167f",
+    "title": "NEW CONCEPTUAL IDEAS IN THE PROCEEDINGS OF THE SHEVCHENKO SCIENTIFIC SOCIETY. MEDICAL SCIENCES (DEDICATED TO THE 125TH ANNIVERSARY SINCE ITS FOUNDATION)",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not discuss foundation models or their training and evaluation."
+  },
+  {
+    "paper_id": "26c80bd65baa90f5b18157de4951f4eb0b62ab69",
+    "title": "InternImage: Exploring Large-Scale Vision Foundation Models with Deformable Convolutions",
+    "is_foundation_model": true,
+    "model_name": "InternImage",
+    "explanation": "The paper introduces and evaluates a new CNN-based foundation model, demonstrating its effectiveness on various benchmarks."
+  },
+  {
+    "paper_id": "98e6e0b3b811193e89b1a033da6c0a454220877a",
+    "title": "Foundation Models and Fair Use",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses legal and ethical issues surrounding existing foundation models, not the training of a new model."
+  },
+  {
+    "paper_id": "236c7dafea3df7ecffb5f18ec780d12f2f27d4b0",
+    "title": "C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper presents an evaluation suite for existing foundation models rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "8dd70dbe17d7e68fcf561e8782f446537852272d",
+    "title": "Scientific and Technical Capacity of Regions as the Foundation for Technological Independence of the Russian Federation",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses regional scientific and technical capacity and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "7e4b9cdc59618a9403d326b6797467e764710221",
+    "title": "The Challenges of Funding and Conducting Scientific Research in PostCOVID-19 Georgia (Case of the Shota Rustaveli National Science Foundation of Georgia)",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper focuses on challenges in scientific research funding and does not involve foundation models."
+  },
+  {
+    "paper_id": "9faa2b0e5cb93f20df0555c3c350fab0b2eccf3a",
+    "title": "Foundation models for generalist medical artificial intelligence",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The abstract does not provide any details about a specific foundation model being trained or evaluated."
+  },
+  {
+    "paper_id": "05be16afbd1dec2f5dad0949686c3fbe9d44f466",
+    "title": "SeaEval for Multilingual Foundation Models: From Cross-Lingual Alignment to Cultural Reasoning",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper presents a benchmark for evaluating existing multilingual foundation models rather than introducing a new model."
+  },
+  {
+    "paper_id": "ac7771c332da42b29a913b116bd6ef622cbf89cf",
+    "title": "TaskMatrix.AI: Completing Tasks by Connecting Foundation Models with Millions of APIs",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper proposes a system for connecting existing foundation models with APIs but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "af3ab5da98e0807784b57e321ed887a3666a8ab6",
+    "title": "Multimodal Foundation Models: From Specialists to General-Purpose Assistants",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper is a survey of multimodal foundation models and does not present new training or evaluation of a specific model."
+  },
+  {
+    "paper_id": "352420ee61a8da783ca7750170793613b18b8d9c",
+    "title": "Tool Learning with Foundation Models",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper reviews tool learning and does not describe the training or evaluation of a new foundation model."
+  },
+  {
+    "paper_id": "2ebd5df74980a37370b0bcdf16deff958289c041",
+    "title": "Foundation Models for Decision Making: Problems, Methods, and Opportunities",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses the application of foundation models in decision making but does not introduce a new model."
+  },
+  {
+    "paper_id": "299e281cb6e2bfae6e8459d2ac354e11e40931be",
+    "title": "ChemBERTa-2: Towards Chemical Foundation Models",
+    "is_foundation_model": true,
+    "model_name": "ChemBERTa-2",
+    "explanation": "This paper describes the training and evaluation of a new foundation model specifically designed for chemical applications."
+  },
+  {
+    "paper_id": "7e17763ce886de67ee12fe1dd7b21fe19e4116ba",
+    "title": "SSL4EO-L: Datasets and Foundation Models for Landsat Imagery",
+    "is_foundation_model": true,
+    "model_name": "SSL4EOL",
+    "explanation": "This paper introduces SSL4EO-L, a foundation model specifically trained for Landsat imagery, along with a new dataset."
+  },
+  {
+    "paper_id": "e33a538e80d1877782df26e1493f5adc661ceec4",
+    "title": "AstroLLaMA: Towards Specialized Foundation Models in Astronomy",
+    "is_foundation_model": true,
+    "model_name": "AstroLLaMA",
+    "explanation": "AstroLLaMA is a new foundation model specifically trained for astronomy tasks, demonstrating its training and evaluation."
+  },
+  {
+    "paper_id": "066a9da13badca3791832f50f47103f31d681189",
+    "title": "On “Scientific Debt” in NLP: A Case for More Rigour in Language Model Pre-Training Research",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This is a position paper critiquing existing research practices and does not introduce or evaluate a new foundation model."
+  },
+  {
+    "paper_id": "325d8e9501af05e594bd668b6cd6d43ed42c8b4d",
+    "title": "InternVideo: General Video Foundation Models via Generative and Discriminative Learning",
+    "is_foundation_model": true,
+    "model_name": "InternVideo",
+    "explanation": "InternVideo is a newly introduced foundation model for video understanding, with detailed training and evaluation results."
+  },
+  {
+    "paper_id": "fed150a219f9c31bdb4920e615c7c9264c634736",
+    "title": "On the Challenges and Perspectives of Foundation Models for Medical Image Analysis",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper discusses challenges and opportunities in medical foundation models but does not present a new model or its evaluation."
+  },
+  {
+    "paper_id": "599080fc0e2af249d2dc2e4ecb90a900c380926c",
+    "title": "A Novel Scenarios Engineering Methodology for Foundation Models in Metaverse",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper proposes a theoretical framework for foundation models but does not describe the training or evaluation of a specific model."
+  },
+  {
+    "paper_id": "00321860bcc55993c5e09f8c274246d90a0e20af",
+    "title": "The New Business Model for the State Scientific and Technical Library of Ukraine Enhancing New Digital Tools for Researchers",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper focuses on library transformation and digital tools, not on training or evaluating a foundation model."
+  },
+  {
+    "paper_id": "3ac23b04fe6e26d18fd190df062fb9e3a94f9682",
+    "title": "Nonlinear dynamic stability analysis of CNTs reinforced piezoelectric viscoelastic composite nano/micro plate under multiple physical fields resting on smart foundation",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This study is focused on mechanical analysis and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "0f071ec7a34b25d60b5f122e5e755213771bf7f9",
+    "title": "EHR foundation models improve robustness in the presence of temporal distribution shift",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The abstract does not provide sufficient information to determine if a new foundation model is introduced or evaluated."
+  },
+  {
+    "paper_id": "03912619cfb7cd374163c71102d19c0e38af9ae3",
+    "title": "Studied the Impact of the Foundation on the Underground Cavity Using the Finite Element Method",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper focuses on numerical modeling related to underground cavities and does not involve foundation models."
+  },
+  {
+    "paper_id": "f08b5feb404eadb07828ae138ae993b0da96dc34",
+    "title": "Field Studies of the Stressed State of the «soil base – combined pile raft foundation» System of the Multifunctional Complex in Kharkiv City",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a specific construction project and monitoring of a foundation system, but does not introduce or evaluate a new foundation model."
+  },
+  {
+    "paper_id": "6739e86f42e2220bd3db9a1b332aedd20fa9637c",
+    "title": "Scientific data from precipitation driver response model intercomparison project",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not provide any information about training or evaluating a specific foundation model."
+  },
+  {
+    "paper_id": "d2cc43385f757cd265bd75dca8839a2939e8de32",
+    "title": "Study on the Analysis of Pile Foundation Deformation and Control Methods during the Excavation of Deep and Thick Sludge Pits",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This study focuses on monitoring and simulation related to excavation projects, not on training a new foundation model."
+  },
+  {
+    "paper_id": "9167e0999117a81439307302dc3c2bd8acfea72d",
+    "title": "Study on the influence of reverse faulting on deformation of foundation pit retaining piles",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a new foundation model."
+  },
+  {
+    "paper_id": "6819435de8aff1c3f135f3752d7e4935d41a856c",
+    "title": "Same but Different: Providing a Probabilistic Foundation for the Feature-Matching Approach to Similarity and Categorization",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses a theoretical approach and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "e78105d658b238c2ade95b6e62ba2ee0d3173ef7",
+    "title": "Scientific investigation of a fractional model based on hybrid nanofluids with heat generation and porous medium: applications in the drilling process",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper investigates a specific model related to nanofluids but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "e916f69e70a4321f21356f7ce360e380dd976a43",
+    "title": "Scientific Machine Learning Through Physics–Informed Neural Networks: Where we are and What’s Next",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses the application of existing methods and does not present a new foundation model."
+  },
+  {
+    "paper_id": "d7223ce07cf7310b0a86d60cc5a75207bd73b31b",
+    "title": "Numerical Simulation Study on the Impact of Deep Foundation Pit Excavation on Adjacent Rail Transit Structures—A Case Study",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper focuses on numerical simulations related to excavation impacts and does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "76ceaba011d024abedf6221942d64d297ba774a1",
+    "title": "Accelerations Caused by Underwater Explosions on the Naval Gun Foundation",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper analyzes the impact of underwater explosions on a naval gun foundation but does not describe a new foundation model."
+  },
+  {
+    "paper_id": "1ad0ce838b21c7eefb8d3437baa8a23c383b8556",
+    "title": "A Proposed Vision For Developing Institutional Performance In Arab Universities Appropriating The Standards Of The European Foundation For Quality Management (EFQM)",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper proposes a vision for institutional performance but does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "01bb62caf22954ebf2a4a615d2ab59d5db022c1e",
+    "title": "DeepSNR: A deep learning foundation for offline gravitational wave detection",
+    "is_foundation_model": true,
+    "model_name": "DeepSNR",
+    "explanation": "The paper introduces and evaluates the DeepSNR model specifically designed for gravitational wave detection."
+  },
+  {
+    "paper_id": "19ee11fa437f718cd698d32f9fcb8502ea5a2eea",
+    "title": "Pathways to a Shiny Future: Building the Foundation for Computational Physical Chemistry and Biophysics in 2050",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This is a perspective paper discussing future directions and does not introduce or evaluate a specific foundation model."
+  },
+  {
+    "paper_id": "edc9bf11c4810a77f00ccb96130ff67ee578391e",
+    "title": "ThoughtSource: A central hub for large language model reasoning data",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "536da60361c493a6ea13792e40fe8169a17288ea",
+    "title": "The Primary Nursing Care Model and Inpatients’ Nursing-Sensitive Outcomes: A Systematic Review and Narrative Synthesis of Quantitative Studies",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This is a systematic review and does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "f4f568ef210abfb9b41cdb615dc4b1fa6fa1f00a",
+    "title": "Simulation of Foundation Fieldbus Manchester Coded 31.25 kbps H1 Bus Using MATLAB and Simulink",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper focuses on simulation techniques and does not introduce a foundation model."
+  },
+  {
+    "paper_id": "18b9e58ed9cc268db2464a2e47b9e4c5e278ccc1",
+    "title": "NSF Fellows’ perceptions about incentives, research misconduct, and scientific integrity in STEM academia",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not discuss or evaluate a foundation model."
+  },
+  {
+    "paper_id": "eaf10e5f64899a90a4a177f41cea6cd4129d064e",
+    "title": "BioLLM: A Standardized Framework for Integrating and Benchmarking Single-Cell Foundation Models",
+    "is_foundation_model": true,
+    "model_name": "BioLLM",
+    "explanation": "The paper introduces the BioLLM framework for integrating and benchmarking single-cell foundation models."
+  },
+  {
+    "paper_id": "a3163b0ba228f77a8900e984db351cc39c7bd05a",
+    "title": "Visually sensitive seizures: An updated review by the Epilepsy Foundation",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This is a review paper and does not introduce or evaluate a foundation model."
+  },
+  {
+    "paper_id": "6ace352d5f87440785b04a287b7504d7d3f0a2b2",
+    "title": "Strategic Objectives of Sustainable Development Model in Production and Education",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a model conceptually but does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "4424ab85c882482a49d4c358a6990e110dbb1ef7",
+    "title": "Principal component analysis–artificial neural network-based model for predicting the static strength of seasonally frozen soils",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper presents a specific application model but does not introduce a foundation model."
+  },
+  {
+    "paper_id": "c8110a2bd66aa0f2cb85990542e226e963636f50",
+    "title": "Spatial–Temporal Characteristics and Influencing Factors of Land-Use Carbon Emissions: An Empirical Analysis Based on the GTWR Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses the GTWR model but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "a46f24e0623cdc65973531e79d81c606751c6235",
+    "title": "Predicting monthly hospital outpatient visits based on meteorological environmental factors using the ARIMA model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper uses the ARIMA model for predictions but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "aadb54d84739201df7da2831e8a2502d15bcf1c3",
+    "title": "Significance of heat transfer rate in water-based nanoparticles with magnetic and shape factors effects: Tiwari and Das model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses the Tiwari and Das model but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "859de36ccde19d292a210cba486ab237aaa02f85",
+    "title": "The Canadian Atmospheric Model version 5 (CanAM5.0.3)",
+    "is_foundation_model": true,
+    "model_name": "CanAM5",
+    "explanation": "The paper describes the training and evaluation of the Canadian Atmospheric Model version 5, which qualifies as a foundation model."
+  },
+  {
+    "paper_id": "759a38745575ef3ef1a67f7128d5e00fd8a303f0",
+    "title": "Physics-Guided, Physics-Informed, and Physics-Encoded Neural Networks in Scientific Computing",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper reviews various neural network frameworks but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "e2d0bd5bfd0d1d35484552abf9f7fbcd276c8669",
+    "title": "Effectiveness of Generative Artificial Intelligence for Scientific Content Analysis",
+    "is_foundation_model": true,
+    "model_name": "VertexAITextBison",
+    "explanation": "The paper evaluates the Vertex AI 'text-bison' model, which is a foundation model, in a real-world scenario."
+  },
+  {
+    "paper_id": "d5e0e0e18e47bc7686cf744aa15c58e6b5aa381d",
+    "title": "Influence of virtual reality on the process of personality socialization: A distance model of socialization",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a theoretical model of socialization but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "42881d3692609984a9ece089cf99786fdf21d18a",
+    "title": "Impact of Ecological Restoration Project on Water Conservation Function of Qilian Mountains Based on InVEST Model—A Case Study of the Upper Reaches of Shiyang River Basin",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper uses the InVEST model for evaluation but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "dae831497765e78390420d48b806d95b2f4b75aa",
+    "title": "Model-predicted geometry variations to compensate material variability in the design of classical guitars",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses model predictions but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "ba59095351831f7d0106383476c341ed3694eb54",
+    "title": "Optimizing the evaluation model of green building management based on the concept of urban ecology and environment",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper proposes an evaluation model but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "ae893a7b1ec219724267f1ada26e8de8f1d77cf3",
+    "title": "Improving deep learning model performance under parametric constraints for materials informatics applications",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "58ed85f2f00b71ac4e3efd74240687129fb1268c",
+    "title": "Optimising brain age estimation through transfer learning: A suite of pre‐trained foundation models for improved performance and generalisability in a clinical setting",
+    "is_foundation_model": true,
+    "model_name": "BrainAgeEstimationFM",
+    "explanation": "The paper describes the training and evaluation of multiple models for brain age estimation, which are proposed as foundation models."
+  },
+  {
+    "paper_id": "5e9c4f25bf9d680a2942acbc80e5b9de4ce3c730",
+    "title": "High-resolution Digital Surface Model of the 2021 eruption deposit of Cumbre Vieja volcano, La Palma, Spain",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "2911f5b3c864a8ef424c1a1cd273c287b3c98afd",
+    "title": "Novel machine-learning analysis of SARS-CoV-2 infection in a subclinical nonhuman primate model using radiomics and blood biomarkers",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "d24862671af7070f261147b0681be534b856b81c",
+    "title": "Disease pathology signatures in a mouse model of Mucopolysaccharidosis type IIIB",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "9e03b2abf8121143045963565605fdfdceaa26ec",
+    "title": "A study on the influencing factors and related paths of farmer’s participation in food safety governance—based on DEMATEL-ISM-MICMAC model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "273050d60ad49cf38327f9e186ca6afcd2b42531",
+    "title": "Latent Dirichlet Allocation-Based Topic Mining Analysis of Educational Scientific Research Projects Based on 2360 NSF Education Projects",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "2db6837da6517592a10c7f8cf5ffaefbf47df4f1",
+    "title": "Water Cycle Health Assessment Using the Combined Weights and Relative Preference Relationship VIKOR Model: A Case Study in the Zheng-Bian-Luo Region, Henan Province",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "667a30b3d77da9e8a6a0643ce9eca0204ebcf323",
+    "title": "On the Efficiency and Robustness of Vibration-Based Foundation Models for IoT Sensing: A Case Study",
+    "is_foundation_model": true,
+    "model_name": "FOCAL",
+    "explanation": "The paper describes the training and evaluation of a vibration-based foundation model for IoT applications."
+  },
+  {
+    "paper_id": "ab9e8abd8ca6226b7bd3b14c0eeebc1d0bde9813",
+    "title": "A parallel implementation of the confined–unconfined aquifer system model for subglacial hydrology: design, verification, and performance analysis (CUAS-MPI v0.1.0)",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "558da61c97bff463ddfc8b56713e1d0660ceb35c",
+    "title": "Research on construction schedule risk management of power supply and distribution projects based on MCS-AHP model",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper proposes a risk evaluation model but does not introduce a foundation model."
+  },
+  {
+    "paper_id": "37f9f95aaf725457aeb1ce311aa4d0e4fa80b878",
+    "title": "Sciris: Simplifying scientific software in Python",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper discusses software simplification and does not introduce a foundation model."
+  },
+  {
+    "paper_id": "86b3729b841bd32b3b37f4cb930447360d2d527a",
+    "title": "Toward Lossless Homomorphic Encryption for Scientific Computation",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper investigates encrypted computations but does not introduce a new foundation model."
+  },
+  {
+    "paper_id": "e9eb01fdaa94d555d4587bfc3d22f1e51d097c4a",
+    "title": "Investigations on Flexural Strength of a Columnar Saline Model Ice under Circular Plate Central Loading",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This study focuses on physical testing and modeling of ice properties, not a foundation model."
+  },
+  {
+    "paper_id": "5daa9022b1d5b044a17b80ad61f7c3247815ce86",
+    "title": "Preliminary content and construct validity of a new model to differentiate research skills from evidence-based practice skills: Core, Evidence Application, Research (CEAR) Model.",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper proposes a model for educational assessment but does not describe a foundation model."
+  },
+  {
+    "paper_id": "aa3ebcc47fd353556dcdfb450803890a48a936b9",
+    "title": "Retracted: College Students’ Ideological and Political In-Depth Teaching Community Based on Core Literacy Model",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper has been retracted and does not contribute to foundation model research."
+  },
+  {
+    "paper_id": "10422818a70c3633b126278d6ce8ef535c6e08de",
+    "title": "Analyzing the effects of quarantine, isolation, and vaccination on the spread of COVID-19 via a mathematical model",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper discusses a mathematical model for disease spread but does not introduce a foundation model."
+  },
+  {
+    "paper_id": "2f411d33b8a5a45229ad5c9aa23b3ee4ac9080a4",
+    "title": "Bratislava School of Musicology as a Centre of Slavic Way of Thinking in Scientific and Artistic Work",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "This paper focuses on the history of a musicology department and does not introduce a foundation model."
+  },
+  {
+    "paper_id": "588b26190980e3ceda4abc2e1336bd9ee9470a41",
+    "title": "Scientific school of non-equilibrium aeromechanics in Saint Petersburg State University",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper reviews a scientific school and its achievements, not a foundation model."
+  },
+  {
+    "paper_id": "53dbba82d32e7cd5533742c45deb8904b56b1ddc",
+    "title": "Decision tree based ensemble machine learning model for the prediction of Zika virus T-cell epitopes as potential vaccine candidates",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper discusses a specific machine learning model for a task but does not introduce a foundation model."
+  },
+  {
+    "paper_id": "5d3f28c8f86696eec9cf845a609b2977b2efd3ba",
+    "title": "Scientific and Technological Issues for the Intelligent Management of Air Traffic",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper discusses challenges and scientific problems in air traffic management but does not describe the training or evaluation of a specific foundation model."
+  },
+  {
+    "paper_id": "9e6c6f6201b4cdbb0b0b429ef3421ec1ac7b3cf1",
+    "title": "Creative and Correct: Requesting Diverse Code Solutions from AI Foundation Models",
+    "is_foundation_model": true,
+    "model_name": "DiverseCodeSolutionsFM",
+    "explanation": "The paper investigates the use of AI foundation models to generate diverse code solutions, including experiments that evaluate their performance."
+  },
+  {
+    "paper_id": "a945f3049323de3f5d657aaf789e7b9e81f13929",
+    "title": "Optimal Reusable Rocket Landing Guidance: A Cutting-Edge Approach Integrating Scientific Machine Learning and Enhanced Neural Networks",
+    "is_foundation_model": true,
+    "model_name": "AQResNetRAQResNet",
+    "explanation": "The paper presents the training and evaluation of two enhanced neural network architectures for rocket landing guidance, qualifying as foundation models."
+  },
+  {
+    "paper_id": "4f75ce16c5d8f3ba92ec4fcaa277bd8b5e24dfe1",
+    "title": "Self-filtering based on the fault ride-through technique using a robust model predictive control for wind turbine rotor current",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper focuses on control techniques for wind turbines and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "71dac5df00f1977002e39cabdfff5d56fe8ee620",
+    "title": "Community-based Reconstruction and Simulation of a Full-scale Model of Region CA1 of Rat Hippocampus",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper describes a community-driven model for neuroscience but does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "8efa4e0781b8c95dbd0ff9a49375940a1026a0c6",
+    "title": "Spectral organ fingerprints for machine learning-based intraoperative tissue classification with hyperspectral imaging in a porcine model",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper discusses tissue classification using machine learning but does not describe the training of a new foundation model."
+  },
+  {
+    "paper_id": "a85d3326a078dd97d23681910e017cda72ed0ee7",
+    "title": "Thermal Analysis of a Raft Concrete Foundation: A Case Study of a Leaking Ethane Tank",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper presents a case study on thermal analysis and does not involve the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "dd0c988b494a8ea835df6a31fb963dc6379f8829",
+    "title": "STEAM-Project-Based Learning: A Catalyst for Elementary School Students’ Scientific Literacy Skills",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper focuses on educational methods and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "aee0e8de10f74209c8eb20f1a924392ed67ec534",
+    "title": "An explanatory study of factors influencing engagement in AI education at the K-12 Level: an extension of the classic TAM model",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper discusses factors influencing AI education engagement and does not involve the training of a foundation model."
+  },
+  {
+    "paper_id": "cdaea71d540bf9a6a82e7549c70b8e8c25c4f7aa",
+    "title": "Retracted: Construction of Machine Learning Model Based on Text Mining and Ranking of Meituan Merchants",
+    "is_foundation_model": false,
+    "model_name": null,
+    "explanation": "The paper has been retracted and does not provide valid research on a foundation model."
+  },
+  {
+    "paper_id": "4b11a95597e0957f493a2a9c25fb3cd6a84d7ce0",
+    "title": "Retracted: Research on Intelligent English Translation Method Based on the Improved Attention Mechanism Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper is retracted and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "2871b7b044e3c2df0ac667dce10ca524f212e7cb",
+    "title": "The ICON-A model for direct QBO simulations on GPUs (version icon-cscs:baf28a514)",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper describes a specific implementation of an existing atmospheric model rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "87a41bcce3cc61d52663d7be8ce00b293a92fe8c",
+    "title": "Prediction of lung adenocarcinoma prognosis and diagnosis with a novel model anchored in circadian clock-related genes",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper focuses on a specific application rather than the training and evaluation of a new foundation model."
+  },
+  {
+    "paper_id": "6846326d043416e90e392770bdf963ef55159dbb",
+    "title": "On topological indices and entropy measures of beryllonitrene network via logarithmic regression model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "7a8d28aea1dcc11960961575756d52a157c4f4a1",
+    "title": "Novel collector design and optimized photo-fenton model for sustainable industry textile wastewater treatment",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a specific application model rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "f6c7bfbde68a88c77f27e22bbb12980d50c99d13",
+    "title": "A novel Eulerian model based on central moments to simulate age and reactivity continua interacting with mixing processes",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper presents a specific modeling approach rather than a new foundation model."
+  },
+  {
+    "paper_id": "33b9698550996e54e799046e6c3d7049b8bfa2c7",
+    "title": "Ocean Modeling with Adaptive REsolution (OMARE; version 1.0) – refactoring the NEMO model (version 4.0.1) with the parallel computing framework of JASMIN – Part 1: Adaptive grid refinement in an idealized double-gyre case",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper refactors an existing model rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "79ebc6b15786cb20a1a11c8f7d206d9d4b976e4c",
+    "title": "Water balance model (WBM) v.1.0.0: a scalable gridded global hydrologic model with water-tracking functionality",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper describes an updated version of an existing model rather than a new foundation model."
+  },
+  {
+    "paper_id": "80d2bdb9f2f1960d03a274ef44933688f2e86494",
+    "title": "A Foundation for Archival Engineering",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses theoretical concepts rather than the training and evaluation of a foundation model."
+  },
+  {
+    "paper_id": "5cffd9c3baeb6caf0b1faaf11fcba20bcb2e6ee5",
+    "title": "Retracted: Dynamic Early-Warning Model of College Students’ Psychological Crisis Based on Characteristic Attribute",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper is retracted and does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "51dd4850d17d8a996ec4b8206b05e5af2c41d740",
+    "title": "Retracted: Analysis and Optimization of Online Music Teaching System Based on Dynamic Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "10342527114edc2d2aa60ad052dc97fab75e740f",
+    "title": "Retracted: Research on Network Layer Recursive Reduction Model Compression for Image Recognition",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper focuses on model compression rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "defcb3019d7395c5fbba24ca6a6f9d75765347bd",
+    "title": "Retracted: Industrial Design Capability Evaluation System under Cloud Service Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not present a new foundation model or its training and evaluation."
+  },
+  {
+    "paper_id": "5fc5f4b496de7183f45d0ef1ac7804f2cccd6115",
+    "title": "Retracted: Analysis on the Artistic Presentation Effect of 3D Rendering Ink Painting Based on the Evaluation of Deep Learning Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper evaluates an existing model rather than training a new foundation model."
+  },
+  {
+    "paper_id": "f00ea7e3cd8c2c9b8fe7870d08feee1328b52741",
+    "title": "Retracted: Construction of College English Mobile Learning Model Based on Distributed Terminal",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not introduce a new foundation model or its training and evaluation."
+  },
+  {
+    "paper_id": "4dd3392affd5086d6f711bf2469775aade1d0432",
+    "title": "Retracted: Willingness and Evaluation Model of College Students’ Online Learning Behavior Based on Distributed Cognition",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses an evaluation model but does not present a new foundation model."
+  },
+  {
+    "paper_id": "70e22000cb65b2010d65ba19f232b0c477b857c0",
+    "title": "Retracted: Remote English Teaching Resource Sharing Based on Internet O2O Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "9ac2e6f916df895a3e6a470e67c03d2837312f80",
+    "title": "Retracted: Construction of the Cross-Cultural Interaction Model for International Students Based on Big Data Analysis",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not introduce a new foundation model or its training and evaluation."
+  },
+  {
+    "paper_id": "aac47072111d1d5102b0c0986ebf4bdfa370ebd6",
+    "title": "Retracted: Construction of the Luxury Marketing Model Based on Machine Learning Classification Algorithm",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a model based on existing algorithms rather than a new foundation model."
+  },
+  {
+    "paper_id": "653fea963cfb4e2f03dc1181b32e0a4010e7238a",
+    "title": "Retracted: Teaching Design of Online Ideological and Political Course Based on Deep Learning Model Evaluation",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper evaluates an existing deep learning model rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "5f8f18fe149a7cf135e9d7a2312f204504bd0992",
+    "title": "Retracted: The Process and Model Innovation of Ideological Education Network Communication in Colleges and Universities Based on Cloud Computing",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "6caa3d9cde26b28243ddc969d81354666aeb2d18",
+    "title": "Retracted: Economic Market Fluctuation Model Based on Internet of Things Technology",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "6a5038ccaebcf690f0d18df9ff6d31af75eb91e0",
+    "title": "Retracted: Analysis of Key Indicators Related to the Teaching of Floral Art Skills Competition Based on Fuzzy Hierarchical Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "227c91d59cc06b005742c9a3098031c8c2122998",
+    "title": "Retracted: Construction of the Open Oral Evaluation Model Based on the Neural Network",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "b97e35fe9b65d2f69c4d7b7ac0df497f8b35210b",
+    "title": "Retracted: Retrospection of the Optimization Model for Designing the Power Train of a Formula Student Race Car",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "b8f72b2423ce1f20ca08608206abd5000e496b53",
+    "title": "Retracted: A Study of Regional Economic Disparities and Coordinated Development Based on Improving Grey Model Combinations",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "27a72fcc95f723ecc7a2a356f710af79fe50b1f7",
+    "title": "Retracted: Digital Image Art Style Transfer Algorithm and Simulation Based on Deep Learning Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "2348569c575fd5e07e2b7015affe3acc88f14905",
+    "title": "Retracted: Construction of a Six-Pronge Intelligent Physical Education Classroom Model in Colleges and Universities",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "fbff37d7a880b5d2c2dcfede6c6ae5283ed00722",
+    "title": "Retracted: Research on Students’ Adaptive Learning System Based on Deep Learning Model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "137e5db86475c40e462e798257c8a8b0445aaf3b",
+    "title": "Retracted: Impact of Carbon Information on Enterprise Value: Analysis Model Design Based on Big Data",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper does not describe the training or evaluation of a foundation model."
+  },
+  {
+    "paper_id": "b8ca87a9d9ff9497f597e719b57529df5f6d17f0",
+    "title": "Future proofing core facilities with a seven‐pillar model",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a conceptual model for core facilities in life science research, not a foundation model."
+  },
+  {
+    "paper_id": "4fd31502b610883b77fd44017bbb4188e2680fbd",
+    "title": "The Synergy Model of Quality Tools and Methods and Its Influence on Process Performance and Improvement",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper presents a model for quality tools in manufacturing, not a foundation model."
+  },
+  {
+    "paper_id": "41269981571c1d7f8a9a33f12e9febc90e148355",
+    "title": "Harmonizing Knowledge Frontiers: TGKH. Muhammad Zainuddin Abdul Madjid's Innovative Integration Model at Nahdlatul Wathan Educational Institute",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper describes an educational integration model, not a foundation model."
+  },
+  {
+    "paper_id": "617d7b91fee52ebebf30ec95447e9712942f7203",
+    "title": "The Regional Aerosol Model Intercomparison Project (RAMIP)",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses a project for intercomparison of models rather than introducing a new foundation model."
+  },
+  {
+    "paper_id": "6b9c661fd6287da4f07794e6b4fb35c3d3b3fb44",
+    "title": "Dynamics of invariant solutions of the DNA model using Lie symmetry approach",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper focuses on mathematical solutions related to DNA, not a foundation model."
+  },
+  {
+    "paper_id": "e6c30459128f4421f97d44224f0e3b3fbcddec43",
+    "title": "Replicating a High-Impact Scientific Publication Using Systems of Large Language Models",
+    "is_foundation_model": true,
+    "model_name": "MultiAgentLLMSystem",
+    "explanation": "The paper describes the use of a multi-agent system of large language models to replicate scientific findings, indicating the training and evaluation of a new model."
+  },
+  {
+    "paper_id": "6514abc95a3613ac91cf38753a4f84f72f544ac6",
+    "title": "Innovation of Management Mode of Private Colleges and Universities from the Perspective of Scientific Outlook on Development",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper discusses management models for educational institutions, not a foundation model."
+  },
+  {
+    "paper_id": "cab46b045436965a561e02e9bd94fb59c91766ca",
+    "title": "A corpus of CO2 electrocatalytic reduction process extracted from the scientific literature",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper presents a corpus for research, not a foundation model."
+  },
+  {
+    "paper_id": "38d171618d47607808b94677770d3738e55debd0",
+    "title": "Research on Evaluation Model of Music Education Informatization System Based on Machine Learning",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "This paper evaluates a music education system using machine learning, not a foundation model."
+  },
+  {
+    "paper_id": "2ccb9e8301337f6f73bb7c1a12f4ffb25e603e48",
+    "title": "A case study on the relationship between risk assessment of scientific research projects and related factors under the Naive Bayesian algorithm",
+    "is_foundation_model": false,
+    "model_name": "",
+    "explanation": "The paper discusses a case study using an existing algorithm, not a foundation model."
+  }
+]

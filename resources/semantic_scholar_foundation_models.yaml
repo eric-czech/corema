@@ -1,0 +1,145 @@
+projects:
+- project_name: MolecularMultimodalFoundationModel
+  paper_urls:
+  - http://arxiv.org/pdf/2209.05481
+  semantic_scholar_paper_id: 1c7a4e8d9f4fcf19a5d1caa078c66ca39cb75dd2
+- project_name: nach0
+  paper_urls:
+  - https://pubs.rsc.org/en/content/articlepdf/2024/sc/d4sc00966e
+  semantic_scholar_paper_id: d733c2d6e08f5b59ccc0af9188f1f86d0aa7a4c5
+- project_name: ScientificKnowledgeModelForChemistry
+  paper_urls:
+  - https://aclanthology.org/2022.bigscience-1.12.pdf
+  semantic_scholar_paper_id: 70f8e3c72e9178b408667e3619a87a153fd853e6
+- project_name: JIANG
+  paper_urls:
+  - https://arxiv.org/pdf/2308.00624
+  semantic_scholar_paper_id: 9406aa108296d5c1985950f02b4a24dfd9b0a4ec
+- project_name: ClinicalTextAnalysisFM
+  paper_urls:
+  - http://arxiv.org/pdf/2303.13314
+  semantic_scholar_paper_id: 79545d9d30b924df293ee103e46f78aaf3249e51
+- project_name: LLaMASciTune
+  paper_urls:
+  - http://arxiv.org/pdf/2307.01139
+  semantic_scholar_paper_id: da08e9f21ef361e0e1242f8849a18a4ea1a3d27e
+- project_name: ScholarEmbeddingModel
+  paper_urls:
+  - https://arxiv.org/pdf/2303.09607
+  semantic_scholar_paper_id: 5cd86824d36efda71728e1a393edab7c73c613c8
+- project_name: EVHF-GCN
+  paper_urls:
+  - https://ieeexplore.ieee.org/ielx7/6287639/6514899/10380592.pdf
+  semantic_scholar_paper_id: 85b068e7803144c97e989fe3ee981fc48ae25049
+- project_name: GenSLMs
+  paper_urls:
+  - https://www.biorxiv.org/content/biorxiv/early/2022/11/23/2022.10.10.511571.full.pdf
+  semantic_scholar_paper_id: 62a45ab7b676f3877d41f66f6c9ddf1ec44a1c5f
+- project_name: AI-GOMS
+  paper_urls:
+  - https://arxiv.org/pdf/2308.03152
+  semantic_scholar_paper_id: db467127792900ec438884063e61a7957783e1c1
+- project_name: DNABERT-2
+  paper_urls:
+  - http://arxiv.org/pdf/2306.15006
+  semantic_scholar_paper_id: 0f4780f3f42dbe9755d54495ae17244cc88a7483
+- project_name: DiseaseDetectionFM
+  paper_urls:
+  - https://www.nature.com/articles/s41586-023-06555-x.pdf
+  semantic_scholar_paper_id: f4dc1886a9ba1def1e9fa230572d21cc85934f7d
+- project_name: SpectralGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2311.07113
+  semantic_scholar_paper_id: a4960c5758a76faee04bf8c2962d30c789d7a3f1
+- project_name: RadFM
+  paper_urls:
+  - https://arxiv.org/pdf/2308.02463
+  semantic_scholar_paper_id: df0ddb588a200d095743e9d26fc4a9318619766e
+- project_name: scFoundation
+  paper_urls:
+  - https://www.biorxiv.org/content/biorxiv/early/2023/06/21/2023.05.29.542705.full.pdf
+  semantic_scholar_paper_id: c520d8a888355f7abb7728b2e2510fe7bc63f814
+- project_name: ClimaX
+  paper_urls:
+  - https://arxiv.org/pdf/2301.10343
+  semantic_scholar_paper_id: 874deb5f06f35e52ae13a921b23611eec4abd1da
+- project_name: BillionScaleRemoteSensingFM
+  paper_urls:
+  - https://arxiv.org/pdf/2304.05215
+  semantic_scholar_paper_id: 45c2f1672ef1de301868453acaf23f6df9a34b8a
+- project_name: RadioAstronomyFM
+  paper_urls:
+  - https://academic.oup.com/rasti/advance-article-pdf/doi/10.1093/rasti/rzad055/54757793/rzad055.pdf
+  semantic_scholar_paper_id: a2d269de1d168a7908f3af4d5b4cbe4195fb6c34
+- project_name: FEMI
+  paper_urls:
+  - https://academic.oup.com/humrep/article-pdf/39/Supplement_1/deae108.378/58399330/deae108.321.pdf
+  semantic_scholar_paper_id: 3d3cb32bea6410eb489666d2f7bbbcfe2830e82a
+- project_name: CodeLlama
+  paper_urls:
+  - https://arxiv.org/pdf/2308.12950
+  semantic_scholar_paper_id: 0b0debb710366cdff461938c80763eace1651af6
+- project_name: InternVL
+  paper_urls:
+  - https://arxiv.org/pdf/2312.14238
+  semantic_scholar_paper_id: 6a33e58ef961a3a0a5657518b2be86395eb7c8d0
+- project_name: CoCa
+  paper_urls:
+  - https://arxiv.org/pdf/2205.01917
+  semantic_scholar_paper_id: a26a7a74f1e5fd562be95c3611a0680759fbdf84
+- project_name: InternImage
+  paper_urls:
+  - https://arxiv.org/pdf/2211.05778
+  semantic_scholar_paper_id: 26c80bd65baa90f5b18157de4951f4eb0b62ab69
+- project_name: ChemBERTa-2
+  paper_urls:
+  - http://arxiv.org/pdf/2209.01712
+  semantic_scholar_paper_id: 299e281cb6e2bfae6e8459d2ac354e11e40931be
+- project_name: SSL4EOL
+  paper_urls:
+  - http://arxiv.org/pdf/2306.09424
+  semantic_scholar_paper_id: 7e17763ce886de67ee12fe1dd7b21fe19e4116ba
+- project_name: AstroLLaMA
+  paper_urls:
+  - https://arxiv.org/pdf/2309.06126
+  semantic_scholar_paper_id: e33a538e80d1877782df26e1493f5adc661ceec4
+- project_name: InternVideo
+  paper_urls:
+  - https://arxiv.org/pdf/2212.03191
+  semantic_scholar_paper_id: 325d8e9501af05e594bd668b6cd6d43ed42c8b4d
+- project_name: DeepSNR
+  paper_urls:
+  - http://arxiv.org/pdf/2207.04749
+  semantic_scholar_paper_id: 01bb62caf22954ebf2a4a615d2ab59d5db022c1e
+- project_name: BioLLM
+  paper_urls:
+  - https://www.biorxiv.org/content/biorxiv/early/2024/11/22/2024.11.22.624786.full.pdf
+  semantic_scholar_paper_id: eaf10e5f64899a90a4a177f41cea6cd4129d064e
+- project_name: CanAM5
+  paper_urls:
+  - https://gmd.copernicus.org/articles/16/5427/2023/gmd-16-5427-2023.pdf
+  semantic_scholar_paper_id: 859de36ccde19d292a210cba486ab237aaa02f85
+- project_name: VertexAITextBison
+  paper_urls:
+  - https://kclpure.kcl.ac.uk/portal/files/231724989/text_summarization_with_generative_models_pure.pdf
+  semantic_scholar_paper_id: e2d0bd5bfd0d1d35484552abf9f7fbcd276c8669
+- project_name: BrainAgeEstimationFM
+  paper_urls:
+  - https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.26625
+  semantic_scholar_paper_id: 58ed85f2f00b71ac4e3efd74240687129fb1268c
+- project_name: FOCAL
+  paper_urls:
+  - https://arxiv.org/pdf/2404.02461
+  semantic_scholar_paper_id: 667a30b3d77da9e8a6a0643ce9eca0204ebcf323
+- project_name: DiverseCodeSolutionsFM
+  paper_urls:
+  - https://dl.acm.org/doi/pdf/10.1145/3650105.3652302
+  semantic_scholar_paper_id: 9e6c6f6201b4cdbb0b0b429ef3421ec1ac7b3cf1
+- project_name: AQResNetRAQResNet
+  paper_urls:
+  - https://ieeexplore.ieee.org/ielx7/6287639/6514899/10415408.pdf
+  semantic_scholar_paper_id: a945f3049323de3f5d657aaf789e7b9e81f13929
+- project_name: MultiAgentLLMSystem
+  paper_urls:
+  - https://www.biorxiv.org/content/biorxiv/early/2024/04/12/2024.04.08.588614.1.full.pdf
+  semantic_scholar_paper_id: e6c30459128f4421f97d44224f0e3b3fbcddec43

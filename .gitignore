@@ -170,4 +170,10 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
+.env
 config.json
+data/
+logs/
+visualizations/
+temp/
+.vscode/

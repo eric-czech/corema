@@ -1,0 +1,18 @@
+# Core dependencies
+python-dotenv
+requests
+pyyaml
+fire
+
+# PDF processing
+pypdf
+
+# Web scraping and parsing
+beautifulsoup4
+fake-useragent
+
+# Git operations
+GitPython
+
+# Type hints support
+typing-extensions
