@@ -85,3 +85,19 @@ Word cloud visualization of common architectural patterns and components used ac
 ![Training Stack](docs/images/training_stack_wordclouds.svg)
 
 Analysis of software frameworks, libraries, and tools commonly used in model training pipelines.
+
+
+## New Sources
+
+Here are some repos that could be useful for sourcing more papers retrospectively in the future:
+
+- https://github.com/apeterswu/Awesome-Bio-Foundation-Models
+- https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models
+- https://github.com/Jack-bo1220/Awesome-Remote-Sensing-Foundation-Models
+- https://github.com/YutingHe-list/Awesome-Foundation-Models-for-Advancing-Healthcare
+- https://github.com/Jianing-Qiu/Awesome-Healthcare-Foundation-Models
+- https://github.com/OmicsML/awesome-foundation-model-single-cell-papers
+- https://github.com/shengchaochen82/Awesome-Foundation-Models-for-Weather-and-Climate
+- https://github.com/lishenghui/awesome-fm-fl
+- https://github.com/xmindflow/Awesome-Foundation-Models-in-Medical-Imaging
+- https://github.com/usail-hkust/Awesome-Urban-Foundation-Models
