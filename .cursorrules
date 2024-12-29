@@ -1,0 +1,9 @@
+## Logging
+- Use `!r` in f-strings for all strings so it is clear when they have whitespace, unless there is a good reason not to (e.g. `logger.info(f"Data saved to {path!r}")`)
+
+## Abstractions
+- Try to reduce redundancy in code by creating abstractions when possible.
+
+## CLI
+- Use `fire` for creating CLI apps
+- When running CLI commands that take a long time, `tee` the output to a file in `logs/` and redirect stderr to stdout, e.g. `python -m corema.cli summarize_models 2>&1 | tee logs/summarize_models.log`

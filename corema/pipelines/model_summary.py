@@ -190,7 +190,7 @@ class ModelSummaryPipeline:
         self.config = get_config()
         self.manifest = ManifestManager()
 
-    def _get_project_results_dir(self, project_name: str) -> Path:
+    def get_project_results_dir(self, project_name: str) -> Path:
         """Get the directory for storing project-specific results."""
         return (
             self.storage.get_project_dir(project_name) / "results" / self.PIPELINE_NAME
@@ -199,7 +199,7 @@ class ModelSummaryPipeline:
     def _get_project_results_path(self, project_name: str) -> Path:
         """Get the path for storing project results."""
         return (
-            self._get_project_results_dir(project_name) / f"{self.PIPELINE_NAME}.jsonl"
+            self.get_project_results_dir(project_name) / f"{self.PIPELINE_NAME}.jsonl"
         )
 
     def has_been_processed(self, project_id: str) -> bool:
@@ -212,7 +212,7 @@ class ModelSummaryPipeline:
             True if the project has been processed, False otherwise.
         """
         results_path = (
-            self._get_project_results_dir(project_id) / f"{self.PIPELINE_NAME}.jsonl"
+            self.get_project_results_dir(project_id) / f"{self.PIPELINE_NAME}.jsonl"
         )
         return results_path.exists()
 
@@ -228,6 +228,9 @@ class ModelSummaryPipeline:
             paper_path: details.model_dump() for paper_path, details in results.items()
         }
 
+        logger.info(
+            f"Saving model summaries for project {project_name} to {results_path}"
+        )
         with open(results_path, "w") as f:
             json.dump(results_dict, f, indent=2)
 

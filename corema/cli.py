@@ -185,7 +185,6 @@ class CollectorCLI:
             return
 
         # Process each requested project
-        all_results = []
         for project_id in tqdm(projects_to_process, desc="Processing projects"):
             try:
                 logger.info(f"Processing project {project_id}")
@@ -195,17 +194,18 @@ class CollectorCLI:
                     )
                     continue
 
-                results = pipeline.process_project(project_id)
-                # Convert results to records
-                for paper_path, details in results.items():
-                    record = details.model_dump()
-                    record["project_id"] = project_id
-                    record["paper_path"] = paper_path
-                    all_results.append(record)
+                # Delete existing pipeline data if it exists
+                results_dir = pipeline.get_project_results_dir(project_id)
+                if results_dir.exists():
+                    shutil.rmtree(results_dir)
+                    logger.info(f"Removed existing model summary data at {results_dir}")
+
+                pipeline.process_project(project_id)
             except Exception as e:
                 logger.error(f"Error processing project {project_id}: {e}")
 
         # Load existing results for all projects
+        all_results = []
         for project_id in all_projects:
             try:
                 results = pipeline.load_results(project_id)

@@ -1,6 +1,6 @@
 # Corema: Scientific Foundation Model Analysis
 
-Corema (from Greek "Korema", meaning broom) is a project designed to sweep up and organize information about foundation models and large language models from research papers and associated resources. Like its namesake, it systematically gathers and tidies data, leveraging Large Language Models (LLMs) to intelligently extract and analyze information, creating a comprehensive knowledge base of model architectures, training methodologies, and technical specifications.
+Corema (from Greek "Korema", meaning broom) is a project designed to "sweep" up and organize information about foundation models and large language models from research papers and associated resources. Like its namesake, it systematically gathers and tidies data, leveraging Large Language Models (LLMs) to intelligently extract and analyze information, creating a comprehensive knowledge base of model architectures, training methodologies, and technical specifications.
 
 ## How It Works
 
@@ -54,7 +54,7 @@ Corema generates various visualizations to help understand trends and patterns i
 ### Model Evolution Timeline
 ![Model Timeline](docs/images/model_timeline.svg)
 
-A chronological visualization of foundation model releases, showing the evolution of model architectures and capabilities over time.
+A chronological visualization of foundation model releases, showing relevant scientific fields and estimated model size.
 
 ### Dataset Characteristics
 ![Dataset Patterns](docs/images/dataset_wordclouds.svg)
