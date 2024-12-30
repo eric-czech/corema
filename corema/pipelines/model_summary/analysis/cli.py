@@ -12,12 +12,15 @@ from wordcloud import WordCloud
 from plotnine import (
     ggplot,
     aes,
-    geom_bar,
+    geom_text,
+    geom_tile,
     theme,
     element_text,
+    element_blank,
     labs,
-    coord_flip,
     theme_minimal,
+    scale_fill_distiller,
+    scale_color_manual,
 )
 import fire
 import logging
@@ -649,10 +652,17 @@ def create_affiliation_visualization(df):
     Args:
         df: DataFrame from load_paper_metadata()
     """
-    # Load affiliation mapping
-    mapping_path = Path(__file__).parent / "resources" / "affiliation_mapping.yaml"
-    with open(mapping_path, "r") as f:
-        affiliation_mapping = yaml.safe_load(f)
+    # Load affiliation mapping from CSV in resources directory
+    mapping_path = Path(__file__).parent / "resources" / "affiliations.csv"
+    if not mapping_path.exists():
+        raise FileNotFoundError(
+            f"Affiliations CSV not found at {mapping_path!r}. Please run the create_affiliations_csv.py script first."
+        )
+
+    affiliations_df = pd.read_csv(mapping_path)
+    affiliation_mapping = dict(
+        zip(affiliations_df["raw_affiliation"], affiliations_df["normalized_name"])
+    )
 
     # Create dictionary to track projects per affiliation
     affiliation_projects = {}
@@ -678,43 +688,78 @@ def create_affiliation_visualization(df):
                     affiliation_projects[normalized_affiliation].add(project_id)
 
     # Count number of distinct projects per affiliation
-    affiliation_counts = {
-        affiliation: len(projects)
-        for affiliation, projects in affiliation_projects.items()
-    }
-
-    # Convert to DataFrame for plotting
     plot_df = pd.DataFrame(
-        {"affiliation": affiliation_counts.keys(), "count": affiliation_counts.values()}
-    ).sort_values("count", ascending=False)
+        [
+            {
+                "affiliation": affiliation,
+                "count": len(projects),
+                "category": affiliations_df[
+                    affiliations_df["normalized_name"] == affiliation
+                ]["category"].iloc[0],
+                "subcategory": affiliations_df[
+                    affiliations_df["normalized_name"] == affiliation
+                ]["subcategory"].iloc[0],
+            }
+            for affiliation, projects in affiliation_projects.items()
+        ]
+    )
 
-    # Log all affiliations and their counts
-    logger.debug("\nAll affiliations and their project counts:")
-    with pd.option_context(
-        "display.max_rows", None, "display.max_colwidth", None, "display.width", None
-    ):
-        logger.debug("\n" + str(plot_df))
+    # Create and clean up group labels
+    plot_df["category"] = plot_df["category"].str.replace("_", " ").str.title()
+    plot_df["subcategory"] = plot_df["subcategory"].str.replace("_", " ").str.title()
+    plot_df["group"] = plot_df["category"] + " / " + plot_df["subcategory"]
 
-    # Calculate figure size based on number of organizations
-    # Use 0.2 inches per org for height, minimum 8 inches
-    height = max(8, len(plot_df) * 0.2)
+    # Order groups by number of affiliations
+    group_sizes = plot_df.groupby("group").size().sort_values(ascending=False)
+    plot_df["group"] = pd.Categorical(plot_df["group"], categories=group_sizes.index)
 
-    # Create bar plot using plotnine
+    # Sort within each group by count and add order
+    plot_df = plot_df.sort_values(["group", "count"], ascending=[True, True])
+    plot_df["order"] = plot_df.groupby("group").cumcount() + 1
+
+    # Clip affiliation names to 40 chars
+    plot_df["affiliation_label"] = plot_df["affiliation"].apply(
+        lambda x: x if len(x) <= 40 else x[:37] + "..."
+    )
+
+    # Create heatmap using plotnine
     plot = (
-        ggplot(plot_df, aes(x="reorder(affiliation, count)", y="count"))
-        + geom_bar(stat="identity", fill="#2196F3", alpha=0.7)
-        + coord_flip()
+        ggplot(plot_df, aes(y="order", x="group"))
+        + geom_tile(aes(fill="count"), color="black", size=0.25)
+        + scale_fill_distiller(type="seq", palette="Blues", direction=1)
+        + geom_text(
+            aes(label="affiliation_label", color="count > 3"),  # Use boolean condition
+            size=6,
+            ha="center",
+            va="center",
+        )
+        + scale_color_manual(
+            values={True: "white", False: "black"},
+            guide=None,  # Hide the color legend for text
+        )
         + labs(
             title="Organizations in Foundation Model Papers",
-            x="Organization",
-            y="Number of Projects",
+            y="Order",
+            x="Category/Type",
+            fill="Number of\nProjects",
         )
         + theme_minimal()
         + theme(
-            figure_size=(12, height),
-            plot_title=element_text(size=14, face="bold"),
-            axis_text=element_text(size=10),
-            axis_title=element_text(size=12),
+            figure_size=(18, 10),
+            plot_title=element_text(size=12, face="bold"),
+            axis_text_x=element_text(
+                size=8,
+                angle=30,
+                ha="right",
+                va="top",
+                face="bold",
+                vjust=1,  # Move labels down more
+            ),
+            axis_text_y=element_text(size=8),
+            axis_title=element_text(size=10),
+            legend_position="right",
+            panel_grid_major=element_blank(),  # Remove grid lines
+            panel_grid_minor=element_blank(),
         )
     )
 

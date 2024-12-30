@@ -56,6 +56,11 @@ Corema generates various visualizations to help understand trends and patterns i
 
 A chronological visualization of foundation model releases, showing relevant scientific fields and estimated model size.
 
+### Organizational Landscape
+![Affiliations](docs/images/affiliations.svg)
+
+Visualization of organizations involved in foundation model development, showing the distribution across academic institutions, technology companies, research labs, and other entities. The heatmap reveals the intensity of involvement based on the number of published papers, highlighting key players in the field.
+
 ### Dataset Characteristics
 ![Dataset Patterns](docs/images/dataset_wordclouds.svg)
 
@@ -85,7 +90,6 @@ Word cloud visualization of common architectural patterns and components used ac
 ![Training Stack](docs/images/training_stack_wordclouds.svg)
 
 Analysis of software frameworks, libraries, and tools commonly used in model training pipelines.
-
 
 ## New Sources
 

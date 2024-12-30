@@ -1,0 +1,217 @@
+raw_affiliation,normalized_name,category,subcategory
+"Beijing University of Posts and Telecommunications, China",Beijing University of Posts and Telecommunications,academic,chinese_universities
+The Chinese University of Hong Kong,Chinese University of Hong Kong,academic,chinese_universities
+"The Chinese University of Hong Kong, Hong Kong, China",Chinese University of Hong Kong,academic,chinese_universities
+"Communication and Network Key Laboratory, Dalian University, Dalian 116622, China",Dalian University,academic,chinese_universities
+Fudan University,Fudan University,academic,chinese_universities
+"DSA Thrust, The Hong Kong University of Science and Technology (Guangzhou)",HKUST,academic,chinese_universities
+Nanjing University,Nanjing University,academic,chinese_universities
+Peking University,Peking University,academic,chinese_universities
+Beijing Key Laboratory of Big Data Management and Analysis Methods,Renmin University of China,academic,chinese_universities
+"Gaoling School of Artificial Intelligence, Renmin University of China, Beijing 100872, China",Renmin University of China,academic,chinese_universities
+Shanghai Jiao Tong University,Shanghai Jiao Tong University,academic,chinese_universities
+"School of Mathematics, Southeast University, Nanjing 210096, China",Southeast University,academic,chinese_universities
+"Department of Earth System Science, Ministry of Education Key Laboratory for Earth System Modeling, Institute for Global Change Studies, Tsinghua University, Beijing, 100084, China.",Tsinghua University,academic,chinese_universities
+"Department of Electrical Engineering, Tsinghua University, Beijing, China",Tsinghua University,academic,chinese_universities
+"Institute for AI Industry Research, Tsinghua University, Beijing, China",Tsinghua University,academic,chinese_universities
+"MOE Key Laboratory of Bioinformatics and Bioinformatics Division, BNRIST, Department of Automation, Tsinghua University, Beijing, China",Tsinghua University,academic,chinese_universities
+"School of Life Sciences and School of Medicine, Center for Synthetic and Systems Biology, Tsinghua University, Beijing, China",Tsinghua University,academic,chinese_universities
+Tsinghua University,Tsinghua University,academic,chinese_universities
+"Tsinghua University, China",Tsinghua University,academic,chinese_universities
+The University of Hong Kong,University of Hong Kong,academic,chinese_universities
+"School of Computer Science and Technology, University of Science and Technology of China, Hefei, 230026, China.",University of Science and Technology of China,academic,chinese_universities
+University of Science and Technology of China,University of Science and Technology of China,academic,chinese_universities
+Zhejiang University,Zhejiang University,academic,chinese_universities
+"Australian National University, Australia",Australian National University,academic,other_universities
+The Australia National University,Australian National University,academic,other_universities
+"Centre for Cyberphysical and Autonomous Systems, Cranfield University, Bedford, United Kingdom, MK43AL",Cranfield University,academic,other_universities
+"Zurich, Switzerland",ETH Zurich,academic,other_universities
+"Department of Pathology and Laboratory Medicine, Emory University School of Medicine, Atlanta, GA, USA",Emory University,academic,other_universities
+"Division of Neonatology, Emory University School of Medicine, Atlanta, GA",Emory University,academic,other_universities
+Hebrew University of Jerusalem,Hebrew University of Jerusalem,academic,other_universities
+"Integrated Vision and Language Lab, KAIST",KAIST,academic,other_universities
+Khalifa University,Khalifa University,academic,other_universities
+"King's College London, UK",King's College London,academic,other_universities
+"Lund University, Department of Astronomy and Theoretical Physics, Lund, Sweden",Lund University,academic,other_universities
+"Clayton, Australia",Monash University,academic,other_universities
+Monash University,Monash University,academic,other_universities
+"S-Lab, Nanyang Technological University",Nanyang Technological University,academic,other_universities
+New York University,New York University,academic,other_universities
+Northern Illinois University,Northern Illinois University,academic,other_universities
+"Department of Pathology, Pusan National University, Busan, South Korea",Pusan National University,academic,other_universities
+Singapore Management University,Singapore Management University,academic,other_universities
+"Singapore, Singapore",Singapore Management University,academic,other_universities
+"Big Geospatial Data Management, Technical University of Munich, Munich 85521, Germany",Technical University of Munich,academic,other_universities
+"School of Computation, Information and Technology, Technical University of Munich, Munich, Germany",Technical University of Munich,academic,other_universities
+TUM,Technical University of Munich,academic,other_universities
+Technical University of Munich,Technical University of Munich,academic,other_universities
+"Technion - Israel Institute of Technology, Physics Department, Haifa, Israel 32000",Technion,academic,other_universities
+"Centre for Medical Image Computing, University College London, London, UK",University College London,academic,other_universities
+"Department of Computer Science, University College London, London, UK",University College London,academic,other_universities
+"Department of Medical Physics and Biomedical Engineering, University College London, London, UK",University College London,academic,other_universities
+"Institute of Health Informatics, University College London, London, UK",University College London,academic,other_universities
+"Institute of Ophthalmology, University College London, London, UK",University College London,academic,other_universities
+"Academic Unit of Ophthalmology, University of Birmingham, Birmingham, UK",University of Birmingham,academic,other_universities
+University of Bonn,University of Bonn,academic,other_universities
+University of Chicago,University of Chicago,academic,other_universities
+"Hyperspectral Computing Laboratory, Department of Technology of Computers and Communications, Escuela Politécnica, University of Extremadura, Cáceres 10003, Spain",University of Extremadura,academic,other_universities
+"Univ. Grenoble Alpes, Inria, CNRS, Grenoble INP, LJK, Grenoble 38000, France",University of Grenoble Alpes,academic,other_universities
+"Faculty of Electrical and Computer Engineering, University of Iceland, Reykjavik 102, Iceland",University of Iceland,academic,other_universities
+"School of Engineering and Information Technology, University of New South Wales, Canberra, ACT 2612, Australia",University of New South Wales,academic,other_universities
+"Visual Geometry Group, University of Oxford",University of Oxford,academic,other_universities
+"Department of Electrical, Computer and Biomedical Engineering, University of Pavia, Pavia 27100, Italy",University of Pavia,academic,other_universities
+University of Texas at San Antonio,University of Texas at San Antonio,academic,other_universities
+"Department of Preventive Medicine, Graduate School of Medicine, The University of Tokyo, Tokyo, Japan",University of Tokyo,academic,other_universities
+"Graduate School of Frontier Sciences, the University of Tokyo, Chiba 277–8561, Japan",University of Tokyo,academic,other_universities
+Dalla Lana School of Public Health,University of Toronto,academic,other_universities
+"Department of Computer Science, University of Toronto, Toronto, ON, Canada",University of Toronto,academic,other_universities
+"Department of Laboratory Medicine and Pathobiology, University of Toronto, Toronto, ON, Canada",University of Toronto,academic,other_universities
+"Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada",University of Toronto,academic,other_universities
+"Toronto, Canada",University of Toronto,academic,other_universities
+University of Toronto,University of Toronto,academic,other_universities
+"University of Toronto, Lash Miller Building 80 St. George Street, Toronto, Ontario, Canada",University of Toronto,academic,other_universities
+"Wrocław University, Poland",Wrocław University,academic,other_universities
+Arizona State University,Arizona State University,academic,us_universities
+California Institute of Technology,Caltech,academic,us_universities
+Carnegie Mellon University,Carnegie Mellon University,academic,us_universities
+"Carnegie Mellon University, Department of Physics, Pittsburgh, Pennsylvania 15213, USA",Carnegie Mellon University,academic,us_universities
+"Columbia University, United States",Columbia University,academic,us_universities
+"Department of Computer Science, Cornell University, Ithaca, NY, USA 14853",Cornell University,academic,us_universities
+"Institute for Genomic Diversity, Cornell University, Ithaca, NY USA 14853",Cornell University,academic,us_universities
+"Section of Plant Breeding and Genetics, Cornell University, Ithaca, NY USA 14853",Cornell University,academic,us_universities
+"Department of Biomedical Informatics, Harvard University, Boston, MA, USA",Harvard University,academic,us_universities
+"Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA",Harvard University,academic,us_universities
+"Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA, USA.",Harvard University,academic,us_universities
+"Department of Epidemiology, Harvard T.H. Chan School of Public Health, Boston, MA",Harvard University,academic,us_universities
+"Harvard Data Science Initiative, Harvard University, Cambridge, MA, USA",Harvard University,academic,us_universities
+Harvard University,Harvard University,academic,us_universities
+"Harvard University, United States",Harvard University,academic,us_universities
+"John A. Paulson School of Engineering and Applied Sciences, Harvard University, Cambridge, MA, USA",Harvard University,academic,us_universities
+"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA, USA",MIT,academic,us_universities
+"Department of Health Sciences & Technology, Massachusetts Institute of Technology, Cambridge, MA",MIT,academic,us_universities
+"Harvard-MIT Division of Health Sciences and Technology, Massachusetts Institute of Technology, Cambridge, MA, USA",MIT,academic,us_universities
+MIT CSAIL,MIT,academic,us_universities
+"Department of Computer Science, Northwestern University, Evanston, IL, USA",Northwestern University,academic,us_universities
+"Ohio State University, United States",Ohio State University,academic,us_universities
+"AIMI Center, Stanford University, Palo Alto, CA, USA",Stanford University,academic,us_universities
+"Department of Earth System Science, Stanford University, Stanford, USA",Stanford University,academic,us_universities
+Stanford University,Stanford University,academic,us_universities
+"Stanford University Department of Computer Science, Stanford, CA, USA",Stanford University,academic,us_universities
+"Department of Biomedical Informatics, Stony Brook University, Stony Brook, NY, USA",Stony Brook University,academic,us_universities
+"Berkeley, CA, USA",UC Berkeley,academic,us_universities
+UC Berkeley,UC Berkeley,academic,us_universities
+"University of California, Berkeley",UC Berkeley,academic,us_universities
+UCLA,UCLA,academic,us_universities
+"University of California, Los Angeles",UCLA,academic,us_universities
+"Earth System Science Center, The University of Alabama in Huntsville, Huntsville, AL, USA",University of Alabama in Huntsville,academic,us_universities
+University of Illinois Chicago,University of Illinois Chicago,academic,us_universities
+University of Illinois Urbana-Champaign,University of Illinois at Urbana-Champaign,academic,us_universities
+University of Illinois at Urbana-Champaign,University of Illinois at Urbana-Champaign,academic,us_universities
+"University of Pennsylvania, United States",University of Pennsylvania,academic,us_universities
+"Department of Ophthalmology, University of Washington, Seattle, WA, USA",University of Washington,academic,us_universities
+"Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle, WA",University of Washington,academic,us_universities
+"Roger and Angie Karalis Johnson Retina Center, University of Washington, Seattle, WA, USA",University of Washington,academic,us_universities
+University of Washington,University of Washington,academic,us_universities
+"ADNET Systems, Inc.",ADNET Systems,industry,ai_companies
+Cerebras Inc.,Cerebras,industry,ai_companies
+Deep Forest Sciences,Deep Forest Sciences,industry,ai_companies
+GenBio AI,GenBio AI,industry,ai_companies
+"Insilico Medicine AI Ltd., Level 6, Unit 08, Block A, IRENA HQ Building, Masdar City, Abu Dhabi, United Arab Emirates",Insilico Medicine,industry,ai_companies
+"Insilico Medicine Canada Inc., 3710-1250 Ren´e-L´evesque West, Montreal, Quebec, Canada",Insilico Medicine,industry,ai_companies
+"Insilico Medicine Hong Kong Ltd., Unit 310, 3/F, Building 8W, Phase 2, Hong Kong Science Park, Pak Shek Kok, New Territories, Hong Kong",Insilico Medicine,industry,ai_companies
+InstaDeep,InstaDeep,industry,ai_companies
+"InuTeq, LLC.",InuTeq,industry,ai_companies
+"Learning Machines, Australia",Learning Machines,industry,ai_companies
+Modulos AG,Modulos AG,industry,ai_companies
+Reverie Labs,Reverie Labs,industry,ai_companies
+"SI Analytics, Daejeon 34051, South Korea",SI Analytics,industry,ai_companies
+Scaled Foundations,Scaled Foundations,industry,ai_companies
+Sea AI Lab,Sea AI Lab,industry,ai_companies
+TogetherAI,Together AI,industry,ai_companies
+"Advanced Propulsion Laboratory at Applied Physics, 477 Madison Avenue, New York, 10022, U.S.",Advanced Propulsion Laboratory,industry,other_companies
+"BGI Research, Beijing 102601, China",BGI Research,industry,other_companies
+"BGI Research, Shenzhen 518083, China",BGI Research,industry,other_companies
+"BGI Research, Wuhan 430074, China",BGI Research,industry,other_companies
+"Precision Cardiology Laboratory, Bayer US LLC, Cambridge, MA, USA.",Bayer,industry,other_companies
+"BioMap, Beijing, China",BioMap,industry,other_companies
+"KDF, China",KDF,industry,other_companies
+"SBX BioSciences, Inc., 1600 - 925 West Georgia Street, Vancouver, V6C 3L2, BC, Canada.",SBX BioSciences,industry,other_companies
+"UDemy Inc., Data Products Department, 600 Harrison St 3rd Floor, San Francisco, 94107, CA, United States",Udemy,industry,other_companies
+AWS AI Labs,AWS AI Labs,industry,tech_companies
+Bytedance Research,ByteDance,industry,tech_companies
+Google DeepMind,Google DeepMind,industry,tech_companies
+Google Research,Google Research,industry,tech_companies
+IBM Research,IBM Research,industry,tech_companies
+Meta AI,Meta AI,industry,tech_companies
+Microsoft,Microsoft,industry,tech_companies
+Microsoft AI for Good Research Lab,Microsoft Research,industry,tech_companies
+"Microsoft Research, Redmond, WA",Microsoft Research,industry,tech_companies
+NVIDIA,NVIDIA,industry,tech_companies
+NVIDIA Inc.,NVIDIA,industry,tech_companies
+NVIDIA and Caltech,NVIDIA,industry,tech_companies
+"NVIDIA, 2788 San Tomas Expressway, Santa Clara, 95051, CA, USA",NVIDIA,industry,tech_companies
+Nvidia,NVIDIA,industry,tech_companies
+"Santa Clara, CA, USA",NVIDIA,industry,tech_companies
+SenseTime Research,SenseTime,industry,tech_companies
+"Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100094, China",Chinese Academy of Sciences,research_institutes,international_institutes
+"Centre for Artificial Intelligence and Robotics, HKISI, CAS",Chinese Academy of Sciences,research_institutes,international_institutes
+"College of Life Sciences, University of Chinese Academy of Sciences, Beijing 100049, China",Chinese Academy of Sciences,research_institutes,international_institutes
+"College of Resources and Environment, University of Chinese Academy of Sciences, Beijing 100049, China",Chinese Academy of Sciences,research_institutes,international_institutes
+"New Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences",Chinese Academy of Sciences,research_institutes,international_institutes
+"School of Artificial Intelligence, University of Chinese Academy of Sciences",Chinese Academy of Sciences,research_institutes,international_institutes
+"School of Electronic, Electrical and Communication Engineering, University of Chinese Academy of Sciences, Beijing 100049, China",Chinese Academy of Sciences,research_institutes,international_institutes
+"Science & Technology on Integrated Information System Laboratory, Institute of Software, Chinese Academy of Sciences, Beijing, China",Chinese Academy of Sciences,research_institutes,international_institutes
+"Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences",Chinese Academy of Sciences,research_institutes,international_institutes
+"University of Chinese Academy of Sciences, Beijing, China",Chinese Academy of Sciences,research_institutes,international_institutes
+"Canadian Centre for Climate Modelling and Analysis, Environment and Climate Change Canada, Victoria, British Columbia, Canada",Environment and Climate Change Canada,research_institutes,international_institutes
+"Climate Processes Section, Environment and Climate Change Canada, Toronto, Ontario, Canada",Environment and Climate Change Canada,research_institutes,international_institutes
+"Environmental Numerical Weather Prediction Research Section, Environment and Climate Change Canada, Toronto, Ontario, Canada",Environment and Climate Change Canada,research_institutes,international_institutes
+"European Space Astronomy Centre, Spain",European Space Astronomy Centre,research_institutes,international_institutes
+"NASA Astrophysics Data System, Harvard & Smithsonian, United States",Harvard-Smithsonian Center for Astrophysics,research_institutes,international_institutes
+"Helmholtz-Zentrum Dresden-Rossendorf, Helmholtz Institute Freiberg for Resource Technology, Freiberg 09599, Germany",Helmholtz Institute Freiberg,research_institutes,international_institutes
+"Helmholtz Munich – German Research Center for Environment and Health, Munich, Germany",Helmholtz Munich,research_institutes,international_institutes
+"Institute of Advanced Research in Artificial Intelligence, Vienna 1030, Austria",Institute of Advanced Research in Artificial Intelligence,research_institutes,international_institutes
+Lamarr Institute for Machine Learning and Artificial Intelligence,Lamarr Institute,research_institutes,international_institutes
+"OpenGVLab, Shanghai AI Laboratory",Shanghai AI Laboratory,research_institutes,international_institutes
+Shanghai AI Laboratory,Shanghai AI Laboratory,research_institutes,international_institutes
+"Space Telescope Science Institute, United States",Space Telescope Science Institute,research_institutes,international_institutes
+"The Systems Biology Institute, Saisei Ikedayama Bldg., 5-10-25, Higashi Gotanda, Shinagawa-ku, 141-0022, Tokyo, Japan.",Systems Biology Institute,research_institutes,international_institutes
+"University Hospitals Birmingham NHS Foundation Trust, Birmingham, UK",University Hospitals Birmingham,research_institutes,international_institutes
+Arc Institute,Arc Institute,research_institutes,medical_research
+"Department of Anesthesia, Critical Care, and Pain Medicine, Beth Israel Deaconess Medical Center, Boston, MA",Beth Israel Deaconess Medical Center,research_institutes,medical_research
+"Department of Neonatology, Beth Israel Deaconess Medical Center, Boston, MA",Beth Israel Deaconess Medical Center,research_institutes,medical_research
+"Division of Genetics and Genomics, Boston Children's Hospital, Boston MA, USA.",Boston Children's Hospital,research_institutes,medical_research
+"Cancer Program, Broad Institute of Harvard and MIT, Cambridge, MA, USA",Broad Institute,research_institutes,medical_research
+"Cardiovascular Disease Initiative and Precision Cardiology Laboratory, Broad Institute of MIT and Harvard, Cambridge, MA, USA.",Broad Institute,research_institutes,medical_research
+CZ Biohub,CZ Biohub,research_institutes,medical_research
+"Simons Center for Quantitative Biology, Cold Spring Harbor Laboratory, 1 Bungtown Road, Cold Spring Harbor, NY USA 11724",Cold Spring Harbor Laboratory,research_institutes,medical_research
+"Center for Functional Cancer Epigenetics, Dana-Farber Cancer Institute, Boston, MA, USA.",Dana-Farber Cancer Institute,research_institutes,medical_research
+"Data Science Program, Dana-Farber Cancer Institute, Boston, MA, USA",Dana-Farber Cancer Institute,research_institutes,medical_research
+"Department of Data Science, Dana-Farber Cancer Institute, Boston MA, USA.",Dana-Farber Cancer Institute,research_institutes,medical_research
+"Department of Pathology, Mass General Brigham, Harvard Medical School, Boston, MA, USA",Harvard Medical School,research_institutes,medical_research
+"Harvard Medical School Genetics Training Program, Boston, USA.",Harvard Medical School,research_institutes,medical_research
+"Division of Pathology, National Cancer Center Exploratory Oncology Research & Clinical Trial Center, Chiba, Japan",National Cancer Center Japan,research_institutes,medical_research
+Argonne National Laboratory,Argonne National Laboratory,research_institutes,national_labs
+DEVCOM Army Research Laboratory,Army Research Laboratory,research_institutes,national_labs
+"NERSC, Lawrence Berkeley Lab",Lawrence Berkeley Lab,research_institutes,national_labs
+"NASA Headquarters, Washington, DC, United States of America",NASA,research_institutes,national_labs
+"Climate and Radiation Lab, NASA Goddard Spaceflight Center",NASA Goddard,research_institutes,national_labs
+"Data Science Group, NASA Goddard Spaceflight Center",NASA Goddard,research_institutes,national_labs
+"NASA/Goddard Space Flight Center, USA",NASA Goddard,research_institutes,national_labs
+"NASA Marshall Space Flight Center, Huntsville, AL, USA",NASA Marshall,research_institutes,national_labs
+National Center for Computational Sciences / Oak Ridge National Laboratory,Oak Ridge National Laboratory,research_institutes,national_labs
+"Oak Ridge National Laboratory, Oak Ridge, TN, USA",Oak Ridge National Laboratory,research_institutes,national_labs
+"Pacific Northwest National Laboratory, Richland, WA",Pacific Northwest National Laboratory,research_institutes,national_labs
+"NIHR Biomedical Research Centre at Moorfields Eye Hospital NHS Foundation Trust, London, UK",Moorfields Eye Hospital,research_organizations,medical
+"Department of Molecular Medicine, Scripps Research, La Jolla, CA, USA",Scripps Research,research_organizations,medical
+"USDA-ARS; Ithaca, NY, USA 14853",USDA-ARS,research_organizations,medical
+"AI Hub, University Health Network, Toronto, ON, Canada",University Health Network,research_organizations,medical
+"Peter Munk Cardiac Centre, University Health Network, Toronto, ON, Canada",University Health Network,research_organizations,medical
+"Vector Institute, Toronto, ON, Canada",Vector Institute,research_organizations,medical
+"Department of Atmospheric Science, Colorado State University, Fort Collins, CO, USA",Colorado State University,unknown,unknown
+German Aerospace Center,German Aerospace Center,unknown,unknown
+"Indian Institute of Technology Delhi, India",IIT Delhi,unknown,unknown
+Mohamed bin Zayed University of Artificial Intelligence,Mohamed bin Zayed University of Artificial Intelligence,unknown,unknown
+"Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi, UAE",Mohamed bin Zayed University of Artificial Intelligence,unknown,unknown
+Toronto Metropolitan University,Toronto Metropolitan University,unknown,unknown
+"Department of Computer Science, University of Coruña, A Coruña, Spain",University of Coruña,unknown,unknown
