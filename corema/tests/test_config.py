@@ -1,9 +1,9 @@
 import pytest
 from unittest.mock import patch
-import os
 from pathlib import Path
+import os
 
-from ..config import get_config, get_project_root
+from corema.config import get_config, get_project_root
 
 
 def test_missing_config_file(tmp_path: Path) -> None:

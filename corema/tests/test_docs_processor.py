@@ -3,8 +3,8 @@ from unittest.mock import Mock, create_autospec, patch
 import requests
 from typing import Any
 
-from ..processors.docs import DocsProcessor
-from ..storage import LocalStorage
+from corema.processors.docs import DocsProcessor
+from corema.storage import LocalStorage
 
 
 @pytest.fixture

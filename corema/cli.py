@@ -11,7 +11,7 @@ from .collector import DataCollector
 from .storage import LocalStorage
 from .utils.names import get_project_id
 from .config import get_config
-from .pipelines.model_summary import ModelSummaryPipeline
+from .pipelines.model_summary.extraction import ModelSummaryPipeline
 from .utils.manifest import ManifestManager
 
 logger = logging.getLogger(__name__)

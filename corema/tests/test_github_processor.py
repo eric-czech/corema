@@ -6,8 +6,8 @@ from pathlib import Path
 from typing import List, Dict, Any
 import json
 
-from ..processors.github import GitHubProcessor
-from ..storage import LocalStorage
+from corema.processors.github import GitHubProcessor
+from corema.storage import LocalStorage
 
 
 @pytest.fixture

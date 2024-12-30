@@ -2,9 +2,9 @@
 import pytest
 from typing import Dict, Any, List
 
-from ..collector import DataCollector
-from ..storage import LocalStorage
-from ..utils.names import get_project_id
+from corema.collector import DataCollector
+from corema.storage import LocalStorage
+from corema.utils.names import get_project_id
 
 
 @pytest.fixture(autouse=True)

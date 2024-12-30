@@ -4,7 +4,7 @@ import logging
 import requests
 import re
 from typing import Dict, Any, Literal
-from ..config import get_config
+from corema.config import get_config
 
 logger = logging.getLogger(__name__)
 

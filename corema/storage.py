@@ -1,11 +1,12 @@
-from pathlib import Path
-import hashlib
-import shutil
-from typing import Union, BinaryIO, TextIO, Literal, Dict, Any
 import logging
+from pathlib import Path
+import shutil
 import json
-from .utils.names import get_project_id
-from .config import get_config
+import hashlib
+from typing import Dict, Any, Literal, Union, BinaryIO, TextIO
+
+from corema.utils.names import get_project_id
+from corema.config import get_config
 
 logger = logging.getLogger(__name__)
 

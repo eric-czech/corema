@@ -1,7 +1,7 @@
 """Tests for OpenAI API utilities."""
 
-from ..utils.openai_api import chunk_text
-from ..utils.openai_models import DEFAULT_MODEL
+from corema.utils.openai_api import chunk_text
+from corema.utils.openai_models import DEFAULT_MODEL
 import tiktoken
 
 

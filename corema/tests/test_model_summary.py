@@ -6,11 +6,11 @@ from unittest.mock import Mock, patch
 from pathlib import Path
 import json
 
-from ..pipelines.model_summary import ModelSummaryPipeline, ModelDetails
-from ..storage import LocalStorage
-from ..config import get_config
-from ..utils.openai_models import DEFAULT_MODEL
-from .utils import check_openai_key
+from corema.pipelines.model_summary.extraction import ModelSummaryPipeline, ModelDetails
+from corema.storage import LocalStorage
+from corema.config import get_config
+from corema.utils.openai_models import DEFAULT_MODEL
+from corema.tests.utils import check_openai_key
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -135,18 +135,32 @@ def test_process_paper_llm(storage: Mock, tmp_path: Path) -> None:
         results = pipeline.process_project("test_project")
 
         # Verify results were saved to project directory
-        project_results_path = project_results_dir / f"{pipeline.PIPELINE_NAME}.jsonl"
+        project_results_path = project_results_dir / f"{pipeline.PIPELINE_NAME}.json"
         assert project_results_path.exists(), "Project results file should exist"
 
         # Read and verify saved results
         with open(project_results_path) as f:
-            saved_results = [json.loads(line) for line in f]
+            saved_results = json.load(f)
             assert len(saved_results) > 0, "Should have saved at least one result"
-            assert "project_id" in saved_results[0], "Results should include project_id"
+            first_paper_path = next(iter(saved_results.keys()))
+            assert first_paper_path == "test_paper.txt", "Paper path should match"
+            first_result = saved_results[first_paper_path]
+            assert isinstance(first_result, dict), "Results should be a dictionary"
             assert (
-                saved_results[0]["project_id"] == "test_project"
-            ), "Project ID should match"
-            assert "paper_path" in saved_results[0], "Results should include paper_path"
+                "scientific_fields" in first_result
+            ), "Results should include scientific_fields"
+            assert (
+                "preprocessing" in first_result
+            ), "Results should include preprocessing"
+            assert (
+                "compute_resources" in first_result
+            ), "Results should include compute_resources"
+            assert "architecture" in first_result, "Results should include architecture"
+            assert (
+                "training_stack" in first_result
+            ), "Results should include training_stack"
+            assert "dataset" in first_result, "Results should include dataset"
+            assert "evaluation" in first_result, "Results should include evaluation"
 
         # Verify the extracted information
         assert len(results) > 0, "Should have processed at least one paper"

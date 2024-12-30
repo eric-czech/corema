@@ -4,8 +4,8 @@ from unittest.mock import Mock, create_autospec, patch
 import requests
 from pathlib import Path
 
-from ..processors.article import ArticleProcessor
-from ..storage import LocalStorage
+from corema.processors.article import ArticleProcessor
+from corema.storage import LocalStorage
 
 
 @pytest.fixture

@@ -2,7 +2,7 @@ import pytest
 from pathlib import Path
 import json
 
-from ..utils.manifest import ManifestManager, PathMapping
+from corema.utils.manifest import ManifestManager, PathMapping
 
 
 @pytest.fixture

@@ -2,16 +2,17 @@ import git
 import requests
 from typing import List
 import logging
-from ..storage import LocalStorage
-from ..utils.url import Crawler
-from ..utils.github_api import (
+import json
+
+from corema.storage import LocalStorage
+from corema.utils.url import Crawler
+from corema.utils.github_api import (
     check_repo_exists,
     fetch_repo_metadata,
     extract_owner_repo,
     normalize_github_url,
 )
-from ..config import get_config
-import json
+from corema.config import get_config
 
 logger = logging.getLogger(__name__)
 

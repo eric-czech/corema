@@ -1,7 +1,7 @@
 from typing import Dict, Any, TypedDict, List, Iterator
 import logging
-from .names import get_project_id
-from ..storage import LocalStorage
+from corema.utils.names import get_project_id
+from corema.storage import LocalStorage
 
 # Set up logging
 logger = logging.getLogger(__name__)

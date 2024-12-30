@@ -4,13 +4,13 @@ import pytest
 from unittest.mock import patch, Mock
 from typing import Tuple
 
-from ..utils.github_api import (
+from corema.utils.github_api import (
     check_repo_exists,
     fetch_repo_metadata,
     normalize_github_url,
     extract_owner_repo,
 )
-from ..config import get_config
+from corema.config import get_config
 
 # Load config to ensure token is available
 get_config()

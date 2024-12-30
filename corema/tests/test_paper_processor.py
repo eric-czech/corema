@@ -1,21 +1,21 @@
 """Tests for paper processor."""
 
 import pytest
-from unittest.mock import patch, Mock
-from datetime import date
+from unittest.mock import Mock, patch
 from pathlib import Path
 from typing import Any
+from datetime import date
 
-from ..processors.paper import (
+from corema.processors.paper import (
     PaperProcessor,
-    PaperMetadata,
-    Author,
     GitHubURLResponse,
     GitHubURL,
+    PaperMetadata,
+    Author,
 )
-from ..storage import LocalStorage
-from ..config import get_config
-from .utils import check_openai_key
+from corema.storage import LocalStorage
+from corema.config import get_config
+from corema.tests.utils import check_openai_key
 
 
 @pytest.fixture

@@ -1,12 +1,13 @@
 from typing import Dict, Any, List, Callable
 import logging
-from .storage import LocalStorage
-from .utils.manifest import ManifestManager
-from .processors.paper import PaperProcessor
-from .processors.github import GitHubProcessor
-from .processors.docs import DocsProcessor
-from .processors.article import ArticleProcessor
-from .config import get_config
+
+from corema.storage import LocalStorage
+from corema.utils.manifest import ManifestManager
+from corema.processors.paper import PaperProcessor
+from corema.processors.github import GitHubProcessor
+from corema.processors.docs import DocsProcessor
+from corema.processors.article import ArticleProcessor
+from corema.config import get_config
 
 # Set up logging
 logger = logging.getLogger(__name__)

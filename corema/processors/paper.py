@@ -4,12 +4,12 @@ from typing import List, Optional
 import logging
 from pdfminer.high_level import extract_text
 
-from ..storage import LocalStorage
-from ..utils.url import Crawler
-from ..utils.github_api import check_repo_exists, normalize_github_url
-from ..config import get_config, get_openai_params
-from ..utils.openai_api import get_structured_output
-from ..resources.paper_prompts import (
+from corema.storage import LocalStorage
+from corema.utils.url import Crawler
+from corema.utils.github_api import check_repo_exists, normalize_github_url
+from corema.config import get_config, get_openai_params
+from corema.utils.openai_api import get_structured_output
+from corema.resources.paper_prompts import (
     GITHUB_URL_EXTRACTION_SYSTEM_PROMPT,
     GITHUB_URL_EXTRACTION_USER_PROMPT,
     PAPER_METADATA_SYSTEM_PROMPT,

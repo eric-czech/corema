@@ -2,12 +2,13 @@
 
 import logging
 from functools import reduce
-from typing import TypeVar, Type, List, Iterator, Callable, cast
-from pydantic import BaseModel
+from typing import List, Type, TypeVar, Callable, Iterator, cast
 from openai import OpenAI
 import tiktoken
-from ..config import get_config
-from .openai_models import get_model_info, DEFAULT_MODEL
+from pydantic import BaseModel
+
+from corema.config import get_config
+from corema.utils.openai_models import get_model_info, DEFAULT_MODEL
 
 logger = logging.getLogger(__name__)
 

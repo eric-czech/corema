@@ -3,8 +3,9 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 import logging
-from ..storage import LocalStorage
-from ..utils.url import Crawler
+
+from corema.storage import LocalStorage
+from corema.utils.url import Crawler
 
 logger = logging.getLogger(__name__)
 
