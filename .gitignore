@@ -175,5 +175,6 @@ config.json
 data/
 logs/
 visualizations/
-temp/
 .vscode/
+tmp/
+resources/

@@ -315,3 +315,827 @@
   paper_urls:
   - https://www.medrxiv.org/content/10.1101/2024.09.09.612009
   publication_date: 2024-09
+- project_name: DINO-MM
+  paper_urls:
+  - https://arxiv.org/pdf/2204.05381
+  publication_date: 2022-04
+- project_name: BillionScaleFM
+  paper_urls:
+  - https://arxiv.org/pdf/2304.05215
+  publication_date: 2023-04
+- project_name: GeoPile
+  paper_urls:
+  - https://arxiv.org/pdf/2302.04476
+  publication_date: 2023-02
+- project_name: ScaleMAE
+  paper_urls:
+  - https://arxiv.org/pdf/2212.14532
+  publication_date: 2022-12
+- project_name: DINOMC
+  paper_urls:
+  - https://arxiv.org/pdf/2303.06670
+  publication_date: 2023-03
+- project_name: CROMA
+  paper_urls:
+  - https://arxiv.org/pdf/2311.00566
+  publication_date: 2023-11
+- project_name: DeCUR
+  paper_urls:
+  - https://arxiv.org/pdf/2309.05300
+  publication_date: 2023-09
+- project_name: Presto
+  paper_urls:
+  - https://arxiv.org/pdf/2304.14065
+  publication_date: 2023-04
+- project_name: CtxMIM
+  paper_urls:
+  - https://arxiv.org/pdf/2310.00022
+  publication_date: 2023-10
+- project_name: FGMAE
+  paper_urls:
+  - https://arxiv.org/pdf/2310.18653
+  publication_date: 2023-10
+- project_name: Prithvi
+  paper_urls:
+  - https://arxiv.org/pdf/2310.18660
+  publication_date: 2023-10
+- project_name: RingMoLite
+  paper_urls:
+  - https://arxiv.org/pdf/2309.09003
+  publication_date: 2023-09
+- project_name: EarthPT
+  paper_urls:
+  - https://arxiv.org/pdf/2309.07207
+  publication_date: 2023-09
+- project_name: USat
+  paper_urls:
+  - https://arxiv.org/pdf/2312.02199
+  publication_date: 2023-12
+- project_name: FoMoNet
+  paper_urls:
+  - https://arxiv.org/pdf/2312.10114
+  publication_date: 2023-12
+- project_name: SARJEPA
+  paper_urls:
+  - https://arxiv.org/pdf/2311.15153v4
+  publication_date: 2023-11
+- project_name: GeRSP
+  paper_urls:
+  - https://arxiv.org/pdf/2401.04614
+  publication_date: 2024-01
+- project_name: SwiMDiff
+  paper_urls:
+  - https://arxiv.org/pdf/2401.05093
+  publication_date: 2024-01
+- project_name: OFANet
+  paper_urls:
+  - https://arxiv.org/pdf/2401.07527
+  publication_date: 2024-01
+- project_name: SpectralGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2311.07113
+  publication_date: 2023-11
+- project_name: SatMAE++
+  paper_urls:
+  - https://arxiv.org/pdf/2403.05419
+  publication_date: 2024-03
+- project_name: msGFM
+  paper_urls:
+  - https://arxiv.org/pdf/2404.01260
+  publication_date: 2024-04
+- project_name: SkySense
+  paper_urls:
+  - https://arxiv.org/pdf/2312.10115
+  publication_date: 2023-12
+- project_name: MTP
+  paper_urls:
+  - https://arxiv.org/pdf/2403.13430
+  publication_date: 2024-03
+- project_name: DOFA
+  paper_urls:
+  - https://arxiv.org/pdf/2403.15356
+  publication_date: 2024-03
+- project_name: MMEarth
+  paper_urls:
+  - https://arxiv.org/pdf/2405.02771
+  publication_date: 2024-05
+- project_name: SARATRX
+  paper_urls:
+  - https://arxiv.org/pdf/2405.09365
+  publication_date: 2024-05
+- project_name: LeMeViT
+  paper_urls:
+  - https://arxiv.org/pdf/2405.09789
+  publication_date: 2024-05
+- project_name: SoftContrastiveLearning
+  paper_urls:
+  - https://arxiv.org/pdf/2405.20462
+  publication_date: 2024-05
+- project_name: RSDFM
+  paper_urls:
+  - https://arxiv.org/pdf/2406.07032
+  publication_date: 2024-06
+- project_name: A2MAE
+  paper_urls:
+  - https://arxiv.org/pdf/2406.08079
+  publication_date: 2024-06
+- project_name: HyperSIGMA
+  paper_urls:
+  - https://arxiv.org/pdf/2406.11519
+  publication_date: 2024-06
+- project_name: SelectiveMAE
+  paper_urls:
+  - https://arxiv.org/pdf/2406.11933
+  publication_date: 2024-06
+- project_name: OmniSat
+  paper_urls:
+  - https://arxiv.org/pdf/2404.08351
+  publication_date: 2024-04
+- project_name: MMVSF
+  paper_urls:
+  - https://arxiv.org/pdf/2407.19660
+  publication_date: 2024-07
+- project_name: MA3E
+  paper_urls:
+  - https://arxiv.org/pdf/2408.01946
+  publication_date: 2024-08
+- project_name: SpectralEarth
+  paper_urls:
+  - https://arxiv.org/pdf/2408.08447
+  publication_date: 2024-08
+- project_name: SenPaMAE
+  paper_urls:
+  - https://arxiv.org/pdf/2408.11000
+  publication_date: 2024-08
+- project_name: RingMoAerial
+  paper_urls:
+  - https://arxiv.org/pdf/2409.13366
+  publication_date: 2024-09
+- project_name: OReoleFM
+  paper_urls:
+  - https://arxiv.org/pdf/2410.19965
+  publication_date: 2024-10
+- project_name: PIEViT
+  paper_urls:
+  - https://arxiv.org/pdf/2411.06091
+  publication_date: 2024-11
+- project_name: SatVisionTOA
+  paper_urls:
+  - https://arxiv.org/pdf/2411.17000
+  publication_date: 2024-11
+- project_name: RSvHeat
+  paper_urls:
+  - https://arxiv.org/pdf/2411.17984
+  publication_date: 2024-11
+- project_name: PrithviEO2
+  paper_urls:
+  - https://arxiv.org/pdf/2412.02732
+  publication_date: 2024-12
+- project_name: AnySat
+  paper_urls:
+  - https://arxiv.org/pdf/2412.14123
+  publication_date: 2024-12
+- project_name: RSGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2307.15266
+  publication_date: 2023-07
+- project_name: RemoteCLIP
+  paper_urls:
+  - https://arxiv.org/pdf/2306.11029
+  publication_date: 2023-06
+- project_name: GeoRSCLIP
+  paper_urls:
+  - https://arxiv.org/pdf/2306.11300
+  publication_date: 2023-06
+- project_name: RemoteSensingChatGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2401.09083
+  publication_date: 2024-01
+- project_name: SkyEyeGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2401.09712
+  publication_date: 2024-01
+- project_name: EarthGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2401.16822
+  publication_date: 2024-01
+- project_name: SkyScript
+  paper_urls:
+  - https://arxiv.org/pdf/2312.12856
+  publication_date: 2023-12
+- project_name: LHRSBot
+  paper_urls:
+  - https://arxiv.org/pdf/2402.02544
+  publication_date: 2024-02
+- project_name: VHM
+  paper_urls:
+  - https://arxiv.org/pdf/2403.20213
+  publication_date: 2024-03
+- project_name: SkySenseGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2406.10100
+  publication_date: 2024-06
+- project_name: EarthMarker
+  paper_urls:
+  - https://arxiv.org/pdf/2407.13596
+  publication_date: 2024-07
+- project_name: TEOChat
+  paper_urls:
+  - https://arxiv.org/pdf/2410.06234
+  publication_date: 2024-10
+- project_name: Aquila
+  paper_urls:
+  - https://arxiv.org/pdf/2411.06074
+  publication_date: 2024-11
+- project_name: LHRSBotNova
+  paper_urls:
+  - https://arxiv.org/pdf/2411.09301
+  publication_date: 2024-11
+- project_name: VisionLanguageRemoteSensingFM
+  paper_urls:
+  - https://arxiv.org/pdf/2409.07048
+  publication_date: 2024-09
+- project_name: RSUniVLM
+  paper_urls:
+  - https://arxiv.org/pdf/2412.05679
+  publication_date: 2024-12
+- project_name: EarthDial
+  paper_urls:
+  - https://arxiv.org/pdf/2412.15190
+  publication_date: 2024-12
+- project_name: ControlNet
+  paper_urls:
+  - https://arxiv.org/pdf/2308.16648
+  publication_date: 2023-08
+- project_name: DiffusionSat
+  paper_urls:
+  - https://arxiv.org/pdf/2312.03606
+  publication_date: 2023-12
+- project_name: CRSDiff
+  paper_urls:
+  - https://arxiv.org/pdf/2403.11614
+  publication_date: 2024-03
+- project_name: MetaEarth
+  paper_urls:
+  - https://arxiv.org/pdf/2405.13570
+  publication_date: 2024-05
+- project_name: HSIGene
+  paper_urls:
+  - https://arxiv.org/pdf/2409.12470
+  publication_date: 2024-09
+- project_name: CSP
+  paper_urls:
+  - https://arxiv.org/pdf/2305.01118
+  publication_date: 2023-05
+- project_name: GeoCLIP
+  paper_urls:
+  - https://arxiv.org/pdf/2309.16020
+  publication_date: 2023-09
+- project_name: SatCLIP
+  paper_urls:
+  - https://arxiv.org/pdf/2311.17179
+  publication_date: 2023-11
+- project_name: TimeTravellingPixels
+  paper_urls:
+  - https://arxiv.org/pdf/2312.16202
+  publication_date: 2023-12
+- project_name: CSMAE
+  paper_urls:
+  - https://arxiv.org/pdf/2401.07782
+  publication_date: 2024-01
+- project_name: RSPrompter
+  paper_urls:
+  - https://arxiv.org/pdf/2306.16269
+  publication_date: 2023-06
+- project_name: BAN
+  paper_urls:
+  - https://arxiv.org/pdf/2312.01163
+  publication_date: 2023-12
+- project_name: SegmentationAnythingModel
+  paper_urls:
+  - https://arxiv.org/pdf/2401.09019
+  publication_date: 2024-01
+- project_name: AnyChange
+  paper_urls:
+  - https://arxiv.org/pdf/2402.01188
+  publication_date: 2024-02
+- project_name: RSCapRet
+  paper_urls:
+  - https://arxiv.org/pdf/2402.06475
+  publication_date: 2024-02
+- project_name: NoisyLabelSegmentation
+  paper_urls:
+  - https://arxiv.org/pdf/2402.16164
+  publication_date: 2024-02
+- project_name: RSBuilding
+  paper_urls:
+  - https://arxiv.org/pdf/2403.07564
+  publication_date: 2024-03
+- project_name: SAMRoad
+  paper_urls:
+  - https://arxiv.org/pdf/2403.16051
+  publication_date: 2024-03
+- project_name: CrossEarth
+  paper_urls:
+  - https://arxiv.org/pdf/2410.22629
+  publication_date: 2024-10
+- project_name: GeoGround
+  paper_urls:
+  - https://arxiv.org/pdf/2411.11904
+  publication_date: 2024-11
+- project_name: RSAgent
+  paper_urls:
+  - https://arxiv.org/pdf/2406.07089
+  publication_date: 2024-06
+- project_name: PhilEOBench
+  paper_urls:
+  - https://arxiv.org/pdf/2401.04464
+  publication_date: 2024-01
+- project_name: PANGAEA
+  paper_urls:
+  - https://arxiv.org/pdf/2412.04204
+  publication_date: 2024-12
+- project_name: SSL4EOL
+  paper_urls:
+  - https://arxiv.org/pdf/2306.09424
+  publication_date: 2023-06
+- project_name: CISEN
+  paper_urls:
+  - https://arxiv.org/pdf/2403.10887
+  publication_date: 2024-03
+- project_name: RSGPT4V
+  paper_urls:
+  - https://arxiv.org/pdf/2406.12479
+  publication_date: 2024-06
+- project_name: VisualChatGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2304.13009
+  publication_date: 2023-04
+- project_name: GPT4V
+  paper_urls:
+  - https://arxiv.org/pdf/2312.17016
+  publication_date: 2023-12
+- project_name: PMCLLaMA
+  paper_urls:
+  - https://arxiv.org/pdf/2304.14454
+  publication_date: 2023-04
+- project_name: MEDITRON70B
+  paper_urls:
+  - https://arxiv.org/pdf/2311.16079
+  publication_date: 2023-11
+- project_name: ClinicalGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2306.09968
+  publication_date: 2023-06
+- project_name: AlpaCare
+  paper_urls:
+  - https://arxiv.org/pdf/2310.14558
+  publication_date: 2023-10
+- project_name: QilinMed
+  paper_urls:
+  - https://arxiv.org/pdf/2310.09089
+  publication_date: 2023-10
+- project_name: BianQue
+  paper_urls:
+  - https://arxiv.org/pdf/2310.15896
+  publication_date: 2023-10
+- project_name: MedAlpaca
+  paper_urls:
+  - https://arxiv.org/pdf/2304.08247
+  publication_date: 2023-04
+- project_name: MedPaLM2
+  paper_urls:
+  - https://arxiv.org/pdf/2305.09617
+  publication_date: 2023-05
+- project_name: BiMediX
+  paper_urls:
+  - https://arxiv.org/pdf/2402.13253
+  publication_date: 2024-02
+- project_name: PMCCLIP
+  paper_urls:
+  - https://arxiv.org/pdf/2303.07240
+  publication_date: 2023-03
+- project_name: QilinMedVL
+  paper_urls:
+  - https://arxiv.org/pdf/2310.17956v2
+  publication_date: 2023-10
+- project_name: PMC-VQA
+  paper_urls:
+  - https://arxiv.org/pdf/2305.10415
+  publication_date: 2023-05
+- project_name: ProteinDT
+  paper_urls:
+  - https://arxiv.org/pdf/2302.04611
+  publication_date: 2023-02
+- project_name: stFormer
+  paper_urls:
+  - https://www.biorxiv.org/content/10.1101/2024.09.27.615337v5.full.pdf
+  publication_date: 2024-09
+- project_name: CellWhisperer
+  paper_urls:
+  - https://www.biorxiv.org/content/10.1101/2024.10.15.618501v1.full.pdf
+  publication_date: 2024-10
+- project_name: CancerFoundation
+  paper_urls:
+  - https://www.biorxiv.org/content/10.1101/2024.11.01.621087v1.full.pdf
+  publication_date: 2024-11
+- project_name: scChat
+  paper_urls:
+  - https://www.biorxiv.org/content/10.1101/2024.10.01.616063v1.full.pdf
+  publication_date: 2024-10
+- project_name: scCello
+  paper_urls:
+  - https://arxiv.org/pdf/2408.12373
+  publication_date: 2024-08
+- project_name: CellGraphCompass
+  paper_urls:
+  - https://www.biorxiv.org/content/10.1101/2024.06.04.597354v1.full.pdf
+  publication_date: 2024-06
+- project_name: scPRINT
+  paper_urls:
+  - https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1.full.pdf
+  publication_date: 2024-07
+- project_name: scGenePT
+  paper_urls:
+  - https://www.biorxiv.org/content/10.1101/2024.10.23.619972v1.full.pdf
+  publication_date: 2024-10
+- project_name: LMWeather
+  paper_urls:
+  - https://arxiv.org/pdf/2405.20348
+  publication_date: 2024-05
+- project_name: MaCo
+  paper_urls:
+  - https://arxiv.org/pdf/2309.05904
+  publication_date: 2023-09
+- project_name: ELIXR
+  paper_urls:
+  - https://arxiv.org/pdf/2308.01317
+  publication_date: 2023-08
+- project_name: KoBo
+  paper_urls:
+  - https://arxiv.org/pdf/2307.07246
+  publication_date: 2023-07
+- project_name: CITE
+  paper_urls:
+  - https://arxiv.org/pdf/2307.14901
+  publication_date: 2023-07
+- project_name: BiomedCLIP
+  paper_urls:
+  - https://arxiv.org/pdf/2303.00915
+  publication_date: 2023-03
+- project_name: PTUnifier
+  paper_urls:
+  - https://arxiv.org/pdf/2302.08958
+  publication_date: 2023-02
+- project_name: BioViLT
+  paper_urls:
+  - https://arxiv.org/pdf/2301.04558
+  publication_date: 2023-01
+- project_name: CLIPDrivenUniversalModel
+  paper_urls:
+  - https://arxiv.org/pdf/2301.00785
+  publication_date: 2023-01
+- project_name: MedCLIP
+  paper_urls:
+  - https://arxiv.org/pdf/2210.10163
+  publication_date: 2022-10
+- project_name: RadiologyLlama2
+  paper_urls:
+  - https://arxiv.org/pdf/2309.06419
+  publication_date: 2023-09
+- project_name: XrayGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2306.07971
+  publication_date: 2023-06
+- project_name: LLaVAMed
+  paper_urls:
+  - https://arxiv.org/pdf/2306.00890
+  publication_date: 2023-06
+- project_name: ChatDoctor
+  paper_urls:
+  - https://arxiv.org/pdf/2303.14070
+  publication_date: 2023-03
+- project_name: DeIDGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2303.11032
+  publication_date: 2023-03
+- project_name: ChatCAD
+  paper_urls:
+  - https://arxiv.org/pdf/2302.07257
+  publication_date: 2023-02
+- project_name: MedFlamingo
+  paper_urls:
+  - https://arxiv.org/pdf/2307.15189
+  publication_date: 2023-07
+- project_name: MedPaLM2
+  paper_urls:
+  - https://arxiv.org/pdf/2305.09617
+  publication_date: 2023-05
+- project_name: MedBLIP
+  paper_urls:
+  - https://arxiv.org/pdf/2305.10799
+  publication_date: 2023-05
+- project_name: Virchow
+  paper_urls:
+  - https://arxiv.org/pdf/2309.07778
+  publication_date: 2023-09
+- project_name: SAMMed2D
+  paper_urls:
+  - https://arxiv.org/pdf/2308.16184
+  publication_date: 2023-08
+- project_name: SAM
+  paper_urls:
+  - https://arxiv.org/pdf/2307.04973
+  publication_date: 2023-07
+- project_name: AutoSAM
+  paper_urls:
+  - https://arxiv.org/pdf/2306.13731
+  publication_date: 2023-06
+- project_name: LVMMed
+  paper_urls:
+  - https://arxiv.org/pdf/2306.11925
+  publication_date: 2023-06
+- project_name: SAMed
+  paper_urls:
+  - https://arxiv.org/pdf/2304.13785
+  publication_date: 2023-04
+- project_name: MedicalSAMAdapter
+  paper_urls:
+  - https://arxiv.org/pdf/2304.12620
+  publication_date: 2023-04
+- project_name: MedSAM
+  paper_urls:
+  - https://arxiv.org/pdf/2304.12306
+  publication_date: 2023-04
+- project_name: RadFM
+  paper_urls:
+  - https://arxiv.org/pdf/2308.02463
+  publication_date: 2023-08
+- project_name: MedPaLMM
+  paper_urls:
+  - https://arxiv.org/pdf/2307.14334
+  publication_date: 2023-07
+- project_name: BiomedGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2305.17100
+  publication_date: 2023-05
+- project_name: SegmentAnythingModel
+  paper_urls:
+  - https://arxiv.org/pdf/2304.12637v2
+  publication_date: 2023-04
+- project_name: GeoAIFM
+  paper_urls:
+  - https://arxiv.org/pdf/2304.06798
+  publication_date: 2023-04
+- project_name: GeoLLM
+  paper_urls:
+  - https://arxiv.org/pdf/2310.06213
+  publication_date: 2023-10
+- project_name: CityGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2406.13948
+  publication_date: 2024-06
+- project_name: UrbanLLM
+  paper_urls:
+  - https://arxiv.org/pdf/2406.12360
+  publication_date: 2024-06
+- project_name: LAMP
+  paper_urls:
+  - https://arxiv.org/pdf/2403.09059
+  publication_date: 2024-03
+- project_name: K2
+  paper_urls:
+  - https://arxiv.org/pdf/2306.05064
+  publication_date: 2023-06
+- project_name: Aurora
+  paper_urls:
+  - https://arxiv.org/pdf/2405.13063
+  publication_date: 2024-05
+- project_name: FengWu
+  paper_urls:
+  - https://arxiv.org/pdf/2304.02948
+  publication_date: 2023-04
+- project_name: WMAE
+  paper_urls:
+  - https://arxiv.org/pdf/2304.08754
+  publication_date: 2023-04
+- project_name: FourCastNet
+  paper_urls:
+  - https://arxiv.org/pdf/2202.11214
+  publication_date: 2022-02
+- project_name: GeoSAM
+  paper_urls:
+  - https://arxiv.org/pdf/2311.11319
+  publication_date: 2023-11
+- project_name: StreetCLIP
+  paper_urls:
+  - https://arxiv.org/pdf/2302.00275
+  publication_date: 2023-02
+- project_name: JGRM
+  paper_urls:
+  - https://arxiv.org/pdf/2402.16915v1
+  publication_date: 2024-02
+- project_name: TrajFM
+  paper_urls:
+  - https://arxiv.org/pdf/2408.15251
+  publication_date: 2024-08
+- project_name: LLMMPE
+  paper_urls:
+  - https://arxiv.org/pdf/2311.17351
+  publication_date: 2023-11
+- project_name: GPTDriver
+  paper_urls:
+  - https://arxiv.org/pdf/2310.01415
+  publication_date: 2023-10
+- project_name: LanguageMPC
+  paper_urls:
+  - https://arxiv.org/pdf/2310.03026
+  publication_date: 2023-10
+- project_name: TextBasedSceneEmbedding
+  paper_urls:
+  - https://arxiv.org/pdf/2309.05282
+  publication_date: 2023-09
+- project_name: LLMMob
+  paper_urls:
+  - https://arxiv.org/pdf/2308.15197
+  publication_date: 2023-08
+- project_name: DrPlanner
+  paper_urls:
+  - https://arxiv.org/pdf/2403.07470
+  publication_date: 2024-03
+- project_name: UniTS
+  paper_urls:
+  - https://arxiv.org/pdf/2403.00131
+  publication_date: 2024-03
+- project_name: Timer
+  paper_urls:
+  - https://arxiv.org/pdf/2402.02368
+  publication_date: 2024-02
+- project_name: GPHT
+  paper_urls:
+  - https://arxiv.org/pdf/2402.16516
+  publication_date: 2024-02
+- project_name: TimeSiam
+  paper_urls:
+  - https://arxiv.org/pdf/2402.02475v1
+  publication_date: 2024-02
+- project_name: TinyTimeMixers
+  paper_urls:
+  - https://arxiv.org/pdf/2401.03955v3
+  publication_date: 2024-01
+- project_name: HiMTM
+  paper_urls:
+  - https://arxiv.org/pdf/2401.05012
+  publication_date: 2024-01
+- project_name: POND
+  paper_urls:
+  - https://arxiv.org/pdf/2312.12276
+  publication_date: 2023-12
+- project_name: PTTuning
+  paper_urls:
+  - https://arxiv.org/pdf/2311.03768
+  publication_date: 2023-11
+- project_name: UniTime
+  paper_urls:
+  - https://arxiv.org/pdf/2310.09751
+  publication_date: 2023-10
+- project_name: SimTS
+  paper_urls:
+  - https://arxiv.org/pdf/2303.18205
+  publication_date: 2023-03
+- project_name: TiMAE
+  paper_urls:
+  - https://arxiv.org/pdf/2301.08871
+  publication_date: 2023-01
+- project_name: SimMTM
+  paper_urls:
+  - https://arxiv.org/pdf/2302.00861
+  publication_date: 2023-02
+- project_name: LagLlama
+  paper_urls:
+  - https://arxiv.org/pdf/2310.08278
+  publication_date: 2023-10
+- project_name: PatchTST
+  paper_urls:
+  - https://arxiv.org/pdf/2211.14730
+  publication_date: 2022-11
+- project_name: TSMixer
+  paper_urls:
+  - https://arxiv.org/pdf/2306.09364
+  publication_date: 2023-06
+- project_name: CoST
+  paper_urls:
+  - https://arxiv.org/pdf/2202.01575
+  publication_date: 2022-02
+- project_name: TSTCC
+  paper_urls:
+  - https://arxiv.org/pdf/2106.14112
+  publication_date: 2021-06
+- project_name: TemporalNeighborhoodCoding
+  paper_urls:
+  - https://arxiv.org/pdf/2106.00750
+  publication_date: 2021-06
+- project_name: UniST
+  paper_urls:
+  - https://arxiv.org/pdf/2402.11838
+  publication_date: 2024-02
+- project_name: GPTST
+  paper_urls:
+  - https://arxiv.org/pdf/2311.04245
+  publication_date: 2023-11
+- project_name: RegionTrans
+  paper_urls:
+  - https://arxiv.org/pdf/1802.00386
+  publication_date: 2018-02
+- project_name: FedPoD
+  paper_urls:
+  - https://arxiv.org/pdf/2305.14244
+  publication_date: 2023-05
+- project_name: WeatherFM
+  paper_urls:
+  - https://arxiv.org/pdf/2301.09152
+  publication_date: 2023-01
+- project_name: LLMTimeSeriesFM
+  paper_urls:
+  - https://arxiv.org/pdf/2310.07820
+  publication_date: 2023-10
+- project_name: AutoTimes
+  paper_urls:
+  - https://arxiv.org/pdf/2402.02370
+  publication_date: 2024-02
+- project_name: TEMPO
+  paper_urls:
+  - https://arxiv.org/pdf/2310.04948
+  publication_date: 2023-10
+- project_name: TPLLM
+  paper_urls:
+  - https://arxiv.org/pdf/2403.02221v1
+  publication_date: 2024-03
+- project_name: STGLLM
+  paper_urls:
+  - https://arxiv.org/pdf/2401.14192v1
+  publication_date: 2024-01
+- project_name: STLLM
+  paper_urls:
+  - https://arxiv.org/pdf/2401.10134v2
+  publication_date: 2024-01
+- project_name: GATGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2311.14332
+  publication_date: 2023-11
+- project_name: LLM4TS
+  paper_urls:
+  - https://arxiv.org/pdf/2308.08469
+  publication_date: 2023-08
+- project_name: RePST
+  paper_urls:
+  - https://arxiv.org/pdf/2408.14505
+  publication_date: 2024-08
+- project_name: UrbanGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2403.00813
+  publication_date: 2024-03
+- project_name: TimeLLM
+  paper_urls:
+  - https://arxiv.org/pdf/2310.01728
+  publication_date: 2023-10
+- project_name: TEST
+  paper_urls:
+  - https://arxiv.org/pdf/2308.08241
+  publication_date: 2023-08
+- project_name: AllSpark
+  paper_urls:
+  - https://arxiv.org/pdf/2401.00546
+  publication_date: 2024-01
+- project_name: CityFM
+  paper_urls:
+  - https://arxiv.org/pdf/2310.00583
+  publication_date: 2023-10
+- project_name: TrafficGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2309.06719
+  publication_date: 2023-09
+- project_name: GeoGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2307.07930
+  publication_date: 2023-07
+- project_name: GeoReasoner
+  paper_urls:
+  - https://arxiv.org/pdf/2406.18572
+  publication_date: 2024-06
+- project_name: TransGPT
+  paper_urls:
+  - https://arxiv.org/pdf/2402.07233
+  publication_date: 2024-02
+- project_name: UrbanGenerativeIntelligence
+  paper_urls:
+  - https://arxiv.org/pdf/2312.11813
+  publication_date: 2023-12
+- project_name: LLMLight
+  paper_urls:
+  - https://arxiv.org/pdf/2312.16044
+  publication_date: 2023-12
+- project_name: PromptGAT
+  paper_urls:
+  - https://arxiv.org/pdf/2308.14284
+  publication_date: 2023-08
