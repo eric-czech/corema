@@ -1,9 +1,28 @@
+
+## General
+
+- Don't use relative imports for code within this project.  Use absolute imports.
+- Don't try to fix pre-commit errors from anything other than myp and ruff.  All other steps are fixed by the tools themselves when running `pre-commit`.
+- When creating CLIs, always use `fire` with an appropriately named class and a constructor that takes a `log_level` command so that this argument is always present
+- When running CLI commands that may take any significant amount of time, `tee` the output to a file in `logs/` and redirect stderr to stdout, e.g. `python -m corema.cli summarize_models 2>&1 | tee logs/summarize_models.log`
+
+## Orchestration
+
+When prompts begin with "exec: <message>", this means it is a command to run functions in a particular fashion. The convention used is:
+
+1. If the command says to "run" or "execute" a command of some kind, assume the command already exists in `corema/main.py`, try to find it and if it cannot be found report that it does not exist and ask if a new one should be created.
+2. If the command says to "create", "write", "make", etc. a new command, then assume a temporary script (as a fire CLI) for the command should be written to the dir `temp/exec` with the naming convention `exec_<name_for_action>.py`.
+
+When creating new executable functions, use these rules for finding context:
+
+1. Search for relevant functions with the `@pipeline_task` decorator in modules named `tasks.py`.
+2. Analyze the inputs, outputs and dependencies for the task as described in the docstring for `pipeline_task`, as well as the code itself for those functions.
+3. Write the new function to meet the guidelines set forth in the prompt with appropriate context on how existing commands depend on one another.
+
 ## Logging
+
 - Use `!r` in f-strings for all strings so it is clear when they have whitespace, unless there is a good reason not to (e.g. `logger.info(f"Data saved to {path!r}")`)
 
 ## Abstractions
-- Try to reduce redundancy in code by creating abstractions when possible.
 
-## CLI
-- Use `fire` for creating CLI apps
-- When running CLI commands that take a long time, `tee` the output to a file in `logs/` and redirect stderr to stdout, e.g. `python -m corema.cli summarize_models 2>&1 | tee logs/summarize_models.log`
+- Try to reduce redundancy in code by creating abstractions when possible.

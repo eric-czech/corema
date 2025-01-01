@@ -35,3 +35,7 @@ def main() -> Any:
         "visualize_model_summaries": analysis_tasks.visualize_model_summaries,
     }
     return fire.Fire(commands)
+
+
+if __name__ == "__main__":
+    main()

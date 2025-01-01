@@ -215,7 +215,7 @@ def create_timeline_visualization(
     plt.gcf().autofmt_xdate()  # Rotate and align the tick labels
 
     # Add minimal padding to prevent text cutoff
-    plt.margins(y=0.03)
+    plt.margins(y=0.01)
 
     # Save the visualization
     plt.savefig(images_dir / "model_timeline.svg", bbox_inches="tight", format="svg")
