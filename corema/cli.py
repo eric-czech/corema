@@ -26,7 +26,8 @@ def setup_logging(log_level: str) -> None:
 
 
 class CollectorCLI:
-    def __init__(self) -> None:
+    def __init__(self, log_level: str = "INFO") -> None:
+        setup_logging(log_level)
         self.storage = LocalStorage()
         self.config = get_config()
         self.manifest = ManifestManager()
@@ -143,7 +144,6 @@ class CollectorCLI:
         output_file: str | None = None,
         projects: str = "",
         overwrite: bool = False,
-        log_level: str = "INFO",
     ) -> None:
         """
         Process all papers and extract model details, saving results to both JSONL and Parquet files.
@@ -154,10 +154,7 @@ class CollectorCLI:
                 Will append appropriate extensions (.jsonl and .parquet).
             projects: Comma-separated list of project names or IDs to process. If empty, processes all.
             overwrite: Whether to overwrite existing results for projects. If False, skips projects that have already been processed.
-            log_level: Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
         """
-        setup_logging(log_level)
-
         # Initialize pipeline
         pipeline = ModelSummaryPipeline(self.storage)
 

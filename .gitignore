@@ -176,5 +176,5 @@ data/
 logs/
 visualizations/
 .vscode/
-tmp/
+temp/
 resources/
