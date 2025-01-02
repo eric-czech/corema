@@ -4,7 +4,7 @@
 - Don't use relative imports for code within this project.  Use absolute imports.
 - Don't try to fix pre-commit errors from anything other than myp and ruff.  All other steps are fixed by the tools themselves when running `pre-commit`.
 - When creating CLIs, always use `fire` with an appropriately named class and a constructor that takes a `log_level` command so that this argument is always present
-- When running CLI commands that may take any significant amount of time, `tee` the output to a file in `logs/` and redirect stderr to stdout, e.g. `python -m corema.cli summarize_models 2>&1 | tee logs/summarize_models.log`
+- When running CLI commands that may take any significant amount of time, `tee` the output to a file in `logs/` and redirect stderr to stdout, e.g. `python -m corema.main summarize_models 2>&1 | tee logs/summarize_models.log`
 
 ## Orchestration
 

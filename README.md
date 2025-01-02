@@ -52,42 +52,42 @@ The pipeline operates through several key components:
 Corema generates various visualizations to help understand trends and patterns in foundation model development:
 
 ### Model Evolution Timeline
-![Model Timeline](docs/images/model_timeline.svg)
+![Model Timeline](docs/results/images/model_timeline.svg)
 
 A chronological visualization of foundation model releases, showing relevant scientific fields and estimated model size.
 
 ### Organizational Landscape
-![Affiliations](docs/images/affiliations.svg)
+![Affiliations](docs/results/images/affiliations.svg)
 
 Visualization of organizations involved in foundation model development, showing the distribution across academic institutions, technology companies, research labs, and other entities. The heatmap reveals the intensity of involvement based on the number of published papers, highlighting key players in the field.
 
 ### Dataset Characteristics
-![Dataset Patterns](docs/images/dataset_wordclouds.svg)
+![Dataset Patterns](docs/results/images/dataset_wordclouds.svg)
 
 Overview of common data sources, preprocessing techniques, and dataset characteristics used in model training.
 
 ### Scientific Fields
-![Scientific Fields](docs/images/scientific_fields_wordcloud.svg)
+![Scientific Fields](docs/results/images/scientific_fields_wordcloud.svg)
 
 Analysis of the specific scientific domains and research areas where foundation models are being applied, excluding general ML/AI terminology to highlight the unique application domains.
 
 ### Preprocessing Pipeline
-![Preprocessing](docs/images/preprocessing_wordclouds.svg)
+![Preprocessing](docs/results/images/preprocessing_wordclouds.svg)
 
 Comprehensive view of data preprocessing steps, including cleaning methods, transformation techniques, normalization approaches, and tokenization strategies used across different foundation models. This visualization reveals the common tools and systems used for preparing training data, showing the diversity of preprocessing pipelines in modern foundation model development.
 
 ### Training Infrastructure
-![Compute Resources](docs/images/compute_resources_wordclouds.svg)
+![Compute Resources](docs/results/images/compute_resources_wordclouds.svg)
 
 Analysis of computational resources and infrastructure used for model training, highlighting the scale of compute required.
 
 ### Model Architecture
-![Architecture Patterns](docs/images/architecture_wordclouds.svg)
+![Architecture Patterns](docs/results/images/architecture_wordclouds.svg)
 
 Word cloud visualization of common architectural patterns and components used across different foundation models.
 
-### Training Stack
-![Training Stack](docs/images/training_stack_wordclouds.svg)
+### Training Details
+![Training Details](docs/results/images/training_details_wordclouds.svg)
 
 Analysis of software frameworks, libraries, and tools commonly used in model training pipelines.
 

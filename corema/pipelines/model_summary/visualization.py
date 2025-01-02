@@ -36,51 +36,156 @@ DEFAULT_WORDCLOUD_PARAMS = {
 logger = logging.getLogger(__name__)
 
 
-def create_model_table(df: pd.DataFrame, images_dir: Path) -> None:
-    """Create a table visualization of model IDs, names, and publication dates."""
-    # Create figure and axis
-    _, ax = plt.subplots(figsize=(12, len(df) * 0.3))
-    ax.axis("tight")
-    ax.axis("off")
+def get_domain_name(url: str) -> str:
+    """Extract domain name from URL."""
+    if not url or url == "Unknown":
+        return url
+    from urllib.parse import urlparse
 
+    domain = urlparse(url).netloc
+    return domain.replace("www.", "")
+
+
+def get_repo_path(url: str) -> str:
+    """Extract owner/repo from GitHub URL."""
+    if not url or url == "Unknown":
+        return url
+    if "github.com" not in url:
+        return url
+    parts = url.rstrip("/").split("/")
+    if len(parts) >= 5:
+        return f"{parts[-2]}/{parts[-1]}"
+    return url
+
+
+def create_model_table(df: pd.DataFrame, results_dir: Path) -> None:
+    """Create markdown and HTML table visualizations of model details.
+
+    The table includes:
+    - Project ID
+    - Project Name
+    - Publication Date (YYYY-MM)
+    - Paper Title
+    - PDF URL
+    - Github URLs
+    """
     # Prepare data for table
-    table_data = df[["project_id", "project_name", "publication_date"]].copy()
-    table_data["publication_date"] = table_data["publication_date"].dt.strftime(
-        "%Y-%m-%d"
+    table_data = df[
+        [
+            "project_id",
+            "project_name",
+            "publication_date",
+            "primary_paper_title",
+            "primary_paper_url",
+            "github_urls",
+        ]
+    ].copy()
+
+    # Format publication date as YYYY-MM
+    table_data["publication_date"] = table_data["publication_date"].dt.strftime("%Y-%m")
+
+    # Format URLs with shorter labels
+    def format_paper_url_md(url: str) -> str:
+        if not url or url == "Unknown":
+            return url
+        domain = get_domain_name(url)
+        return f"[{domain}]({url})"
+
+    def format_github_urls_md(urls: List[str]) -> str:
+        if not urls:
+            return ""
+        return ", ".join(f"[{get_repo_path(url)}]({url})" for url in urls)
+
+    def format_paper_url_html(url: str) -> str:
+        if not url or url == "Unknown":
+            return url
+        domain = get_domain_name(url)
+        return f'<a href="{url}">{domain}</a>'
+
+    def format_github_urls_html(urls: List[str]) -> str:
+        if not urls:
+            return ""
+        return ", ".join(f'<a href="{url}">{get_repo_path(url)}</a>' for url in urls)
+
+    # Create markdown version
+    md_data = table_data.copy()
+    md_data["primary_paper_url"] = md_data["primary_paper_url"].apply(
+        format_paper_url_md
     )
-    table_data = table_data.fillna("Unknown")
+    md_data["github_urls"] = md_data["github_urls"].apply(format_github_urls_md)
 
-    # Create table
-    table = ax.table(
-        cellText=table_data.values,
-        colLabels=["Project ID", "Project Name", "Publication Date"],
-        cellLoc="left",
-        loc="center",
-        colWidths=[0.3, 0.4, 0.3],
+    # Create HTML version
+    html_data = table_data.copy()
+    html_data["primary_paper_url"] = html_data["primary_paper_url"].apply(
+        format_paper_url_html
     )
+    html_data["github_urls"] = html_data["github_urls"].apply(format_github_urls_html)
 
-    # Style the table
-    table.auto_set_font_size(False)
-    table.set_fontsize(9)
-    table.scale(1.2, 1.5)
+    # Fill NA values
+    md_data = md_data.fillna("Unknown")
+    html_data = html_data.fillna("Unknown")
 
-    # Style header
-    for j, cell in enumerate(
-        table._cells[(0, j)] for j in range(len(table_data.columns))
-    ):
-        cell.set_text_props(weight="bold")
-        cell.set_facecolor("#E6E6E6")
+    # Rename columns for display
+    md_data.columns = [
+        "Project ID",
+        "Project Name",
+        "Publication Date",
+        "Paper Title",
+        "PDF URL",
+        "GitHub URLs",
+    ]
+    html_data.columns = [
+        "Project ID",
+        "Project Name",
+        "Publication Date",
+        "Paper Title",
+        "PDF URL",
+        "GitHub URLs",
+    ]
 
-    # Adjust layout and save
-    plt.title("Foundation Models Overview", pad=20)
-    plt.savefig(images_dir / "model_table.svg", bbox_inches="tight", format="svg")
-    plt.close()
+    # Create tables directory if it doesn't exist
+    tables_dir = results_dir / "tables"
+    tables_dir.mkdir(parents=True, exist_ok=True)
+
+    # Save as markdown
+    md_data.to_markdown(tables_dir / "model_table.md", index=False)
+
+    # Save as HTML with basic styling
+    html_table = html_data.to_html(
+        index=False, escape=False
+    )  # Don't escape HTML in cells
+    styled_html = f"""
+    <html>
+    <head>
+        <style>
+            table {{ border-collapse: collapse; width: 100%; }}
+            th, td {{ padding: 8px; text-align: left; border: 1px solid #ddd; }}
+            th {{ background-color: #E6E6E6; }}
+            tr:nth-child(even) {{ background-color: #f9f9f9; }}
+            td {{ word-break: break-word; }}
+            .github-urls {{ max-width: 300px; }}
+            a {{ color: #0366d6; text-decoration: none; }}
+            a:hover {{ text-decoration: underline; }}
+        </style>
+    </head>
+    <body>
+        <h2>Foundation Models Overview</h2>
+        {html_table}
+    </body>
+    </html>
+    """
+    with open(tables_dir / "model_table.html", "w") as f:
+        f.write(styled_html)
 
 
 def create_timeline_visualization(
-    df: pd.DataFrame, project_fields: Dict[str, List[str]], images_dir: Path
+    df: pd.DataFrame, project_fields: Dict[str, List[str]], results_dir: Path
 ) -> None:
     """Create a timeline visualization showing models and their scientific fields."""
+    # Create images directory if it doesn't exist
+    images_dir = results_dir / "images"
+    images_dir.mkdir(parents=True, exist_ok=True)
+
     # Filter out models without dates
     df_with_dates = df[df["publication_date"].notna()].copy()
 
@@ -222,8 +327,12 @@ def create_timeline_visualization(
     plt.close()
 
 
-def create_affiliation_visualization(df: pd.DataFrame, images_dir: Path) -> None:
+def create_affiliation_visualization(df: pd.DataFrame, results_dir: Path) -> None:
     """Create visualization showing the frequency of affiliations across papers."""
+    # Create images directory if it doesn't exist
+    images_dir = results_dir / "images"
+    images_dir.mkdir(parents=True, exist_ok=True)
+
     # Load affiliation mapping from CSV in resources directory
     mapping_path = Path(__file__).parent / "resources" / "affiliations.csv"
     if not mapping_path.exists():
@@ -345,10 +454,14 @@ def create_category_wordclouds(
     categories: List[str],
     title_prefix: str,
     output_file: str,
-    images_dir: Path,
+    results_dir: Path,
     n_cols: int = 2,
 ) -> None:
     """Create word cloud visualizations for categories in a column."""
+    # Create images directory if it doesn't exist
+    images_dir = results_dir / "images"
+    images_dir.mkdir(parents=True, exist_ok=True)
+
     # Create a figure with subplots for each category
     n_rows = (len(categories) + n_cols - 1) // n_cols
     plt.figure(figsize=(10 * n_cols, 5 * n_rows))
@@ -407,7 +520,7 @@ def create_category_wordclouds(
     plt.close()
 
 
-def create_preprocessing_wordclouds(df: pd.DataFrame, images_dir: Path) -> None:
+def create_preprocessing_wordclouds(df: pd.DataFrame, results_dir: Path) -> None:
     """Create word cloud visualizations for preprocessing categories."""
     categories = [
         "tools",
@@ -425,11 +538,11 @@ def create_preprocessing_wordclouds(df: pd.DataFrame, images_dir: Path) -> None:
         categories=categories,
         title_prefix="Preprocessing",
         output_file="preprocessing_wordclouds.svg",
-        images_dir=images_dir,
+        results_dir=results_dir,
     )
 
 
-def create_dataset_wordclouds(df: pd.DataFrame, images_dir: Path) -> None:
+def create_dataset_wordclouds(df: pd.DataFrame, results_dir: Path) -> None:
     """Create word cloud visualizations for dataset categories."""
     categories = ["modalities"]
     create_category_wordclouds(
@@ -438,12 +551,12 @@ def create_dataset_wordclouds(df: pd.DataFrame, images_dir: Path) -> None:
         categories=categories,
         title_prefix="Dataset",
         output_file="dataset_wordclouds.svg",
-        images_dir=images_dir,
+        results_dir=results_dir,
         n_cols=1,
     )
 
 
-def create_scientific_fields_wordcloud(df: pd.DataFrame, images_dir: Path) -> None:
+def create_scientific_fields_wordcloud(df: pd.DataFrame, results_dir: Path) -> None:
     """Create word cloud visualization for scientific fields."""
     # Define generic terms to filter out (case-insensitive)
     generic_terms = {
@@ -486,12 +599,12 @@ def create_scientific_fields_wordcloud(df: pd.DataFrame, images_dir: Path) -> No
         categories=["scientific_fields"],
         title_prefix="Scientific Fields",
         output_file="scientific_fields_wordcloud.svg",
-        images_dir=images_dir,
+        results_dir=results_dir,
         n_cols=1,
     )
 
 
-def create_training_details_wordclouds(df: pd.DataFrame, images_dir: Path) -> None:
+def create_training_details_wordclouds(df: pd.DataFrame, results_dir: Path) -> None:
     """Create word cloud visualizations for training details categories."""
     categories = [
         "parallelization",
@@ -507,11 +620,11 @@ def create_training_details_wordclouds(df: pd.DataFrame, images_dir: Path) -> No
         categories=categories,
         title_prefix="Training Details",
         output_file="training_details_wordclouds.svg",
-        images_dir=images_dir,
+        results_dir=results_dir,
     )
 
 
-def create_training_platform_wordclouds(df: pd.DataFrame, images_dir: Path) -> None:
+def create_training_platform_wordclouds(df: pd.DataFrame, results_dir: Path) -> None:
     """Create word cloud visualizations for training platform categories."""
     categories = ["cloud_provider", "hpc_system", "training_service", "other_platforms"]
     create_category_wordclouds(
@@ -520,11 +633,11 @@ def create_training_platform_wordclouds(df: pd.DataFrame, images_dir: Path) -> N
         categories=categories,
         title_prefix="Training Platform",
         output_file="training_platform_wordclouds.svg",
-        images_dir=images_dir,
+        results_dir=results_dir,
     )
 
 
-def create_architecture_wordclouds(df: pd.DataFrame, images_dir: Path) -> None:
+def create_architecture_wordclouds(df: pd.DataFrame, results_dir: Path) -> None:
     """Create word cloud visualizations for architecture categories."""
     categories = ["model_type", "architecture_type", "key_components"]
     create_category_wordclouds(
@@ -533,11 +646,11 @@ def create_architecture_wordclouds(df: pd.DataFrame, images_dir: Path) -> None:
         categories=categories,
         title_prefix="Architecture",
         output_file="architecture_wordclouds.svg",
-        images_dir=images_dir,
+        results_dir=results_dir,
     )
 
 
-def create_compute_resources_wordclouds(df: pd.DataFrame, images_dir: Path) -> None:
+def create_compute_resources_wordclouds(df: pd.DataFrame, results_dir: Path) -> None:
     """Create word cloud visualizations for compute resources categories."""
     categories = ["training_time", "cost_estimate", "gpu_type", "other_hardware"]
     create_category_wordclouds(
@@ -546,5 +659,5 @@ def create_compute_resources_wordclouds(df: pd.DataFrame, images_dir: Path) -> N
         categories=categories,
         title_prefix="Compute Resources",
         output_file="compute_resources_wordclouds.svg",
-        images_dir=images_dir,
+        results_dir=results_dir,
     )

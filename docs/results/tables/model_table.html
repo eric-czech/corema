@@ -1,0 +1,2408 @@
+
+    <html>
+    <head>
+        <style>
+            table { border-collapse: collapse; width: 100%; }
+            th, td { padding: 8px; text-align: left; border: 1px solid #ddd; }
+            th { background-color: #E6E6E6; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            td { word-break: break-word; }
+            .github-urls { max-width: 300px; }
+            a { color: #0366d6; text-decoration: none; }
+            a:hover { text-decoration: underline; }
+        </style>
+    </head>
+    <body>
+        <h2>Foundation Models Overview</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Project ID</th>
+      <th>Project Name</th>
+      <th>Publication Date</th>
+      <th>Paper Title</th>
+      <th>PDF URL</th>
+      <th>GitHub URLs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>regiontrans</td>
+      <td>RegionTrans</td>
+      <td>2018-02</td>
+      <td>Cross-City Transfer Learning for Deep Spatio-Temporal Prediction</td>
+      <td><a href="https://arxiv.org/pdf/1802.00386">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemberta2</td>
+      <td>ChemBERTa-2</td>
+      <td>2021-01</td>
+      <td>ChemBERTa-2: Towards Chemical Foundation Models</td>
+      <td><a href="http://arxiv.org/pdf/2209.01712">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>temporalneighborhoodcoding</td>
+      <td>TemporalNeighborhoodCoding</td>
+      <td>2021-06</td>
+      <td>UNSUPERVISED REPRESENTATION LEARNING FOR TIME SERIES WITH TEMPORAL NEIGHBORHOOD CODING</td>
+      <td><a href="https://arxiv.org/pdf/2106.00750">arxiv.org</a></td>
+      <td><a href="https://github.com/White-Link/UnsupervisedScalableRepresentationLearningTimeSeries">White-Link/UnsupervisedScalableRepresentationLearningTimeSeries</a>, <a href="https://github.com/sanatonek/TNC_representation_learning">sanatonek/TNC_representation_learning</a></td>
+    </tr>
+    <tr>
+      <td>tstcc</td>
+      <td>TSTCC</td>
+      <td>2021-06</td>
+      <td>Time-Series Representation Learning via Temporal and Contextual Contrasting</td>
+      <td><a href="https://arxiv.org/pdf/2106.14112">arxiv.org</a></td>
+      <td><a href="https://github.com/emadeldeen24/TS-TCC">emadeldeen24/TS-TCC</a></td>
+    </tr>
+    <tr>
+      <td>alphafold</td>
+      <td>AlphaFold</td>
+      <td>2021-07</td>
+      <td>Highly accurate protein structure prediction with AlphaFold</td>
+      <td><a href="https://www.nature.com/articles/s41586-021-03819-2.pdf">nature.com</a></td>
+      <td><a href="https://github.com/deepmind/alphafold">deepmind/alphafold</a></td>
+    </tr>
+    <tr>
+      <td>dnabert</td>
+      <td>DNABERT</td>
+      <td>2021-09</td>
+      <td>DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2020.09.17.301879v1.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/jerryji1993/DNABERT">jerryji1993/DNABERT</a></td>
+    </tr>
+    <tr>
+      <td>enformer</td>
+      <td>Enformer</td>
+      <td>2021-10</td>
+      <td>Effective gene expression prediction from sequence by integrating long-range interactions</td>
+      <td><a href="https://www.nature.com/articles/s41592-021-01252-x.pdf">nature.com</a></td>
+      <td><a href="https://github.com/calico/basenji">calico/basenji</a>, <a href="https://github.com/deepmind/deepmind-research">deepmind/deepmind-research</a></td>
+    </tr>
+    <tr>
+      <td>cost</td>
+      <td>CoST</td>
+      <td>2022-02</td>
+      <td>COST: CONTRASTIVE LEARNING OF DISENTANGLED SEASONAL-TREND REPRESENTATIONS FOR TIME SERIES FORECASTING</td>
+      <td><a href="https://arxiv.org/pdf/2202.01575">arxiv.org</a></td>
+      <td><a href="https://github.com/salesforce/CoST">salesforce/CoST</a></td>
+    </tr>
+    <tr>
+      <td>fourcastnet</td>
+      <td>FourCastNet</td>
+      <td>2022-02</td>
+      <td>FourCastNet: Accelerating Global High-Resolution Weather Forecasting using Adaptive Fourier Neural Operators</td>
+      <td><a href="https://arxiv.org/pdf/2208.05419">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fourcastnet</td>
+      <td>FourCastNet</td>
+      <td>2022-02</td>
+      <td>FourCastNet: Accelerating Global High-Resolution Weather Forecasting using Adaptive Fourier Neural Operators</td>
+      <td><a href="https://arxiv.org/pdf/2208.05419">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dinomm</td>
+      <td>DINO-MM</td>
+      <td>2022-04</td>
+      <td>SELF-SUPERVISED VISION TRANSFORMERS FOR JOINT SAR-OPTICAL REPRESENTATION LEARNING</td>
+      <td><a href="https://arxiv.org/pdf/2204.05381">arxiv.org</a></td>
+      <td><a href="https://github.com/zhu-xlab/DINO-MM">zhu-xlab/DINO-MM</a></td>
+    </tr>
+    <tr>
+      <td>chemistryfm</td>
+      <td>ChemistryFM</td>
+      <td>2022-05</td>
+      <td>Foundation Models of Scientific Knowledge for Chemistry: Opportunities, Challenges and Lessons Learned</td>
+      <td><a href="https://aclanthology.org/2022.bigscience-1.12.pdf">aclanthology.org</a></td>
+      <td><a href="https://github.com/EleutherAI/gpt-neox">EleutherAI/gpt-neox</a></td>
+    </tr>
+    <tr>
+      <td>coca</td>
+      <td>CoCa</td>
+      <td>2022-05</td>
+      <td>CoCa: Contrastive Captioners are Image-Text Foundation Models</td>
+      <td><a href="https://arxiv.org/pdf/2205.01917">arxiv.org</a></td>
+      <td><a href="https://github.com/google-research/google-research">google-research/google-research</a></td>
+    </tr>
+    <tr>
+      <td>deepsnr</td>
+      <td>DeepSNR</td>
+      <td>2022-07</td>
+      <td>DeepSNR: A deep learning foundation for oﬄine gravitational wave detection</td>
+      <td><a href="http://arxiv.org/pdf/2207.04749">arxiv.org</a></td>
+      <td><a href="https://github.com/mbandrews/gw-analysis">mbandrews/gw-analysis</a></td>
+    </tr>
+    <tr>
+      <td>molecularmultimodalfoundationmodel</td>
+      <td>MolecularMultimodalFoundationModel</td>
+      <td>2022-09</td>
+      <td>A Molecular Multimodal Foundation Model Associating Molecule Graphs with Natural Language</td>
+      <td><a href="http://arxiv.org/pdf/2209.05481">arxiv.org</a></td>
+      <td><a href="https://github.com/BingSu12/MoMu">BingSu12/MoMu</a>, <a href="https://github.com/calvin-zcx/moflow">calvin-zcx/moflow</a>, <a href="https://github.com/yangzhao1230/GraphTextRetrieval">yangzhao1230/GraphTextRetrieval</a></td>
+    </tr>
+    <tr>
+      <td>pathologyexpertfm</td>
+      <td>PathologyExpertFM</td>
+      <td>2022-09</td>
+      <td>Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning</td>
+      <td><a href="https://www.nature.com/articles/s41551-022-00936-9.pdf">nature.com</a></td>
+      <td><a href="https://github.com/rajpurkarlab/CheXzero">rajpurkarlab/CheXzero</a></td>
+    </tr>
+    <tr>
+      <td>chestxrayfm</td>
+      <td>ChestXrayFM</td>
+      <td>2022-09</td>
+      <td>Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning</td>
+      <td><a href="https://www.nature.com/articles/s41551-022-00936-9.pdf">nature.com</a></td>
+      <td><a href="https://github.com/rajpurkarlab/CheXzero">rajpurkarlab/CheXzero</a></td>
+    </tr>
+    <tr>
+      <td>medclip</td>
+      <td>MedCLIP</td>
+      <td>2022-10</td>
+      <td>MedCLIP: Contrastive Learning from Unpaired Medical Images and Text</td>
+      <td><a href="https://arxiv.org/pdf/2210.10163">arxiv.org</a></td>
+      <td><a href="https://github.com/RyanWangZf/MedCLIP">RyanWangZf/MedCLIP</a></td>
+    </tr>
+    <tr>
+      <td>genslms</td>
+      <td>GenSLMs</td>
+      <td>2022-11</td>
+      <td>GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics</td>
+      <td><a href="https://www.biorxiv.org/content/biorxiv/early/2022/11/23/2022.10.10.511571.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/ramanathanlab/genslm">ramanathanlab/genslm</a></td>
+    </tr>
+    <tr>
+      <td>patchtst</td>
+      <td>PatchTST</td>
+      <td>2022-11</td>
+      <td>A TIME SERIES IS WORTH 64 WORDS: LONG-TERM FORECASTING WITH TRANSFORMERS</td>
+      <td><a href="https://arxiv.org/pdf/2211.14730">arxiv.org</a></td>
+      <td><a href="https://github.com/zhouhaoyi/ETDataset">zhouhaoyi/ETDataset</a></td>
+    </tr>
+    <tr>
+      <td>internimage</td>
+      <td>InternImage</td>
+      <td>2022-11</td>
+      <td>InternImage: Exploring Large-Scale Vision Foundation Models with Deformable Convolutions</td>
+      <td><a href="https://arxiv.org/pdf/2211.05778">arxiv.org</a></td>
+      <td><a href="https://github.com/OpenGVLab/InternImage">OpenGVLab/InternImage</a></td>
+    </tr>
+    <tr>
+      <td>gatortron</td>
+      <td>GatorTron</td>
+      <td>2022-12</td>
+      <td>A large language model for electronic health records</td>
+      <td><a href="https://www.nature.com/articles/s41746-022-00742-2.pdf">nature.com</a></td>
+      <td><a href="https://github.com/NVIDIA/Megatron-LM">NVIDIA/Megatron-LM</a>, <a href="https://github.com/NVIDIA/NeMo">NVIDIA/NeMo</a>, <a href="https://github.com/uf-hobi-informatics-lab/GatorTron">uf-hobi-informatics-lab/GatorTron</a></td>
+    </tr>
+    <tr>
+      <td>internvideo</td>
+      <td>InternVideo</td>
+      <td>2022-12</td>
+      <td>InternVideo: General Video Foundation Models via Generative and Discriminative Learning</td>
+      <td><a href="https://arxiv.org/pdf/2212.03191">arxiv.org</a></td>
+      <td><a href="https://github.com/OpenGVLab/InternVideo">OpenGVLab/InternVideo</a></td>
+    </tr>
+    <tr>
+      <td>scalemae</td>
+      <td>ScaleMAE</td>
+      <td>2022-12</td>
+      <td>Scale-MAE: A Scale-Aware Masked Autoencoder for Multiscale Geospatial Representation Learning</td>
+      <td><a href="https://arxiv.org/pdf/2212.14532">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>clipdrivenuniversalmodel</td>
+      <td>CLIPDrivenUniversalModel</td>
+      <td>2023-01</td>
+      <td>CLIP-Driven Universal Model for Organ Segmentation and Tumor Detection</td>
+      <td><a href="https://arxiv.org/pdf/2301.00785">arxiv.org</a></td>
+      <td><a href="https://github.com/ljwztc/CLIP-Driven-Universal-Model">ljwztc/CLIP-Driven-Universal-Model</a>, <a href="https://github.com/openai/CLIP">openai/CLIP</a></td>
+    </tr>
+    <tr>
+      <td>biovilt</td>
+      <td>BioViLT</td>
+      <td>2023-01</td>
+      <td>Learning to Exploit Temporal Structure for Biomedical Vision–Language Processing</td>
+      <td><a href="https://arxiv.org/pdf/2301.04558">arxiv.org</a></td>
+      <td><a href="https://github.com/farrell236/mimic-cxr">farrell236/mimic-cxr</a></td>
+    </tr>
+    <tr>
+      <td>vertexaitextbison</td>
+      <td>VertexAITextBison</td>
+      <td>2023-01</td>
+      <td>Effectiveness of Generative Artificial Intelligence for Scientific Content Analysis</td>
+      <td><a href="https://kclpure.kcl.ac.uk/portal/files/231724989/text_summarization_with_generative_models_pure.pdf">kclpure.kcl.ac.uk</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>timae</td>
+      <td>TiMAE</td>
+      <td>2023-01</td>
+      <td>TI-MAE: SELF-SUPERVISED MASKED TIME SERIES AUTOENCODERS</td>
+      <td><a href="https://arxiv.org/pdf/2301.08871">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>weatherfm</td>
+      <td>WeatherFM</td>
+      <td>2023-01</td>
+      <td>Prompt Federated Learning for Weather Forecasting: Toward Foundation Models on Meteorological Data</td>
+      <td><a href="https://arxiv.org/pdf/2301.09152">arxiv.org</a></td>
+      <td><a href="https://github.com/shengchaochen82/MetePFL">shengchaochen82/MetePFL</a></td>
+    </tr>
+    <tr>
+      <td>proteindt</td>
+      <td>ProteinDT</td>
+      <td>2023-02</td>
+      <td>A Text-guided Protein Design Framework</td>
+      <td><a href="https://arxiv.org/pdf/2302.04611">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>simmtm</td>
+      <td>SimMTM</td>
+      <td>2023-02</td>
+      <td>SimMTM: A Simple Pre-Training Framework for Masked Time-Series Modeling</td>
+      <td><a href="https://arxiv.org/pdf/2302.00861">arxiv.org</a></td>
+      <td><a href="https://github.com/thuml/SimMTM">thuml/SimMTM</a></td>
+    </tr>
+    <tr>
+      <td>chatcad</td>
+      <td>ChatCAD</td>
+      <td>2023-02</td>
+      <td>ChatCAD: Interactive Computer-Aided Diagnosis on Medical Image using Large Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2302.07257">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>streetclip</td>
+      <td>StreetCLIP</td>
+      <td>2023-02</td>
+      <td>LEARNING GENERALIZED ZERO-SHOT LEARNERS FOR OPEN-DOMAIN IMAGE GEOLOCALIZATION</td>
+      <td><a href="https://arxiv.org/pdf/2302.00275">arxiv.org</a></td>
+      <td><a href="https://github.com/lugiavn/revisiting-im2gps">lugiavn/revisiting-im2gps</a></td>
+    </tr>
+    <tr>
+      <td>ptunifier</td>
+      <td>PTUnifier</td>
+      <td>2023-02</td>
+      <td>Towards Unifying Medical Vision-and-Language Pre-training via Soft Prompts</td>
+      <td><a href="https://arxiv.org/pdf/2302.08958">arxiv.org</a></td>
+      <td><a href="https://github.com/zhjohnchan/PTUnifier">zhjohnchan/PTUnifier</a></td>
+    </tr>
+    <tr>
+      <td>geopile</td>
+      <td>GeoPile</td>
+      <td>2023-02</td>
+      <td>Towards Geospatial Foundation Models via Continual Pretraining</td>
+      <td><a href="https://arxiv.org/pdf/2302.04476">arxiv.org</a></td>
+      <td><a href="https://github.com/mmendiet/GFM">mmendiet/GFM</a></td>
+    </tr>
+    <tr>
+      <td>simts</td>
+      <td>SimTS</td>
+      <td>2023-03</td>
+      <td>SimTS: Rethinking Contrastive Representation Learning for Time Series Forecasting</td>
+      <td><a href="https://arxiv.org/pdf/2303.18205">arxiv.org</a></td>
+      <td><a href="https://github.com/laiguokun/multivariate-time-series-data">laiguokun/multivariate-time-series-data</a></td>
+    </tr>
+    <tr>
+      <td>pmcclip</td>
+      <td>PMCCLIP</td>
+      <td>2023-03</td>
+      <td>PMC-CLIP: Contrastive Language-Image Pre-training using Biomedical Documents</td>
+      <td><a href="https://arxiv.org/pdf/2303.07240">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>deidgpt</td>
+      <td>DeIDGPT</td>
+      <td>2023-03</td>
+      <td>DeID-GPT: Zero-shot Medical Text De-Identification by GPT-4</td>
+      <td><a href="https://arxiv.org/pdf/2303.11032">arxiv.org</a></td>
+      <td><a href="https://github.com/yhydhx/ChatGPT-API">yhydhx/ChatGPT-API</a></td>
+    </tr>
+    <tr>
+      <td>chatdoctor</td>
+      <td>ChatDoctor</td>
+      <td>2023-03</td>
+      <td>ChatDoctor: A Medical Chat Model Fine-Tuned on a Large Language Model Meta-AI (LLaMA) Using Medical Domain Knowledge</td>
+      <td><a href="https://arxiv.org/pdf/2303.14070">arxiv.org</a></td>
+      <td><a href="https://github.com/Kent0n-Li/ChatDoctor">Kent0n-Li/ChatDoctor</a></td>
+    </tr>
+    <tr>
+      <td>dinomc</td>
+      <td>DINOMC</td>
+      <td>2023-03</td>
+      <td>Extending global-local view alignment for self-supervised learning with remote sensing imagery</td>
+      <td><a href="https://arxiv.org/pdf/2303.06670">arxiv.org</a></td>
+      <td><a href="https://github.com/WennyXY/DINO-MC">WennyXY/DINO-MC</a></td>
+    </tr>
+    <tr>
+      <td>biomedclip</td>
+      <td>BiomedCLIP</td>
+      <td>2023-03</td>
+      <td>BiomedCLIP: a multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs</td>
+      <td><a href="https://arxiv.org/pdf/2303.00915">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>biomedclip</td>
+      <td>BiomedCLIP</td>
+      <td>2023-03</td>
+      <td>BiomedCLIP: a multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs</td>
+      <td><a href="https://arxiv.org/pdf/2303.00915">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>clinicaltextanalysisfm</td>
+      <td>ClinicalTextAnalysisFM</td>
+      <td>2023-03</td>
+      <td>Leveraging Foundation Models for Clinical Text Analysis</td>
+      <td><a href="http://arxiv.org/pdf/2303.13314">arxiv.org</a></td>
+      <td><a href="https://github.com/dmis-lab/biobert">dmis-lab/biobert</a></td>
+    </tr>
+    <tr>
+      <td>wmae</td>
+      <td>WMAE</td>
+      <td>2023-04</td>
+      <td>W-MAE: Pre-trained weather model with masked autoencoder for multi-variable weather forecasting</td>
+      <td><a href="https://arxiv.org/pdf/2304.08754">arxiv.org</a></td>
+      <td><a href="https://github.com/Gufrannn/W-MAE">Gufrannn/W-MAE</a></td>
+    </tr>
+    <tr>
+      <td>medalpaca</td>
+      <td>MedAlpaca</td>
+      <td>2023-04</td>
+      <td>MEDALPACA - AN OPEN-SOURCE COLLECTION OF MEDICAL CONVERSATIONAL AI MODELS AND TRAINING DATA</td>
+      <td><a href="https://arxiv.org/pdf/2304.08247">arxiv.org</a></td>
+      <td><a href="https://github.com/tatsu-lab/stanford_alpaca">tatsu-lab/stanford_alpaca</a></td>
+    </tr>
+    <tr>
+      <td>pmcllama</td>
+      <td>PMCLLaMA</td>
+      <td>2023-04</td>
+      <td>PMC-LLaMA: Towards Building Open-source Language Models for Medicine</td>
+      <td><a href="https://arxiv.org/pdf/2304.14454">arxiv.org</a></td>
+      <td><a href="https://github.com/chaoyi-wu/PMC-LLaMA">chaoyi-wu/PMC-LLaMA</a>, <a href="https://github.com/tatsu-lab/stanford_alpaca">tatsu-lab/stanford_alpaca</a></td>
+    </tr>
+    <tr>
+      <td>fengwu</td>
+      <td>FengWu</td>
+      <td>2023-04</td>
+      <td>FENGWU: PUSHING THE SKILLFUL GLOBAL MEDIUM-RANGE WEATHER FORECAST BEYOND 10 DAYS LEAD</td>
+      <td><a href="https://arxiv.org/pdf/2304.02948">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>samed</td>
+      <td>SAMed</td>
+      <td>2023-04</td>
+      <td>Customized Segment Anything Model for Medical Image Segmentation</td>
+      <td><a href="https://arxiv.org/pdf/2304.13785">arxiv.org</a></td>
+      <td><a href="https://github.com/hitachinsk/SAMed">hitachinsk/SAMed</a></td>
+    </tr>
+    <tr>
+      <td>medicalsamadapter</td>
+      <td>MedicalSAMAdapter</td>
+      <td>2023-04</td>
+      <td>Medical SAM Adapter: Adapting Segment Anything Model for Medical Image Segmentation</td>
+      <td><a href="https://arxiv.org/pdf/2304.12620">arxiv.org</a></td>
+      <td><a href="https://github.com/KidsWithTokens/Medical-SAM-Adapter">KidsWithTokens/Medical-SAM-Adapter</a></td>
+    </tr>
+    <tr>
+      <td>medsam</td>
+      <td>MedSAM</td>
+      <td>2023-04</td>
+      <td>Segment Anything in Medical Images</td>
+      <td><a href="https://arxiv.org/pdf/2304.12306">arxiv.org</a></td>
+      <td><a href="https://github.com/bowang-lab/MedSAM">bowang-lab/MedSAM</a></td>
+    </tr>
+    <tr>
+      <td>billionscalefm</td>
+      <td>BillionScaleFM</td>
+      <td>2023-04</td>
+      <td>A Billion-scale Foundation Model for Remote Sensing Images</td>
+      <td><a href="https://arxiv.org/pdf/2304.05215">arxiv.org</a></td>
+      <td><a href="https://github.com/open-mmlab/mmrotate">open-mmlab/mmrotate</a>, <a href="https://github.com/open-mmlab/mmsegmentation">open-mmlab/mmsegmentation</a></td>
+    </tr>
+    <tr>
+      <td>segmentanythingmodel</td>
+      <td>SegmentAnythingModel</td>
+      <td>2023-04</td>
+      <td>Generalist Vision Foundation Models for Medical Imaging: A Case Study of Segment Anything Model on Zero-Shot Medical Segmentation</td>
+      <td><a href="https://arxiv.org/pdf/2304.12637v2">arxiv.org</a></td>
+      <td><a href="https://github.com/facebookresearch/segment-anything">facebookresearch/segment-anything</a>, <a href="https://github.com/hwei-hw/Generalist_Vision_Foundation_Models_for_Medical_Imaging">hwei-hw/Generalist_Vision_Foundation_Models_for_Medical_Imaging</a></td>
+    </tr>
+    <tr>
+      <td>geoaifm</td>
+      <td>GeoAIFM</td>
+      <td>2023-04</td>
+      <td>On the Opportunities and Challenges of Foundation Models for Geospatial Artificial Intelligence</td>
+      <td><a href="https://arxiv.org/pdf/2304.06798">arxiv.org</a></td>
+      <td><a href="https://github.com/salesforce/BLIP">salesforce/BLIP</a></td>
+    </tr>
+    <tr>
+      <td>billionscaleremotesensingfm</td>
+      <td>BillionScaleRemoteSensingFM</td>
+      <td>2023-04</td>
+      <td>A Billion-scale Foundation Model for Remote Sensing Images</td>
+      <td><a href="https://arxiv.org/pdf/2304.05215">arxiv.org</a></td>
+      <td><a href="https://github.com/open-mmlab/mmrotate">open-mmlab/mmrotate</a>, <a href="https://github.com/open-mmlab/mmsegmentation">open-mmlab/mmsegmentation</a></td>
+    </tr>
+    <tr>
+      <td>visualchatgpt</td>
+      <td>VisualChatGPT</td>
+      <td>2023-04</td>
+      <td>The Potential of Visual ChatGPT For Remote Sensing</td>
+      <td><a href="https://arxiv.org/pdf/2304.13009">arxiv.org</a></td>
+      <td><a href="https://github.com/microsoft/TaskMatrix">microsoft/TaskMatrix</a>, <a href="https://github.com/microsoft/visual-chatgpt">microsoft/visual-chatgpt</a></td>
+    </tr>
+    <tr>
+      <td>presto</td>
+      <td>Presto</td>
+      <td>2023-04</td>
+      <td>Lightweight, Pre-trained Transformers for Remote Sensing Timeseries</td>
+      <td><a href="https://arxiv.org/pdf/2304.14065">arxiv.org</a></td>
+      <td><a href="https://github.com/nasaharvest/presto">nasaharvest/presto</a></td>
+    </tr>
+    <tr>
+      <td>medpalm2</td>
+      <td>MedPaLM2</td>
+      <td>2023-05</td>
+      <td>Towards Expert-Level Medical Question Answering with Large Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2305.09617">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>geneformer</td>
+      <td>GeneFormer</td>
+      <td>2023-05</td>
+      <td>Transfer learning enables predictions in network biology</td>
+      <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10949956/pdf/nihms-1971443.pdf">pmc.ncbi.nlm.nih.gov</a></td>
+      <td><a href="https://github.com/jkobject/geneformer">jkobject/geneformer</a></td>
+    </tr>
+    <tr>
+      <td>scholarembeddingmodel</td>
+      <td>ScholarEmbeddingModel</td>
+      <td>2023-05</td>
+      <td>A Novel Scholar Embedding Model for Interdisciplinary Collaboration</td>
+      <td><a href="https://arxiv.org/pdf/2303.09607">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fedpod</td>
+      <td>FedPoD</td>
+      <td>2023-05</td>
+      <td>Federated Prompt Learning for Weather Foundation Models on Devices</td>
+      <td><a href="https://arxiv.org/pdf/2305.14244">arxiv.org</a></td>
+      <td><a href="https://github.com/shengchaochen82/FedPoD">shengchaochen82/FedPoD</a></td>
+    </tr>
+    <tr>
+      <td>biomedgpt</td>
+      <td>BiomedGPT</td>
+      <td>2023-05</td>
+      <td>BiomedGPT: A generalist vision–language foundation model for diverse biomedical tasks</td>
+      <td><a href="https://arxiv.org/pdf/2305.17100">arxiv.org</a></td>
+      <td><a href="https://github.com/taokz/BiomedGPT">taokz/BiomedGPT</a></td>
+    </tr>
+    <tr>
+      <td>pmcvqa</td>
+      <td>PMC-VQA</td>
+      <td>2023-05</td>
+      <td>PMC-VQA: Visual Instruction Tuning for Medical Visual Question Answering</td>
+      <td><a href="https://arxiv.org/pdf/2305.10415">arxiv.org</a></td>
+      <td><a href="https://github.com/xiaoman-zhang/PMC-VQA">xiaoman-zhang/PMC-VQA</a></td>
+    </tr>
+    <tr>
+      <td>medpalm2</td>
+      <td>MedPaLM2</td>
+      <td>2023-05</td>
+      <td>Towards Expert-Level Medical Question Answering with Large Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2305.09617">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>medblip</td>
+      <td>MedBLIP</td>
+      <td>2023-05</td>
+      <td>MedBLIP: Bootstrapping Language-Image Pre-training from 3D Medical Images and Texts</td>
+      <td><a href="https://arxiv.org/pdf/2305.10799">arxiv.org</a></td>
+      <td><a href="https://github.com/Qybc/MedBLIP">Qybc/MedBLIP</a></td>
+    </tr>
+    <tr>
+      <td>csp</td>
+      <td>CSP</td>
+      <td>2023-05</td>
+      <td>CSP: Self-Supervised Contrastive Spatial Pre-Training for Geospatial-Visual Representations</td>
+      <td><a href="https://arxiv.org/pdf/2305.01118">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>clinicalgpt</td>
+      <td>ClinicalGPT</td>
+      <td>2023-06</td>
+      <td>CLINICALGPT: LARGE LANGUAGE MODELS FINETUNED WITH DIVERSE MEDICAL DATA AND COMPREHENSIVE EVALUATION</td>
+      <td><a href="https://arxiv.org/pdf/2306.09968">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ssl4eol</td>
+      <td>SSL4EOL</td>
+      <td>2023-06</td>
+      <td>SSL4EO-L: Datasets and Foundation Models for Landsat Imagery</td>
+      <td><a href="http://arxiv.org/pdf/2306.09424">arxiv.org</a></td>
+      <td><a href="https://github.com/microsoft/torchgeo">microsoft/torchgeo</a></td>
+    </tr>
+    <tr>
+      <td>rsprompter</td>
+      <td>RSPrompter</td>
+      <td>2023-06</td>
+      <td>RSPrompter: Learning to Prompt for Remote Sensing Instance Segmentation based on Visual Foundation Model</td>
+      <td><a href="https://arxiv.org/pdf/2306.16269">arxiv.org</a></td>
+      <td><a href="https://github.com/facebookresearch/segment-anything">facebookresearch/segment-anything</a></td>
+    </tr>
+    <tr>
+      <td>tsmixer</td>
+      <td>TSMixer</td>
+      <td>2023-06</td>
+      <td>TSMixer: Lightweight MLP-Mixer Model for Multivariate Time Series Forecasting</td>
+      <td><a href="https://arxiv.org/pdf/2306.09364">arxiv.org</a></td>
+      <td><a href="https://github.com/zhouhaoyi/ETDataset">zhouhaoyi/ETDataset</a></td>
+    </tr>
+    <tr>
+      <td>georsclip</td>
+      <td>GeoRSCLIP</td>
+      <td>2023-06</td>
+      <td>RS5M and GeoRSCLIP: A Large Scale Vision-Language Dataset and A Large Vision-Language Model for Remote Sensing</td>
+      <td><a href="https://arxiv.org/pdf/2306.11300">arxiv.org</a></td>
+      <td><a href="https://github.com/ShivamShrirao/diffusers">ShivamShrirao/diffusers</a>, <a href="https://github.com/huggingface/diffusers">huggingface/diffusers</a>, <a href="https://github.com/om-ai-lab/RS5M">om-ai-lab/RS5M</a></td>
+    </tr>
+    <tr>
+      <td>remoteclip</td>
+      <td>RemoteCLIP</td>
+      <td>2023-06</td>
+      <td>RemoteCLIP: A Vision Language Foundation Model for Remote Sensing</td>
+      <td><a href="https://arxiv.org/pdf/2306.11029">arxiv.org</a></td>
+      <td><a href="https://github.com/ChenDelong1999/RemoteCLIP">ChenDelong1999/RemoteCLIP</a></td>
+    </tr>
+    <tr>
+      <td>autosam</td>
+      <td>AutoSAM</td>
+      <td>2023-06</td>
+      <td>How to Efficiently Adapt Large Segmentation Model(SAM) to Medical Images</td>
+      <td><a href="https://arxiv.org/pdf/2306.13731">arxiv.org</a></td>
+      <td><a href="https://github.com/xhu248/AutoSAM">xhu248/AutoSAM</a></td>
+    </tr>
+    <tr>
+      <td>lvmmed</td>
+      <td>LVMMed</td>
+      <td>2023-06</td>
+      <td>LVM-Med: Learning Large-Scale Self-Supervised Vision Models for Medical Imaging via Second-order Graph Matching</td>
+      <td><a href="https://arxiv.org/pdf/2306.11925">arxiv.org</a></td>
+      <td><a href="https://github.com/duyhominhnguyen/LVM-Med">duyhominhnguyen/LVM-Med</a></td>
+    </tr>
+    <tr>
+      <td>xraygpt</td>
+      <td>XrayGPT</td>
+      <td>2023-06</td>
+      <td>XrayGPT: Chest Radiographs Summarization using Large Medical Vision-Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2306.07971">arxiv.org</a></td>
+      <td><a href="https://github.com/mbzuai-oryx/XrayGPT">mbzuai-oryx/XrayGPT</a></td>
+    </tr>
+    <tr>
+      <td>k2</td>
+      <td>K2</td>
+      <td>2023-06</td>
+      <td>K2: A Foundation Language Model for Geoscience Knowledge Understanding and Utilization</td>
+      <td><a href="https://arxiv.org/pdf/2306.05064">arxiv.org</a></td>
+      <td><a href="https://github.com/davendw49/k2">davendw49/k2</a></td>
+    </tr>
+    <tr>
+      <td>llavamed</td>
+      <td>LLaVAMed</td>
+      <td>2023-06</td>
+      <td>LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day</td>
+      <td><a href="https://arxiv.org/pdf/2306.00890">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>heartbeit</td>
+      <td>HeartBEiT</td>
+      <td>2023-06</td>
+      <td>A foundational vision transformer improves diagnostic performance for electrocardiograms</td>
+      <td><a href="https://www.nature.com/articles/s41746-023-00840-9.pdf">nature.com</a></td>
+      <td><a href="https://github.com/akhilvaid/HeartBEiT">akhilvaid/HeartBEiT</a></td>
+    </tr>
+    <tr>
+      <td>ssl4eol</td>
+      <td>SSL4EOL</td>
+      <td>2023-06</td>
+      <td>SSL4EO-L: Datasets and Foundation Models for Landsat Imagery</td>
+      <td><a href="http://arxiv.org/pdf/2306.09424">arxiv.org</a></td>
+      <td><a href="https://github.com/microsoft/torchgeo">microsoft/torchgeo</a></td>
+    </tr>
+    <tr>
+      <td>scfoundation</td>
+      <td>scFoundation</td>
+      <td>2023-06</td>
+      <td>Large Scale Foundation Model on Single-cell Transcriptomics</td>
+      <td><a href="https://www.biorxiv.org/content/biorxiv/early/2023/06/21/2023.05.29.542705.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/CompBioT/SCAD">CompBioT/SCAD</a>, <a href="https://github.com/biomap-research/scFoundation">biomap-research/scFoundation</a>, <a href="https://github.com/kimmo1019/DeepCDR">kimmo1019/DeepCDR</a>, <a href="https://github.com/snap-stanford/GEARS">snap-stanford/GEARS</a></td>
+    </tr>
+    <tr>
+      <td>medpalmm</td>
+      <td>MedPaLMM</td>
+      <td>2023-07</td>
+      <td>Towards Generalist Biomedical AI</td>
+      <td><a href="https://arxiv.org/pdf/2307.14334">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>geogpt</td>
+      <td>GeoGPT</td>
+      <td>2023-07</td>
+      <td>GeoGPT: Understanding and Processing Geospatial Tasks through An Autonomous GPT</td>
+      <td><a href="https://arxiv.org/pdf/2307.07930">arxiv.org</a></td>
+      <td><a href="https://github.com/hwchase17/langchain">hwchase17/langchain</a></td>
+    </tr>
+    <tr>
+      <td>cite</td>
+      <td>CITE</td>
+      <td>2023-07</td>
+      <td>Text-guided Foundation Model Adaptation for Pathological Image Classification</td>
+      <td><a href="https://arxiv.org/pdf/2307.14901">arxiv.org</a></td>
+      <td><a href="https://github.com/Yunkun-Zhang/CITE">Yunkun-Zhang/CITE</a></td>
+    </tr>
+    <tr>
+      <td>kobo</td>
+      <td>KoBo</td>
+      <td>2023-07</td>
+      <td>Knowledge Boosting: Rethinking Medical Contrastive Vision-Language Pre-Training</td>
+      <td><a href="https://arxiv.org/pdf/2307.07246">arxiv.org</a></td>
+      <td><a href="https://github.com/ChenXiaoFei-CS/KoBo">ChenXiaoFei-CS/KoBo</a></td>
+    </tr>
+    <tr>
+      <td>panguweather</td>
+      <td>PanguWeather</td>
+      <td>2023-07</td>
+      <td>Accurate medium-range global weather forecasting with 3D neural networks</td>
+      <td><a href="https://www.nature.com/articles/s41586-023-06185-3.pdf">nature.com</a></td>
+      <td><a href="https://github.com/198808xc/Pangu-Weather">198808xc/Pangu-Weather</a></td>
+    </tr>
+    <tr>
+      <td>llamascitune</td>
+      <td>LLaMASciTune</td>
+      <td>2023-07</td>
+      <td>SCITUNE: Aligning Large Language Models with Scientific Multimodal</td>
+      <td><a href="http://arxiv.org/pdf/2307.01139">arxiv.org</a></td>
+      <td><a href="https://github.com/FranxYao/chain-of-thought-hub">FranxYao/chain-of-thought-hub</a>, <a href="https://github.com/pnnl/scitune">pnnl/scitune</a></td>
+    </tr>
+    <tr>
+      <td>rsgpt</td>
+      <td>RSGPT</td>
+      <td>2023-07</td>
+      <td>RSGPT: A Remote Sensing Vision Language Model and Benchmark</td>
+      <td><a href="https://arxiv.org/pdf/2307.15266">arxiv.org</a></td>
+      <td><a href="https://github.com/Lavender105/RSGPT">Lavender105/RSGPT</a></td>
+    </tr>
+    <tr>
+      <td>medflamingo</td>
+      <td>MedFlamingo</td>
+      <td>2023-07</td>
+      <td>MED-FLAMINGO: A MULTIMODAL MEDICAL FEW-SHOT LEARNER</td>
+      <td><a href="https://arxiv.org/pdf/2307.15189">arxiv.org</a></td>
+      <td><a href="https://github.com/snap-stanford/med-flamingo">snap-stanford/med-flamingo</a></td>
+    </tr>
+    <tr>
+      <td>sam</td>
+      <td>SAM</td>
+      <td>2023-07</td>
+      <td>SAM-U: Multi-box prompts triggered uncertainty estimation for reliable SAM in medical image</td>
+      <td><a href="https://arxiv.org/pdf/2307.04973">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>plip</td>
+      <td>PLIP</td>
+      <td>2023-08</td>
+      <td>Unknown</td>
+      <td><a href="https://www.nature.com/articles/s41591-023-02504-3.pdf">nature.com</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>aigoms</td>
+      <td>AI-GOMS</td>
+      <td>2023-08</td>
+      <td>AI-GOMS: Large AI-Driven Global Ocean Modeling System</td>
+      <td><a href="https://arxiv.org/pdf/2308.03152">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>radfm</td>
+      <td>RadFM</td>
+      <td>2023-08</td>
+      <td>Towards Generalist Foundation Model for Radiology by Leveraging Web-scale 2D&3D Medical Data</td>
+      <td><a href="https://arxiv.org/pdf/2308.02463">arxiv.org</a></td>
+      <td><a href="https://github.com/chaoyi-wu/RadFM">chaoyi-wu/RadFM</a></td>
+    </tr>
+    <tr>
+      <td>promptgat</td>
+      <td>PromptGAT</td>
+      <td>2023-08</td>
+      <td>Prompt to Transfer: Sim-to-Real Transfer for Traffic Signal Control with Prompt Learning</td>
+      <td><a href="https://arxiv.org/pdf/2308.14284">arxiv.org</a></td>
+      <td><a href="https://github.com/DaRL-LibSignal/PromptGAT">DaRL-LibSignal/PromptGAT</a></td>
+    </tr>
+    <tr>
+      <td>llm4ts</td>
+      <td>LLM4TS</td>
+      <td>2023-08</td>
+      <td>LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters</td>
+      <td><a href="https://arxiv.org/pdf/2308.08469">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>elixr</td>
+      <td>ELIXR</td>
+      <td>2023-08</td>
+      <td>ELIXR: Towards a general purpose X-ray artificial intelligence system through alignment of large language models and radiology vision encoders</td>
+      <td><a href="https://arxiv.org/pdf/2308.01317">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>llmmob</td>
+      <td>LLMMob</td>
+      <td>2023-08</td>
+      <td>Where Would I Go Next? Large Language Models as Human Mobility Predictors</td>
+      <td><a href="https://arxiv.org/pdf/2308.15197">arxiv.org</a></td>
+      <td><a href="https://github.com/xlwang233/LLM-Mob">xlwang233/LLM-Mob</a></td>
+    </tr>
+    <tr>
+      <td>sammed2d</td>
+      <td>SAMMed2D</td>
+      <td>2023-08</td>
+      <td>SAM-Med2D</td>
+      <td><a href="https://arxiv.org/pdf/2308.16184">arxiv.org</a></td>
+      <td><a href="https://github.com/facebookresearch/segment-anything">facebookresearch/segment-anything</a>, <a href="https://github.com/uni-medical/SAM-Med2D">uni-medical/SAM-Med2D</a></td>
+    </tr>
+    <tr>
+      <td>codellama</td>
+      <td>CodeLlama</td>
+      <td>2023-08</td>
+      <td>Code Llama: Open Foundation Models for Code</td>
+      <td><a href="https://arxiv.org/pdf/2308.12950">arxiv.org</a></td>
+      <td><a href="https://github.com/facebookresearch/CodeLlama">facebookresearch/CodeLlama</a>, <a href="https://github.com/facebookresearch/codellama">facebookresearch/codellama</a>, <a href="https://github.com/microsoft/guidance">microsoft/guidance</a></td>
+    </tr>
+    <tr>
+      <td>radfm</td>
+      <td>RadFM</td>
+      <td>2023-08</td>
+      <td>Towards Generalist Foundation Model for Radiology by Leveraging Web-scale 2D&3D Medical Data</td>
+      <td><a href="https://arxiv.org/pdf/2308.02463">arxiv.org</a></td>
+      <td><a href="https://github.com/chaoyi-wu/RadFM">chaoyi-wu/RadFM</a></td>
+    </tr>
+    <tr>
+      <td>jiang</td>
+      <td>JIANG</td>
+      <td>2023-08</td>
+      <td>Chinese Open Foundation Language Model</td>
+      <td><a href="https://arxiv.org/pdf/2308.00624">arxiv.org</a></td>
+      <td><a href="https://github.com/EleutherAI/lm-evaluation-harness">EleutherAI/lm-evaluation-harness</a></td>
+    </tr>
+    <tr>
+      <td>test</td>
+      <td>TEST</td>
+      <td>2023-08</td>
+      <td>TEST: TEXT PROTOTYPE ALIGNED EMBEDDING TO ACTIVATE LLM’S ABILITY FOR TIME SERIES</td>
+      <td><a href="https://arxiv.org/pdf/2308.08241">arxiv.org</a></td>
+      <td><a href="https://github.com/SCXsunchenxi/TEST">SCXsunchenxi/TEST</a></td>
+    </tr>
+    <tr>
+      <td>controlnet</td>
+      <td>ControlNet</td>
+      <td>2023-08</td>
+      <td>Generate Your Own Scotland: Satellite Image Generation Conditioned on Maps</td>
+      <td><a href="https://arxiv.org/pdf/2308.16648">arxiv.org</a></td>
+      <td><a href="https://github.com/miquel-espinosa/map-sat">miquel-espinosa/map-sat</a></td>
+    </tr>
+    <tr>
+      <td>radiologyllama2</td>
+      <td>RadiologyLlama2</td>
+      <td>2023-09</td>
+      <td>Radiology-Llama2: Best-in-Class Large Language Model for Radiology</td>
+      <td><a href="https://arxiv.org/pdf/2309.06419">arxiv.org</a></td>
+      <td><a href="https://github.com/WangRongsheng/XrayGLM">WangRongsheng/XrayGLM</a>, <a href="https://github.com/baichuan-inc/baichuan-7B">baichuan-inc/baichuan-7B</a>, <a href="https://github.com/openmedlab/XrayPULSE">openmedlab/XrayPULSE</a></td>
+    </tr>
+    <tr>
+      <td>trafficgpt</td>
+      <td>TrafficGPT</td>
+      <td>2023-09</td>
+      <td>TrafficGPT: Viewing, Processing and Interacting with Traffic Foundation Models</td>
+      <td><a href="https://arxiv.org/pdf/2309.06719">arxiv.org</a></td>
+      <td><a href="https://github.com/lijlansg/TrafficGPT">lijlansg/TrafficGPT</a></td>
+    </tr>
+    <tr>
+      <td>astrollama</td>
+      <td>AstroLLaMA</td>
+      <td>2023-09</td>
+      <td>AstroLLaMA: Towards Specialized Foundation Models in Astronomy</td>
+      <td><a href="https://arxiv.org/pdf/2309.06126">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>virchow</td>
+      <td>Virchow</td>
+      <td>2023-09</td>
+      <td>Virchow: A Million-Slide Digital Pathology Foundation Model</td>
+      <td><a href="https://arxiv.org/pdf/2309.07778">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>maco</td>
+      <td>MaCo</td>
+      <td>2023-09</td>
+      <td>Enhancing Representation in Radiography-Reports Foundation Model: A Granular Alignment Algorithm Using Masked Contrastive Learning</td>
+      <td><a href="https://arxiv.org/pdf/2309.05904">arxiv.org</a></td>
+      <td><a href="https://github.com/SZUHvern/MaCo">SZUHvern/MaCo</a></td>
+    </tr>
+    <tr>
+      <td>geoclip</td>
+      <td>GeoCLIP</td>
+      <td>2023-09</td>
+      <td>GeoCLIP: Clip-Inspired Alignment between Locations and Images for Effective Worldwide Geo-localization</td>
+      <td><a href="https://arxiv.org/pdf/2309.16020">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>retfound</td>
+      <td>RETFound</td>
+      <td>2023-09</td>
+      <td>A foundation model for generalizable disease detection from retinal images</td>
+      <td><a href="https://www.nature.com/articles/s41586-023-06555-x.pdf">nature.com</a></td>
+      <td><a href="https://github.com/rmaphoh/RETFound_MAE">rmaphoh/RETFound_MAE</a>, <a href="https://github.com/uw-biomedical-ml/RETFound_MAE">uw-biomedical-ml/RETFound_MAE</a></td>
+    </tr>
+    <tr>
+      <td>decur</td>
+      <td>DeCUR</td>
+      <td>2023-09</td>
+      <td>Decoupling Common and Unique Representations for Multimodal Self-supervised Learning</td>
+      <td><a href="https://arxiv.org/pdf/2309.05300">arxiv.org</a></td>
+      <td><a href="https://github.com/zhu-xlab/DeCUR">zhu-xlab/DeCUR</a></td>
+    </tr>
+    <tr>
+      <td>textbasedsceneembedding</td>
+      <td>TextBasedSceneEmbedding</td>
+      <td>2023-09</td>
+      <td>Can you text what is happening? Integrating pre-trained language encoders into trajectory prediction models for autonomous driving</td>
+      <td><a href="https://arxiv.org/pdf/2309.05282">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ringmolite</td>
+      <td>RingMoLite</td>
+      <td>2023-09</td>
+      <td>RingMo-lite: A Remote Sensing Multi-task Lightweight Network with CNN-Transformer Hybrid Framework</td>
+      <td><a href="https://arxiv.org/pdf/2309.09003">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>earthpt</td>
+      <td>EarthPT</td>
+      <td>2023-09</td>
+      <td>EarthPT: a time series foundation model for Earth Observation</td>
+      <td><a href="https://arxiv.org/pdf/2309.07207">arxiv.org</a></td>
+      <td><a href="https://github.com/aspiaspace/EarthPT">aspiaspace/EarthPT</a></td>
+    </tr>
+    <tr>
+      <td>diseasedetectionfm</td>
+      <td>DiseaseDetectionFM</td>
+      <td>2023-09</td>
+      <td>A foundation model for generalizable disease detection from retinal images</td>
+      <td><a href="https://www.nature.com/articles/s41586-023-06555-x.pdf">nature.com</a></td>
+      <td><a href="https://github.com/rmaphoh/RETFound_MAE">rmaphoh/RETFound_MAE</a>, <a href="https://github.com/uw-biomedical-ml/RETFound_MAE">uw-biomedical-ml/RETFound_MAE</a></td>
+    </tr>
+    <tr>
+      <td>canam5</td>
+      <td>CanAM5</td>
+      <td>2023-09</td>
+      <td>The Canadian Atmospheric Model version 5 (CanAM5.0.3)</td>
+      <td><a href="https://gmd.copernicus.org/articles/16/5427/2023/gmd-16-5427-2023.pdf">gmd.copernicus.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>llmtimeseriesfm</td>
+      <td>LLMTimeSeriesFM</td>
+      <td>2023-10</td>
+      <td>Large Language Models Are Zero-Shot Time Series Forecasters</td>
+      <td><a href="https://arxiv.org/pdf/2310.07820">arxiv.org</a></td>
+      <td><a href="https://github.com/ngruver/llmtime">ngruver/llmtime</a></td>
+    </tr>
+    <tr>
+      <td>bianque</td>
+      <td>BianQue</td>
+      <td>2023-10</td>
+      <td>BianQue: Balancing the Questioning and Suggestion Ability of Health LLMs with Multi-turn Health Conversations Polished by ChatGPT</td>
+      <td><a href="https://arxiv.org/pdf/2310.15896">arxiv.org</a></td>
+      <td><a href="https://github.com/scutcyr/BianQue">scutcyr/BianQue</a></td>
+    </tr>
+    <tr>
+      <td>ctxmim</td>
+      <td>CtxMIM</td>
+      <td>2023-10</td>
+      <td>CtxMIM: Context-Enhanced Masked Image Modeling for Remote Sensing Image Understanding</td>
+      <td><a href="https://arxiv.org/pdf/2310.00022">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fgmae</td>
+      <td>FGMAE</td>
+      <td>2023-10</td>
+      <td>Feature Guided Masked Autoencoder for Self-supervised Learning in Remote Sensing</td>
+      <td><a href="https://arxiv.org/pdf/2310.18653">arxiv.org</a></td>
+      <td><a href="https://github.com/zhu-xlab/FGMAE">zhu-xlab/FGMAE</a></td>
+    </tr>
+    <tr>
+      <td>timellm</td>
+      <td>TimeLLM</td>
+      <td>2023-10</td>
+      <td>TIME-LLM: TIME SERIES FORECASTING BY REPROGRAMMING LARGE LANGUAGE MODELS</td>
+      <td><a href="https://arxiv.org/pdf/2310.01728">arxiv.org</a></td>
+      <td><a href="https://github.com/KimMeen/Time-LLM">KimMeen/Time-LLM</a></td>
+    </tr>
+    <tr>
+      <td>unitime</td>
+      <td>UniTime</td>
+      <td>2023-10</td>
+      <td>UniTime: A Language-Empowered Unified Model for Cross-Domain Time Series Forecasting</td>
+      <td><a href="https://arxiv.org/pdf/2310.09751">arxiv.org</a></td>
+      <td><a href="https://github.com/DAMO-DI-ML/NeurIPS2023-One-Fits-All">DAMO-DI-ML/NeurIPS2023-One-Fits-All</a>, <a href="https://github.com/UniTime/UniTime">UniTime/UniTime</a>, <a href="https://github.com/liuxu77/UniTime">liuxu77/UniTime</a></td>
+    </tr>
+    <tr>
+      <td>prithvi</td>
+      <td>Prithvi</td>
+      <td>2023-10</td>
+      <td>Prithvi WxC: Foundation Model for Weather and Climate</td>
+      <td><a href="https://arxiv.org/pdf/2409.13598">arxiv.org</a></td>
+      <td><a href="https://github.com/NASA-IMPACT/Prithvi-WxC">NASA-IMPACT/Prithvi-WxC</a>, <a href="https://github.com/NASA-IMPACT/gravity-wave-finetuning">NASA-IMPACT/gravity-wave-finetuning</a></td>
+    </tr>
+    <tr>
+      <td>lagllama</td>
+      <td>LagLlama</td>
+      <td>2023-10</td>
+      <td>Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting</td>
+      <td><a href="https://arxiv.org/pdf/2310.08278">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cityfm</td>
+      <td>CityFM</td>
+      <td>2023-10</td>
+      <td>City Foundation Models for Learning General Purpose Representations from OpenStreetMap</td>
+      <td><a href="https://arxiv.org/pdf/2310.00583">arxiv.org</a></td>
+      <td><a href="https://github.com/PasqualeTurin/CityFM">PasqualeTurin/CityFM</a></td>
+    </tr>
+    <tr>
+      <td>alpacare</td>
+      <td>AlpaCare</td>
+      <td>2023-10</td>
+      <td>ALPACARE: INSTRUCTION FINE-TUNED LARGE LANGUAGE MODELS FOR MEDICAL APPLICATIONS</td>
+      <td><a href="https://arxiv.org/pdf/2310.14558">arxiv.org</a></td>
+      <td><a href="https://github.com/XZhang97666/AlpaCare">XZhang97666/AlpaCare</a></td>
+    </tr>
+    <tr>
+      <td>qilinmedvl</td>
+      <td>QilinMedVL</td>
+      <td>2023-10</td>
+      <td>Qilin-Med-VL: Towards Chinese Large Vision-Language Model for General Healthcare</td>
+      <td><a href="https://arxiv.org/pdf/2310.17956v2">arxiv.org</a></td>
+      <td><a href="https://github.com/williamliujl/Qilin-Med-VL">williamliujl/Qilin-Med-VL</a></td>
+    </tr>
+    <tr>
+      <td>prithvi</td>
+      <td>Prithvi</td>
+      <td>2023-10</td>
+      <td>Prithvi WxC: Foundation Model for Weather and Climate</td>
+      <td><a href="https://arxiv.org/pdf/2409.13598">arxiv.org</a></td>
+      <td><a href="https://github.com/NASA-IMPACT/Prithvi-WxC">NASA-IMPACT/Prithvi-WxC</a>, <a href="https://github.com/NASA-IMPACT/gravity-wave-finetuning">NASA-IMPACT/gravity-wave-finetuning</a></td>
+    </tr>
+    <tr>
+      <td>languagempc</td>
+      <td>LanguageMPC</td>
+      <td>2023-10</td>
+      <td>LANGUAGEMPC: LARGE LANGUAGE MODELS AS DE- CISION MAKERS FOR AUTONOMOUS DRIVING</td>
+      <td><a href="https://arxiv.org/pdf/2310.03026">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tempo</td>
+      <td>TEMPO</td>
+      <td>2023-10</td>
+      <td>TEMPO: PROMPT-BASED GENERATIVE PRE-TRAINED TRANSFORMER FOR TIME SERIES FORECASTING</td>
+      <td><a href="https://arxiv.org/pdf/2310.04948">arxiv.org</a></td>
+      <td><a href="https://github.com/DC-research/TEMPO">DC-research/TEMPO</a></td>
+    </tr>
+    <tr>
+      <td>gptdriver</td>
+      <td>GPTDriver</td>
+      <td>2023-10</td>
+      <td>GPT-DRIVER: LEARNING TO DRIVE WITH GPT</td>
+      <td><a href="https://arxiv.org/pdf/2310.01415">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>geollm</td>
+      <td>GeoLLM</td>
+      <td>2023-10</td>
+      <td>GEOLLM: EXTRACTING GEOSPATIAL KNOWLEDGE FROM LARGE LANGUAGE MODELS</td>
+      <td><a href="https://arxiv.org/pdf/2310.06213">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>qilinmed</td>
+      <td>QilinMed</td>
+      <td>2023-10</td>
+      <td>Qilin-Med: Multi-stage Knowledge Injection Advanced Medical Large Language Model</td>
+      <td><a href="https://arxiv.org/pdf/2310.09089">arxiv.org</a></td>
+      <td><a href="https://github.com/SCIR-HI/Med-ChatGLM">SCIR-HI/Med-ChatGLM</a>, <a href="https://github.com/Toyhom/Chinese-medical-dialogue-data">Toyhom/Chinese-medical-dialogue-data</a>, <a href="https://github.com/shibing624/MedicalGPT">shibing624/MedicalGPT</a></td>
+    </tr>
+    <tr>
+      <td>satclip</td>
+      <td>SatCLIP</td>
+      <td>2023-11</td>
+      <td>SatCLIP: Global, General-Purpose Location Embeddings with Satellite Imagery</td>
+      <td><a href="https://arxiv.org/pdf/2311.17179">arxiv.org</a></td>
+      <td><a href="https://github.com/microsoft/satclip">microsoft/satclip</a></td>
+    </tr>
+    <tr>
+      <td>spectralgpt</td>
+      <td>SpectralGPT</td>
+      <td>2023-11</td>
+      <td>SpectralGPT: Spectral Remote Sensing Foundation Model</td>
+      <td><a href="https://arxiv.org/pdf/2311.07113">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gatgpt</td>
+      <td>GATGPT</td>
+      <td>2023-11</td>
+      <td>GATGPT: A PRE-TRAINED LARGE LANGUAGE MODEL WITH GRAPH ATTENTION NETWORK FOR SPATIOTEMPORAL IMPUTATION</td>
+      <td><a href="https://arxiv.org/pdf/2311.14332">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>universalcellembeddings</td>
+      <td>UniversalCellEmbeddings</td>
+      <td>2023-11</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2023.11.28.568918">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>hyenadna</td>
+      <td>HyenaDNA</td>
+      <td>2023-11</td>
+      <td>HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution</td>
+      <td><a href="https://arxiv.org/pdf/2306.15794">arxiv.org</a></td>
+      <td><a href="https://github.com/HazyResearch/hyena-dna">HazyResearch/hyena-dna</a></td>
+    </tr>
+    <tr>
+      <td>gptst</td>
+      <td>GPTST</td>
+      <td>2023-11</td>
+      <td>GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks</td>
+      <td><a href="https://arxiv.org/pdf/2311.04245">arxiv.org</a></td>
+      <td><a href="https://github.com/HKUDS/GPT-ST">HKUDS/GPT-ST</a></td>
+    </tr>
+    <tr>
+      <td>forge</td>
+      <td>FORGE</td>
+      <td>2023-11</td>
+      <td>FORGE: Pre-Training Open Foundation Models for Science</td>
+      <td><a href="https://dl.acm.org/doi/pdf/10.1145/3581784.3613215">dl.acm.org</a></td>
+      <td><a href="https://github.com/EleutherAI/gpt-neox">EleutherAI/gpt-neox</a>, <a href="https://github.com/at-aaims/forge">at-aaims/forge</a></td>
+    </tr>
+    <tr>
+      <td>universalcellembeddings</td>
+      <td>UniversalCellEmbeddings</td>
+      <td>2023-11</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2023.11.28.568918">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pttuning</td>
+      <td>PTTuning</td>
+      <td>2023-11</td>
+      <td>PT-Tuning: Bridging the Gap between Time Series Masked Reconstruction and Forecasting via Prompt Token Tuning</td>
+      <td><a href="https://arxiv.org/pdf/2311.03768">arxiv.org</a></td>
+      <td><a href="https://github.com/zhouhaoyi/ETDataset">zhouhaoyi/ETDataset</a></td>
+    </tr>
+    <tr>
+      <td>croma</td>
+      <td>CROMA</td>
+      <td>2023-11</td>
+      <td>CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders</td>
+      <td><a href="https://arxiv.org/pdf/2311.00566">arxiv.org</a></td>
+      <td><a href="https://github.com/antofuller/CROMA">antofuller/CROMA</a></td>
+    </tr>
+    <tr>
+      <td>sarjepa</td>
+      <td>SARJEPA</td>
+      <td>2023-11</td>
+      <td>Predicting Gradient is Better: Exploring Self-Supervised Learning for SAR ATR with a Joint-Embedding Predictive Architecture</td>
+      <td><a href="https://arxiv.org/pdf/2311.15153v4">arxiv.org</a></td>
+      <td><a href="https://github.com/waterdisappear/SAR-JEPA">waterdisappear/SAR-JEPA</a></td>
+    </tr>
+    <tr>
+      <td>spectralgpt</td>
+      <td>SpectralGPT</td>
+      <td>2023-11</td>
+      <td>SpectralGPT: Spectral Remote Sensing Foundation Model</td>
+      <td><a href="https://arxiv.org/pdf/2311.07113">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>geosam</td>
+      <td>GeoSAM</td>
+      <td>2023-11</td>
+      <td>GeoSAM: Fine-tuning SAM with Multi-Modal Prompts for Mobility Infrastructure Segmentation</td>
+      <td><a href="https://arxiv.org/pdf/2311.11319">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>meditron70b</td>
+      <td>MEDITRON70B</td>
+      <td>2023-11</td>
+      <td>MEDITRON-70B: Scaling Medical Pretraining for Large Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2311.16079">arxiv.org</a></td>
+      <td><a href="https://github.com/allenai/dolma">allenai/dolma</a>, <a href="https://github.com/epfLLM/Megatron-LLM">epfLLM/Megatron-LLM</a>, <a href="https://github.com/epfLLM/meditron">epfLLM/meditron</a>, <a href="https://github.com/epfLLM/megatron-LLM">epfLLM/megatron-LLM</a>, <a href="https://github.com/openai/openai-python">openai/openai-python</a>, <a href="https://github.com/togethercomputer/RedPajama-Data">togethercomputer/RedPajama-Data</a></td>
+    </tr>
+    <tr>
+      <td>llmmpe</td>
+      <td>LLMMPE</td>
+      <td>2023-11</td>
+      <td>Exploring Large Language Models for Human Mobility Prediction under Public Events</td>
+      <td><a href="https://arxiv.org/pdf/2311.17351">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gpt4v</td>
+      <td>GPT4V</td>
+      <td>2023-12</td>
+      <td>On the Promises and Challenges of Multimodal Foundation Models for Geographical, Environmental, Agricultural, and Urban Planning Applications</td>
+      <td><a href="https://arxiv.org/pdf/2312.17016">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>usat</td>
+      <td>USat</td>
+      <td>2023-12</td>
+      <td>USat: A Unified Self-Supervised Encoder for Multi-Sensor Satellite Imagery</td>
+      <td><a href="https://arxiv.org/pdf/2312.02199">arxiv.org</a></td>
+      <td><a href="https://github.com/stanfordmlgroup/USat">stanfordmlgroup/USat</a></td>
+    </tr>
+    <tr>
+      <td>fomonet</td>
+      <td>FoMoNet</td>
+      <td>2023-12</td>
+      <td>FoMo-Bench: a multi-modal, multi-scale and multi-task Forest Monitoring Benchmark for remote sensing foundation models</td>
+      <td><a href="https://arxiv.org/pdf/2312.10114">arxiv.org</a></td>
+      <td><a href="https://github.com/RolnickLab/FoMo-Bench">RolnickLab/FoMo-Bench</a></td>
+    </tr>
+    <tr>
+      <td>skysense</td>
+      <td>SkySense</td>
+      <td>2023-12</td>
+      <td>SkySense: A Multi-Modal Remote Sensing Foundation Model Towards Universal Interpretation for Earth Observation Imagery</td>
+      <td><a href="https://arxiv.org/pdf/2312.10115">arxiv.org</a></td>
+      <td><a href="https://github.com/open-mmlab/mmcv">open-mmlab/mmcv</a>, <a href="https://github.com/open-mmlab/mmpretrain">open-mmlab/mmpretrain</a>, <a href="https://github.com/open-mmlab/mmsegmentation">open-mmlab/mmsegmentation</a>, <a href="https://github.com/sentinel-hub/sentinel2-cloud-detector">sentinel-hub/sentinel2-cloud-detector</a></td>
+    </tr>
+    <tr>
+      <td>ban</td>
+      <td>BAN</td>
+      <td>2023-12</td>
+      <td>A New Learning Paradigm for Foundation Model-based Remote Sensing Change Detection</td>
+      <td><a href="https://arxiv.org/pdf/2312.01163">arxiv.org</a></td>
+      <td><a href="https://github.com/Open-CD/Open-CD">Open-CD/Open-CD</a>, <a href="https://github.com/likyoo/BAN">likyoo/BAN</a></td>
+    </tr>
+    <tr>
+      <td>timetravellingpixels</td>
+      <td>TimeTravellingPixels</td>
+      <td>2023-12</td>
+      <td>TIME TRAVELLING PIXELS: BITEMPORAL FEATURES INTEGRATION WITH FOUNDATION MODEL FOR REMOTE SENSING IMAGE CHANGE DETECTION</td>
+      <td><a href="https://arxiv.org/pdf/2312.16202">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>internvl</td>
+      <td>InternVL</td>
+      <td>2023-12</td>
+      <td>InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks</td>
+      <td><a href="https://arxiv.org/pdf/2312.14238">arxiv.org</a></td>
+      <td><a href="https://github.com/InternLM/InternLM">InternLM/InternLM</a>, <a href="https://github.com/LAION-AI/CLIP_benchmark">LAION-AI/CLIP_benchmark</a>, <a href="https://github.com/OpenGVLab/InternVL">OpenGVLab/InternVL</a></td>
+    </tr>
+    <tr>
+      <td>urbangenerativeintelligence</td>
+      <td>UrbanGenerativeIntelligence</td>
+      <td>2023-12</td>
+      <td>URBAN GENERATIVE INTELLIGENCE (UGI): A FOUNDATIONAL PLATFORM FOR AGENTS IN EMBODIED CITY ENVIRONMENT</td>
+      <td><a href="https://arxiv.org/pdf/2312.11813">arxiv.org</a></td>
+      <td><a href="https://github.com/huggingface/trl">huggingface/trl</a>, <a href="https://github.com/tatsu-lab/stanford_alpaca">tatsu-lab/stanford_alpaca</a>, <a href="https://github.com/tsinghua-fib-lab/UGI">tsinghua-fib-lab/UGI</a></td>
+    </tr>
+    <tr>
+      <td>pond</td>
+      <td>POND</td>
+      <td>2023-12</td>
+      <td>POND: Multi-Source Time Series Domain Adaptation with Information-Aware Prompt Tuning</td>
+      <td><a href="https://arxiv.org/pdf/2312.12276">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>diffusionsat</td>
+      <td>DiffusionSat</td>
+      <td>2023-12</td>
+      <td>DIFFUSIONSAT: A GENERATIVE FOUNDATION MODEL FOR SATELLITE IMAGERY</td>
+      <td><a href="https://arxiv.org/pdf/2312.03606">arxiv.org</a></td>
+      <td><a href="https://github.com/huggingface/diffusers">huggingface/diffusers</a></td>
+    </tr>
+    <tr>
+      <td>skyscript</td>
+      <td>SkyScript</td>
+      <td>2023-12</td>
+      <td>SkyScript: A Large and Semantically Diverse Vision-Language Dataset for Remote Sensing</td>
+      <td><a href="https://arxiv.org/pdf/2312.12856">arxiv.org</a></td>
+      <td><a href="https://github.com/wangzhecheng/SkyScript">wangzhecheng/SkyScript</a></td>
+    </tr>
+    <tr>
+      <td>llmlight</td>
+      <td>LLMLight</td>
+      <td>2023-12</td>
+      <td>LLMLight: Large Language Models as Traffic Signal Control Agents</td>
+      <td><a href="https://arxiv.org/pdf/2312.16044">arxiv.org</a></td>
+      <td><a href="https://github.com/usail-hkust/LLMTSCS">usail-hkust/LLMTSCS</a></td>
+    </tr>
+    <tr>
+      <td>climax</td>
+      <td>ClimaX</td>
+      <td>2023-12</td>
+      <td>ClimaX: A foundation model for weather and climate</td>
+      <td><a href="https://arxiv.org/pdf/2301.10343">arxiv.org</a></td>
+      <td><a href="https://github.com/microsoft/ClimaX">microsoft/ClimaX</a></td>
+    </tr>
+    <tr>
+      <td>phileobench</td>
+      <td>PhilEOBench</td>
+      <td>2024-01</td>
+      <td>PhilEO BENCH: EVALUATING GEO-SPATIAL FOUNDATION MODELS</td>
+      <td><a href="https://arxiv.org/pdf/2401.04464">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tinytimemixers</td>
+      <td>TinyTimeMixers</td>
+      <td>2024-01</td>
+      <td>Tiny Time Mixers (TTMs): Fast Pre-trained Models for Enhanced Zero/Few-Shot Forecasting of Multivariate Time Series</td>
+      <td><a href="https://arxiv.org/pdf/2401.03955v3">arxiv.org</a></td>
+      <td><a href="https://github.com/BizITObs/BizITObservabilityData">BizITObs/BizITObservabilityData</a>, <a href="https://github.com/DAMO-DI-ML/NeurIPS2023-One-Fits-All">DAMO-DI-ML/NeurIPS2023-One-Fits-All</a>, <a href="https://github.com/ngruver/llmtime">ngruver/llmtime</a>, <a href="https://github.com/thuml/Autoformer">thuml/Autoformer</a>, <a href="https://github.com/yuqinie98/PatchTST">yuqinie98/PatchTST</a>, <a href="https://github.com/zhouhaoyi/ETDataset">zhouhaoyi/ETDataset</a></td>
+    </tr>
+    <tr>
+      <td>stllm</td>
+      <td>STLLM</td>
+      <td>2024-01</td>
+      <td>Spatial-Temporal Large Language Model for Traffic Prediction</td>
+      <td><a href="https://arxiv.org/pdf/2401.10134v2">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>segmentationanythingmodel</td>
+      <td>SegmentationAnythingModel</td>
+      <td>2024-01</td>
+      <td>CHANGE DETECTION BETWEEN OPTICAL REMOTE SENSING IMAGERY AND MAP DATA VIA SEGMENT ANYTHING MODEL (SAM)</td>
+      <td><a href="https://arxiv.org/pdf/2401.09019">arxiv.org</a></td>
+      <td><a href="https://github.com/facebookresearch/segment-anything">facebookresearch/segment-anything</a></td>
+    </tr>
+    <tr>
+      <td>csmae</td>
+      <td>CSMAE</td>
+      <td>2024-01</td>
+      <td>Exploring Masked Autoencoders for Sensor-Agnostic Image Retrieval in Remote Sensing</td>
+      <td><a href="https://arxiv.org/pdf/2401.07782">arxiv.org</a></td>
+      <td><a href="https://github.com/jakhac/CSMAE">jakhac/CSMAE</a></td>
+    </tr>
+    <tr>
+      <td>allspark</td>
+      <td>AllSpark</td>
+      <td>2024-01</td>
+      <td>AllSpark: A Multimodal Spatio-Temporal General Intelligence Model with Thirteen Modalities</td>
+      <td><a href="https://arxiv.org/pdf/2401.00546">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>earthgpt</td>
+      <td>EarthGPT</td>
+      <td>2024-01</td>
+      <td>EarthGPT: A Universal Multi-modal Large Language Model for Multi-sensor Image Comprehension in Remote Sensing Domain</td>
+      <td><a href="https://arxiv.org/pdf/2401.16822">arxiv.org</a></td>
+      <td><a href="https://github.com/wivizhang/EarthGPT">wivizhang/EarthGPT</a></td>
+    </tr>
+    <tr>
+      <td>skyeyegpt</td>
+      <td>SkyEyeGPT</td>
+      <td>2024-01</td>
+      <td>SkyEyeGPT: Unifying Remote Sensing Vision-Language Tasks via Instruction Tuning with Large Language Model</td>
+      <td><a href="https://arxiv.org/pdf/2401.09712">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>himtm</td>
+      <td>HiMTM</td>
+      <td>2024-01</td>
+      <td>HiMTM: Hierarchical Multi-Scale Masked Time Series Modeling with Self-Distillation for Long-Term Forecasting</td>
+      <td><a href="https://arxiv.org/pdf/2401.05012">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ofanet</td>
+      <td>OFANet</td>
+      <td>2024-01</td>
+      <td>ONE FOR ALL: TOWARD UNIFIED FOUNDATION MODELS FOR EARTH VISION</td>
+      <td><a href="https://arxiv.org/pdf/2401.07527">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>swimdiff</td>
+      <td>SwiMDiff</td>
+      <td>2024-01</td>
+      <td>SwiMDiff: Scene-wide Matching Contrastive Learning with Diffusion Constraint for Remote Sensing Image</td>
+      <td><a href="https://arxiv.org/pdf/2401.05093">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gersp</td>
+      <td>GeRSP</td>
+      <td>2024-01</td>
+      <td>Generic Knowledge Boosted Pre-training For Remote Sensing Images</td>
+      <td><a href="https://arxiv.org/pdf/2401.04614">arxiv.org</a></td>
+      <td><a href="https://github.com/floatingstarZ/GeRSP">floatingstarZ/GeRSP</a></td>
+    </tr>
+    <tr>
+      <td>stgllm</td>
+      <td>STGLLM</td>
+      <td>2024-01</td>
+      <td>How Can Large Language Models Understand Spatial-Temporal Data?</td>
+      <td><a href="https://arxiv.org/pdf/2401.14192v1">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>remotesensingchatgpt</td>
+      <td>RemoteSensingChatGPT</td>
+      <td>2024-01</td>
+      <td>Remote Sensing ChatGPT: Solving Remote Sensing Tasks with ChatGPT and Visual Models</td>
+      <td><a href="https://arxiv.org/pdf/2401.09083">arxiv.org</a></td>
+      <td><a href="https://github.com/HaonanGuo/Remote-Sensing-ChatGPT">HaonanGuo/Remote-Sensing-ChatGPT</a></td>
+    </tr>
+    <tr>
+      <td>unist</td>
+      <td>UniST</td>
+      <td>2024-02</td>
+      <td>UniST: A Prompt-Empowered Universal Model for Urban Spatio-Temporal Prediction</td>
+      <td><a href="https://arxiv.org/pdf/2402.11838">arxiv.org</a></td>
+      <td><a href="https://github.com/tsinghua-fib-lab/UniST">tsinghua-fib-lab/UniST</a></td>
+    </tr>
+    <tr>
+      <td>jgrm</td>
+      <td>JGRM</td>
+      <td>2024-02</td>
+      <td>More Than Routing: Joint GPS and Route Modeling for Refine Trajectory Representation Learning</td>
+      <td><a href="https://arxiv.org/pdf/2402.16915v1">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>timer</td>
+      <td>Timer</td>
+      <td>2024-02</td>
+      <td>Timer: Generative Pre-trained Transformers Are Large Time Series Models</td>
+      <td><a href="https://arxiv.org/pdf/2402.02368">arxiv.org</a></td>
+      <td><a href="https://github.com/thuml/Large-Time-Series-Model">thuml/Large-Time-Series-Model</a></td>
+    </tr>
+    <tr>
+      <td>gpht</td>
+      <td>GPHT</td>
+      <td>2024-02</td>
+      <td>Generative Pretrained Hierarchical Transformer for Time Series Forecasting</td>
+      <td><a href="https://arxiv.org/pdf/2402.16516">arxiv.org</a></td>
+      <td><a href="https://github.com/icantnamemyself/GPHT">icantnamemyself/GPHT</a></td>
+    </tr>
+    <tr>
+      <td>scgpt</td>
+      <td>scGPT</td>
+      <td>2024-02</td>
+      <td>scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2023.04.30.538439v2.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/bowang-lab/scGPT">bowang-lab/scGPT</a></td>
+    </tr>
+    <tr>
+      <td>autotimes</td>
+      <td>AutoTimes</td>
+      <td>2024-02</td>
+      <td>AutoTimes: Autoregressive Time Series Forecasters via Large Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2402.02370">arxiv.org</a></td>
+      <td><a href="https://github.com/thuml/AutoTimes">thuml/AutoTimes</a></td>
+    </tr>
+    <tr>
+      <td>transgpt</td>
+      <td>TransGPT</td>
+      <td>2024-02</td>
+      <td>TransGPT: Multi-modal Generative Pre-trained Transformer for Transportation</td>
+      <td><a href="https://arxiv.org/pdf/2402.07233">arxiv.org</a></td>
+      <td><a href="https://github.com/DUOMO/TransGPT">DUOMO/TransGPT</a></td>
+    </tr>
+    <tr>
+      <td>bimedix</td>
+      <td>BiMediX</td>
+      <td>2024-02</td>
+      <td>BiMediX: Bilingual Medical Mixture of Experts LLM</td>
+      <td><a href="https://arxiv.org/pdf/2402.13253">arxiv.org</a></td>
+      <td><a href="https://github.com/mbzuai-oryx/BiMediX">mbzuai-oryx/BiMediX</a></td>
+    </tr>
+    <tr>
+      <td>lhrsbot</td>
+      <td>LHRSBot</td>
+      <td>2024-02</td>
+      <td>LHRS-Bot: Empowering Remote Sensing with VGI-Enhanced Large Multimodal Language Model</td>
+      <td><a href="https://arxiv.org/pdf/2402.02544">arxiv.org</a></td>
+      <td><a href="https://github.com/NJU-LHRS/LHRS-Bot">NJU-LHRS/LHRS-Bot</a></td>
+    </tr>
+    <tr>
+      <td>timesiam</td>
+      <td>TimeSiam</td>
+      <td>2024-02</td>
+      <td>TimeSiam: A Pre-Training Framework for Siamese Time-Series Modeling</td>
+      <td><a href="https://arxiv.org/pdf/2402.02475v1">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>anychange</td>
+      <td>AnyChange</td>
+      <td>2024-02</td>
+      <td>Segment Any Change</td>
+      <td><a href="https://arxiv.org/pdf/2402.01188">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>rscapret</td>
+      <td>RSCapRet</td>
+      <td>2024-02</td>
+      <td>Large Language Models for Captioning and Retrieving Remote Sensing Images</td>
+      <td><a href="https://arxiv.org/pdf/2402.06475">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>noisylabelsegmentation</td>
+      <td>NoisyLabelSegmentation</td>
+      <td>2024-02</td>
+      <td>TASK SPECIFIC PRETRAINING WITH NOISY LABELS FOR REMOTE SENSING IMAGE SEGMENTATION</td>
+      <td><a href="https://arxiv.org/pdf/2402.16164">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vhm</td>
+      <td>VHM</td>
+      <td>2024-03</td>
+      <td>VHM: Versatile and Honest Vision Language Model for Remote Sensing Image Analysis</td>
+      <td><a href="https://arxiv.org/pdf/2403.20213">arxiv.org</a></td>
+      <td><a href="https://github.com/opendatalab/VHM">opendatalab/VHM</a></td>
+    </tr>
+    <tr>
+      <td>uni</td>
+      <td>UNI</td>
+      <td>2024-03</td>
+      <td>Unknown</td>
+      <td><a href="https://www.nature.com/articles/s41591-024-02857-3.epdf">nature.com</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>conch</td>
+      <td>CONCH</td>
+      <td>2024-03</td>
+      <td>Unknown</td>
+      <td><a href="https://www.nature.com/articles/s41591-024-02856-4.epdf">nature.com</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>urbangpt</td>
+      <td>UrbanGPT</td>
+      <td>2024-03</td>
+      <td>UrbanGPT: Spatio-Temporal Large Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2403.00813">arxiv.org</a></td>
+      <td><a href="https://github.com/HKUDS/UrbanGPT">HKUDS/UrbanGPT</a></td>
+    </tr>
+    <tr>
+      <td>dofa</td>
+      <td>DOFA</td>
+      <td>2024-03</td>
+      <td>Neural Plasticity-Inspired Multimodal Foundation Model for Earth Observation</td>
+      <td><a href="https://arxiv.org/pdf/2403.15356">arxiv.org</a></td>
+      <td><a href="https://github.com/zhu-xlab/DOFA">zhu-xlab/DOFA</a></td>
+    </tr>
+    <tr>
+      <td>evo</td>
+      <td>Evo</td>
+      <td>2024-03</td>
+      <td>Sequence modeling and design from molecular to genome scale with Evo</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2024.02.27.582234v2.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/evo-design/evo">evo-design/evo</a>, <a href="https://github.com/togethercomputer/stripedhyena">togethercomputer/stripedhyena</a></td>
+    </tr>
+    <tr>
+      <td>mtp</td>
+      <td>MTP</td>
+      <td>2024-03</td>
+      <td>MTP: Advancing Remote Sensing Foundation Model via Multi-Task Pretraining</td>
+      <td><a href="https://arxiv.org/pdf/2403.13430">arxiv.org</a></td>
+      <td><a href="https://github.com/ViTAE-Transformer/MTP">ViTAE-Transformer/MTP</a>, <a href="https://github.com/likyoo/open-cd">likyoo/open-cd</a>, <a href="https://github.com/open-mmlab/mmpretrain">open-mmlab/mmpretrain</a></td>
+    </tr>
+    <tr>
+      <td>dnabert2</td>
+      <td>DNABERT-2</td>
+      <td>2024-03</td>
+      <td>DNABERT-2: EFFICIENT FOUNDATION MODEL AND BENCHMARK FOR MULTI-SPECIES GENOMES</td>
+      <td><a href="http://arxiv.org/pdf/2306.15006">arxiv.org</a></td>
+      <td><a href="https://github.com/MAGICS-LAB/DNABERT_2">MAGICS-LAB/DNABERT_2</a>, <a href="https://github.com/mosaicml/composer">mosaicml/composer</a></td>
+    </tr>
+    <tr>
+      <td>crsdiff</td>
+      <td>CRSDiff</td>
+      <td>2024-03</td>
+      <td>CRS-Diff: Controllable Remote Sensing Image Generation with Diffusion Model</td>
+      <td><a href="https://arxiv.org/pdf/2403.11614">arxiv.org</a></td>
+      <td><a href="https://github.com/Sonettoo/CRS-Diff">Sonettoo/CRS-Diff</a></td>
+    </tr>
+    <tr>
+      <td>samroad</td>
+      <td>SAMRoad</td>
+      <td>2024-03</td>
+      <td>Segment Anything Model for Road Network Graph Extraction</td>
+      <td><a href="https://arxiv.org/pdf/2403.16051">arxiv.org</a></td>
+      <td><a href="https://github.com/htcr/sam_road">htcr/sam_road</a></td>
+    </tr>
+    <tr>
+      <td>rsbuilding</td>
+      <td>RSBuilding</td>
+      <td>2024-03</td>
+      <td>RSBuilding: Towards General Remote Sensing Image Building Extraction and Change Detection with Foundation Model</td>
+      <td><a href="https://arxiv.org/pdf/2403.07564">arxiv.org</a></td>
+      <td><a href="https://github.com/Meize0729/RSBuilding">Meize0729/RSBuilding</a></td>
+    </tr>
+    <tr>
+      <td>units</td>
+      <td>UniTS</td>
+      <td>2024-03</td>
+      <td>UNITS: A Unified Multi-Task Time Series Model</td>
+      <td><a href="https://arxiv.org/pdf/2403.00131">arxiv.org</a></td>
+      <td><a href="https://github.com/mims-harvard/UniTS">mims-harvard/UniTS</a>, <a href="https://github.com/thuml/Time-Series-Library">thuml/Time-Series-Library</a></td>
+    </tr>
+    <tr>
+      <td>tpllm</td>
+      <td>TPLLM</td>
+      <td>2024-03</td>
+      <td>TPLLM: A Traffic Prediction Framework Based on Pretrained Large Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2403.02221v1">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>drplanner</td>
+      <td>DrPlanner</td>
+      <td>2024-03</td>
+      <td>DrPlanner: Diagnosis and Repair of Motion Planners for Automated Vehicles Using Large Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2403.07470">arxiv.org</a></td>
+      <td><a href="https://github.com/CommonRoad/drplanner">CommonRoad/drplanner</a></td>
+    </tr>
+    <tr>
+      <td>satmae</td>
+      <td>SatMAE++</td>
+      <td>2024-03</td>
+      <td>Rethinking Transformers Pre-training for Multi-Spectral Satellite Imagery</td>
+      <td><a href="https://arxiv.org/pdf/2403.05419">arxiv.org</a></td>
+      <td><a href="https://github.com/techmn/satmae_pp">techmn/satmae_pp</a></td>
+    </tr>
+    <tr>
+      <td>cisen</td>
+      <td>CISEN</td>
+      <td>2024-03</td>
+      <td>LuoJiaHOG: A Hierarchy Oriented Geo-aware Image Caption Dataset for Remote Sensing Image-Text Retrieval</td>
+      <td><a href="https://arxiv.org/pdf/2403.10887">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>lamp</td>
+      <td>LAMP</td>
+      <td>2024-03</td>
+      <td>LAMP: A Language Model on the Map</td>
+      <td><a href="https://arxiv.org/pdf/2403.09059">arxiv.org</a></td>
+      <td><a href="https://github.com/PasqualeTurin/LAMP">PasqualeTurin/LAMP</a></td>
+    </tr>
+    <tr>
+      <td>dnabert2</td>
+      <td>DNABERT-2</td>
+      <td>2024-03</td>
+      <td>DNABERT-2: EFFICIENT FOUNDATION MODEL AND BENCHMARK FOR MULTI-SPECIES GENOMES</td>
+      <td><a href="http://arxiv.org/pdf/2306.15006">arxiv.org</a></td>
+      <td><a href="https://github.com/MAGICS-LAB/DNABERT_2">MAGICS-LAB/DNABERT_2</a>, <a href="https://github.com/mosaicml/composer">mosaicml/composer</a></td>
+    </tr>
+    <tr>
+      <td>omnisat</td>
+      <td>OmniSat</td>
+      <td>2024-04</td>
+      <td>OmniSat: Self-Supervised Modality Fusion for Earth Observation</td>
+      <td><a href="https://arxiv.org/pdf/2404.08351">arxiv.org</a></td>
+      <td><a href="https://github.com/gastruc/OmniSat">gastruc/OmniSat</a></td>
+    </tr>
+    <tr>
+      <td>msgfm</td>
+      <td>msGFM</td>
+      <td>2024-04</td>
+      <td>Bridging Remote Sensors with Multisensor Geospatial Foundation Models</td>
+      <td><a href="https://arxiv.org/pdf/2404.01260">arxiv.org</a></td>
+      <td><a href="https://github.com/boranhan/Geospatial_Foundation_Models">boranhan/Geospatial_Foundation_Models</a></td>
+    </tr>
+    <tr>
+      <td>focal</td>
+      <td>FOCAL</td>
+      <td>2024-04</td>
+      <td>On the Efficiency and Robustness of Vibration-based Foundation Models for IoT Sensing: A Case Study</td>
+      <td><a href="https://arxiv.org/pdf/2404.02461">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>nicheformer</td>
+      <td>Nicheformer</td>
+      <td>2024-04</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.04.15.589472">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>nicheformer</td>
+      <td>Nicheformer</td>
+      <td>2024-04</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.04.15.589472">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>multiagentllmsystem</td>
+      <td>MultiAgentLLMSystem</td>
+      <td>2024-04</td>
+      <td>Replicating a High-Impact Scientific Publication Using Systems of Large Language Models</td>
+      <td><a href="https://www.biorxiv.org/content/biorxiv/early/2024/04/12/2024.04.08.588614.1.full.pdf">biorxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>diversecodesolutionsfm</td>
+      <td>DiverseCodeSolutionsFM</td>
+      <td>2024-04</td>
+      <td>Creative and Correct: Requesting Diverse Code Solutions from AI Foundation Models</td>
+      <td><a href="https://dl.acm.org/doi/pdf/10.1145/3650105.3652302">dl.acm.org</a></td>
+      <td><a href="https://github.com/scottb341/diverse_code_generator">scottb341/diverse_code_generator</a></td>
+    </tr>
+    <tr>
+      <td>aurora</td>
+      <td>Aurora</td>
+      <td>2024-05</td>
+      <td>A Foundation Model for the Earth System</td>
+      <td><a href="https://arxiv.org/pdf/2405.13063">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>softcontrastivelearning</td>
+      <td>SoftContrastiveLearning</td>
+      <td>2024-05</td>
+      <td>Multi-label Guided Soft Contrastive Learning for Efficient Earth Observation Pretraining</td>
+      <td><a href="https://arxiv.org/pdf/2405.20462">arxiv.org</a></td>
+      <td><a href="https://github.com/rwightman/pytorch-image-models">rwightman/pytorch-image-models</a>, <a href="https://github.com/zhu-xlab/softcon">zhu-xlab/softcon</a></td>
+    </tr>
+    <tr>
+      <td>lemevit</td>
+      <td>LeMeViT</td>
+      <td>2024-05</td>
+      <td>LeMeViT: Efficient Vision Transformer with Learnable Meta Tokens for Remote Sensing Image Interpretation</td>
+      <td><a href="https://arxiv.org/pdf/2405.09789">arxiv.org</a></td>
+      <td><a href="https://github.com/MrYxJ/calculate-flops.pytorch">MrYxJ/calculate-flops.pytorch</a>, <a href="https://github.com/ViTAE-Transformer/LeMeViT">ViTAE-Transformer/LeMeViT</a>, <a href="https://github.com/open-mmlab/mmsegmentation">open-mmlab/mmsegmentation</a>, <a href="https://github.com/rwightman/pytorch-image-models">rwightman/pytorch-image-models</a></td>
+    </tr>
+    <tr>
+      <td>generativeantibodymodel</td>
+      <td>GenerativeAntibodyModel</td>
+      <td>2024-05</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.05.22.594943">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>saratrx</td>
+      <td>SARATRX</td>
+      <td>2024-05</td>
+      <td>SARATR-X: Towards Building A Foundation Model for SAR Target Recognition</td>
+      <td><a href="https://arxiv.org/pdf/2405.09365">arxiv.org</a></td>
+      <td><a href="https://github.com/waterdisappear/SARATR-X">waterdisappear/SARATR-X</a></td>
+    </tr>
+    <tr>
+      <td>lmweather</td>
+      <td>LMWeather</td>
+      <td>2024-05</td>
+      <td>Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models</td>
+      <td><a href="https://arxiv.org/pdf/2405.20348">arxiv.org</a></td>
+      <td><a href="https://github.com/thuml/Time-Series-Library">thuml/Time-Series-Library</a></td>
+    </tr>
+    <tr>
+      <td>mmearth</td>
+      <td>MMEarth</td>
+      <td>2024-05</td>
+      <td>MMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning</td>
+      <td><a href="https://arxiv.org/pdf/2405.02771">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>metaearth</td>
+      <td>MetaEarth</td>
+      <td>2024-05</td>
+      <td>MetaEarth: A Generative Foundation Model for Global-scale Remote Sensing Image Generation</td>
+      <td><a href="https://arxiv.org/pdf/2405.13570">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>generativeantibodyfm</td>
+      <td>GenerativeAntibodyFM</td>
+      <td>2024-05</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.05.22.594943">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>nach0</td>
+      <td>nach0</td>
+      <td>2024-05</td>
+      <td>nach0: multimodal natural and chemical languages foundation model</td>
+      <td><a href="https://pubs.rsc.org/en/content/articlepdf/2024/sc/d4sc00966e">pubs.rsc.org</a></td>
+      <td><a href="https://github.com/insilicomedicine/nach0">insilicomedicine/nach0</a>, <a href="https://github.com/zjunlp/Mol-Instructions">zjunlp/Mol-Instructions</a></td>
+    </tr>
+    <tr>
+      <td>rsdfm</td>
+      <td>RSDFM</td>
+      <td>2024-06</td>
+      <td>RS-DFM: A Remote Sensing Distributed Foundation Model for Diverse Downstream Tasks</td>
+      <td><a href="https://arxiv.org/pdf/2406.07032">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a2mae</td>
+      <td>A2MAE</td>
+      <td>2024-06</td>
+      <td>A2-MAE: A Spatial-temporal-spectral Unified Remote Sensing Pre-training Method Based on Anchor-aware Masked Autoencoder</td>
+      <td><a href="https://arxiv.org/pdf/2406.08079">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>hypersigma</td>
+      <td>HyperSIGMA</td>
+      <td>2024-06</td>
+      <td>HyperSIGMA: Hyperspectral Intelligence Comprehension Foundation Model</td>
+      <td><a href="https://arxiv.org/pdf/2406.11519">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>georeasoner</td>
+      <td>GeoReasoner</td>
+      <td>2024-06</td>
+      <td>GeoReasoner: Geo-localization with Reasoning in Street Views using a Large Vision-Language Model</td>
+      <td><a href="https://arxiv.org/pdf/2406.18572">arxiv.org</a></td>
+      <td><a href="https://github.com/lingli1996/GeoReasoner">lingli1996/GeoReasoner</a></td>
+    </tr>
+    <tr>
+      <td>citygpt</td>
+      <td>CityGPT</td>
+      <td>2024-06</td>
+      <td>CityGPT: Empowering Urban Spatial Cognition of Large Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2406.13948">arxiv.org</a></td>
+      <td><a href="https://github.com/tsinghua-fib-lab/CityGPT">tsinghua-fib-lab/CityGPT</a>, <a href="https://github.com/tsinghua-fib-lab/pycitysim">tsinghua-fib-lab/pycitysim</a></td>
+    </tr>
+    <tr>
+      <td>rsgpt4v</td>
+      <td>RSGPT4V</td>
+      <td>2024-06</td>
+      <td>RS-GPT4V: A Unified Multimodal Instruction-Following Dataset for Remote Sensing Image Understanding</td>
+      <td><a href="https://arxiv.org/pdf/2406.12479">arxiv.org</a></td>
+      <td><a href="https://github.com/GeoX-Lab/RS-GPT4V">GeoX-Lab/RS-GPT4V</a></td>
+    </tr>
+    <tr>
+      <td>cellgraphcompass</td>
+      <td>CellGraphCompass</td>
+      <td>2024-06</td>
+      <td>Cell-Graph Compass: Modeling Single Cells with Graph Structure Foundation Model</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2024.06.04.597354v1.full.pdf">biorxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>caduceus</td>
+      <td>Caduceus</td>
+      <td>2024-06</td>
+      <td>Caduceus: Bi-Directional Equivariant Long-Range DNA Sequence Modeling</td>
+      <td><a href="https://arxiv.org/pdf/2403.03234">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>urbanllm</td>
+      <td>UrbanLLM</td>
+      <td>2024-06</td>
+      <td>UrbanLLM: Autonomous Urban Activity Planning and Management with Large Language Models</td>
+      <td><a href="https://arxiv.org/pdf/2406.12360">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>skysensegpt</td>
+      <td>SkySenseGPT</td>
+      <td>2024-06</td>
+      <td>SkySenseGPT: A Fine-Grained Instruction Tuning Dataset and Model for Remote Sensing Vision-Language Understanding</td>
+      <td><a href="https://arxiv.org/pdf/2406.10100">arxiv.org</a></td>
+      <td><a href="https://github.com/Luo-Z13/SkySenseGPT">Luo-Z13/SkySenseGPT</a></td>
+    </tr>
+    <tr>
+      <td>rsagent</td>
+      <td>RSAgent</td>
+      <td>2024-06</td>
+      <td>RS-Agent: Automating Remote Sensing Tasks through Intelligent Agents</td>
+      <td><a href="https://arxiv.org/pdf/2406.07089">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>selectivemae</td>
+      <td>SelectiveMAE</td>
+      <td>2024-06</td>
+      <td>Scaling Efficient Masked Image Modeling on Large Remote Sensing Dataset</td>
+      <td><a href="https://arxiv.org/pdf/2406.11933">arxiv.org</a></td>
+      <td><a href="https://github.com/open-mmlab/mmdetection">open-mmlab/mmdetection</a>, <a href="https://github.com/open-mmlab/mmrotate">open-mmlab/mmrotate</a>, <a href="https://github.com/open-mmlab/mmsegmentation">open-mmlab/mmsegmentation</a></td>
+    </tr>
+    <tr>
+      <td>earthmarker</td>
+      <td>EarthMarker</td>
+      <td>2024-07</td>
+      <td>EarthMarker: A Visual Prompting Multi-modal Large Language Model for Remote Sensing</td>
+      <td><a href="https://arxiv.org/pdf/2407.13596">arxiv.org</a></td>
+      <td><a href="https://github.com/wivizhang/EarthMarker">wivizhang/EarthMarker</a></td>
+    </tr>
+    <tr>
+      <td>scprint</td>
+      <td>scPRINT</td>
+      <td>2024-07</td>
+      <td>scPRINT: pre-training on 50 million cells allows robust gene network predictions</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/cantinilab/scPRINT">cantinilab/scPRINT</a></td>
+    </tr>
+    <tr>
+      <td>mmvsf</td>
+      <td>MMVSF</td>
+      <td>2024-07</td>
+      <td>TOWARDS A KNOWLEDGE GUIDED MULTIMODAL FOUNDATION MODEL FOR SPATIO-TEMPORAL REMOTE SENSING APPLICATIONS</td>
+      <td><a href="https://arxiv.org/pdf/2407.19660">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>videofoundationmodel</td>
+      <td>VideoFoundationModel</td>
+      <td>2024-07</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.07.30.605655">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>videoanimalbehaviorfm</td>
+      <td>VideoAnimalBehaviorFM</td>
+      <td>2024-07</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.07.30.605655">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>trajfm</td>
+      <td>TrajFM</td>
+      <td>2024-08</td>
+      <td>TrajFM: A Vehicle Trajectory Foundation Model for Region and Task Transferability</td>
+      <td><a href="https://arxiv.org/pdf/2408.15251">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>spectralearth</td>
+      <td>SpectralEarth</td>
+      <td>2024-08</td>
+      <td>SpectralEarth: Training Hyperspectral Foundation Models at Scale</td>
+      <td><a href="https://arxiv.org/pdf/2408.08447">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>repst</td>
+      <td>RePST</td>
+      <td>2024-08</td>
+      <td>LANGUAGE MODEL EMPOWERED SPATIO-TEMPORAL FORECASTING VIA PHYSICS-AWARE REPROGRAMMING</td>
+      <td><a href="https://arxiv.org/pdf/2408.14505">arxiv.org</a></td>
+      <td><a href="https://github.com/LibCity/Bigscity-LibCity">LibCity/Bigscity-LibCity</a></td>
+    </tr>
+    <tr>
+      <td>ma3e</td>
+      <td>MA3E</td>
+      <td>2024-08</td>
+      <td>Masked Angle-Aware Autoencoder for Remote Sensing Images</td>
+      <td><a href="https://arxiv.org/pdf/2408.01946">arxiv.org</a></td>
+      <td><a href="https://github.com/benesakitam/MA3E">benesakitam/MA3E</a></td>
+    </tr>
+    <tr>
+      <td>sccello</td>
+      <td>scCello</td>
+      <td>2024-08</td>
+      <td>Cell-ontology guided transcriptome foundation model</td>
+      <td><a href="https://arxiv.org/pdf/2408.12373">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>senpamae</td>
+      <td>SenPaMAE</td>
+      <td>2024-08</td>
+      <td>SenPa-MAE: Sensor Parameter Aware Masked Autoencoder for Multi-Satellite Self-Supervised Pretraining</td>
+      <td><a href="https://arxiv.org/pdf/2408.11000">arxiv.org</a></td>
+      <td><a href="https://github.com/JonathanPrexl/SenPa-MAE">JonathanPrexl/SenPa-MAE</a></td>
+    </tr>
+    <tr>
+      <td>plantcaduceus</td>
+      <td>PlantCaduceus</td>
+      <td>2024-08</td>
+      <td>Cross-species  modeling  of  plant  genomes  at  single nucleotide  resolution  using  a  pre-trained  DNA language model</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2024.06.04.596709v3.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/kuleshov-group/PlantCaduceus">kuleshov-group/PlantCaduceus</a></td>
+    </tr>
+    <tr>
+      <td>novae</td>
+      <td>Novae</td>
+      <td>2024-09</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.09.09.612009">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>stformer</td>
+      <td>stFormer</td>
+      <td>2024-09</td>
+      <td>A framework for gene representation on spatial transcriptomics</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2024.09.27.615337v5.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/csh3/stFormer">csh3/stFormer</a></td>
+    </tr>
+    <tr>
+      <td>visionlanguageremotesensingfm</td>
+      <td>VisionLanguageRemoteSensingFM</td>
+      <td>2024-09</td>
+      <td>Pushing the Limits of Vision-Language Models in Remote Sensing without Human Annotations</td>
+      <td><a href="https://arxiv.org/pdf/2409.07048">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ringmoaerial</td>
+      <td>RingMoAerial</td>
+      <td>2024-09</td>
+      <td>RingMo-Aerial: An Aerial Remote Sensing Foundation Model With A Affine Transformation Contrastive Learning</td>
+      <td><a href="https://arxiv.org/pdf/2409.13366">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>novae</td>
+      <td>Novae</td>
+      <td>2024-09</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.09.09.612009">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>hsigene</td>
+      <td>HSIGene</td>
+      <td>2024-09</td>
+      <td>HSIGene: A Foundation Model for Hyperspectral Image Generation</td>
+      <td><a href="https://arxiv.org/pdf/2409.12470">arxiv.org</a></td>
+      <td><a href="https://github.com/LiPang/HSIGene">LiPang/HSIGene</a></td>
+    </tr>
+    <tr>
+      <td>cpgpt</td>
+      <td>CpGPT</td>
+      <td>2024-10</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.10.24.619766">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>teochat</td>
+      <td>TEOChat</td>
+      <td>2024-10</td>
+      <td>TEOCHAT: A LARGE VISION-LANGUAGE ASSISTANT FOR TEMPORAL EARTH OBSERVATION DATA</td>
+      <td><a href="https://arxiv.org/pdf/2410.06234">arxiv.org</a></td>
+      <td><a href="https://github.com/ermongroup/TEOChat">ermongroup/TEOChat</a></td>
+    </tr>
+    <tr>
+      <td>cellwhisperer</td>
+      <td>CellWhisperer</td>
+      <td>2024-10</td>
+      <td>Multimodal learning of transcriptomes and text enables interactive single-cell RNA-seq data exploration with natural-language chats</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2024.10.15.618501v1.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/epigen/cellwhisperer">epigen/cellwhisperer</a></td>
+    </tr>
+    <tr>
+      <td>crossearth</td>
+      <td>CrossEarth</td>
+      <td>2024-10</td>
+      <td>CrossEarth: Geospatial Vision Foundation Model for Domain Generalizable Remote Sensing Semantic Segmentation</td>
+      <td><a href="https://arxiv.org/pdf/2410.22629">arxiv.org</a></td>
+      <td><a href="https://github.com/Cuzyoung/CrossEarth">Cuzyoung/CrossEarth</a>, <a href="https://github.com/open-mmlab/mmsegmentation">open-mmlab/mmsegmentation</a></td>
+    </tr>
+    <tr>
+      <td>scgenept</td>
+      <td>scGenePT</td>
+      <td>2024-10</td>
+      <td>scGenePT: Is language all you need for modeling single-cell perturbations?</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2024.10.23.619972v1.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/bowang-lab/scGPT">bowang-lab/scGPT</a>, <a href="https://github.com/yiqunchen/GenePT">yiqunchen/GenePT</a></td>
+    </tr>
+    <tr>
+      <td>oreolefm</td>
+      <td>OReoleFM</td>
+      <td>2024-10</td>
+      <td>OReole-FM: successes and challenges toward billion-parameter foundation models for high-resolution satellite imagery</td>
+      <td><a href="https://arxiv.org/pdf/2410.19965">arxiv.org</a></td>
+      <td><a href="https://github.com/facebookresearch/mae">facebookresearch/mae</a>, <a href="https://github.com/open-mmlab/mmpretrain">open-mmlab/mmpretrain</a></td>
+    </tr>
+    <tr>
+      <td>nucleotidetransformer</td>
+      <td>NucleotideTransformer</td>
+      <td>2024-10</td>
+      <td>The Nucleotide Transformer: Building and Evaluating Robust Foundation Models for Human Genomics</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2023.01.11.523679v4.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/instadeepai/nucleotide-transformer">instadeepai/nucleotide-transformer</a></td>
+    </tr>
+    <tr>
+      <td>cpgpt</td>
+      <td>CpGPT</td>
+      <td>2024-10</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.10.24.619766">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>proteinaligner</td>
+      <td>ProteinAligner</td>
+      <td>2024-10</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.10.06.616870">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scchat</td>
+      <td>scChat</td>
+      <td>2024-10</td>
+      <td>scChat: A Large Language Model-Powered Co-Pilot for Contextualized Single-Cell RNA Sequencing Analysis</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2024.10.01.616063v1.full.pdf">biorxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>proteinaligner</td>
+      <td>ProteinAligner</td>
+      <td>2024-10</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.10.06.616870">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pievit</td>
+      <td>PIEViT</td>
+      <td>2024-11</td>
+      <td>Pattern Integration and Enhancement Vision Transformer for Self-supervised Learning in Remote Sensing</td>
+      <td><a href="https://arxiv.org/pdf/2411.06091">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>satvisiontoa</td>
+      <td>SatVisionTOA</td>
+      <td>2024-11</td>
+      <td>SATVISION-TOA: A GEOSPATIAL FOUNDATION MODEL FOR COARSE-RESOLUTION ALL-SKY REMOTE SENSING IMAGERY</td>
+      <td><a href="https://arxiv.org/pdf/2411.17000">arxiv.org</a></td>
+      <td><a href="https://github.com/nasa-nccs-hpda/pytorch-caney">nasa-nccs-hpda/pytorch-caney</a></td>
+    </tr>
+    <tr>
+      <td>rsvheat</td>
+      <td>RSvHeat</td>
+      <td>2024-11</td>
+      <td>RS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model</td>
+      <td><a href="https://arxiv.org/pdf/2411.17984">arxiv.org</a></td>
+      <td><a href="https://github.com/iecashhy/RS-vHeat">iecashhy/RS-vHeat</a></td>
+    </tr>
+    <tr>
+      <td>titan</td>
+      <td>TITAN</td>
+      <td>2024-11</td>
+      <td>Multimodal Whole Slide Foundation Model for Pathology</td>
+      <td><a href="https://arxiv.org/pdf/2411.19666">arxiv.org</a></td>
+      <td><a href="https://github.com/bytedance/ibot">bytedance/ibot</a>, <a href="https://github.com/hms-dbmi/CHIEF">hms-dbmi/CHIEF</a>, <a href="https://github.com/mahmoodlab/CLAM">mahmoodlab/CLAM</a>, <a href="https://github.com/mahmoodlab/TITAN">mahmoodlab/TITAN</a>, <a href="https://github.com/mbanani/lgssl">mbanani/lgssl</a>, <a href="https://github.com/mlfoundations/open_clip">mlfoundations/open_clip</a>, <a href="https://github.com/prov-gigapath/prov-gigapath">prov-gigapath/prov-gigapath</a></td>
+    </tr>
+    <tr>
+      <td>aquila</td>
+      <td>Aquila</td>
+      <td>2024-11</td>
+      <td>Aquila: A Hierarchically Aligned Visual-Language Model for Enhanced Remote Sensing Image Comprehension</td>
+      <td><a href="https://arxiv.org/pdf/2411.06074">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>lhrsbotnova</td>
+      <td>LHRSBotNova</td>
+      <td>2024-11</td>
+      <td>LHRS-Bot-Nova: Improved Multimodal Large Language Model for Remote Sensing Vision-Language Interpretation</td>
+      <td><a href="https://arxiv.org/pdf/2411.09301">arxiv.org</a></td>
+      <td><a href="https://github.com/NJU-LHRS/LHRS-Bot">NJU-LHRS/LHRS-Bot</a></td>
+    </tr>
+    <tr>
+      <td>cryofm</td>
+      <td>CryoFM</td>
+      <td>2024-11</td>
+      <td>CRYOFM: A FLOW-BASED FOUNDATION MODEL FOR CRYO-EM DENSITIES</td>
+      <td><a href="https://arxiv.org/pdf/2410.08631">arxiv.org</a></td>
+      <td><a href="https://github.com/CompVis/stable-diffusion">CompVis/stable-diffusion</a>, <a href="https://github.com/huggingface/diffusers">huggingface/diffusers</a></td>
+    </tr>
+    <tr>
+      <td>geoground</td>
+      <td>GeoGround</td>
+      <td>2024-11</td>
+      <td>GeoGround: A Unified Large Vision-Language Model for Remote Sensing Visual Grounding</td>
+      <td><a href="https://arxiv.org/pdf/2411.11904">arxiv.org</a></td>
+      <td><a href="https://github.com/zytx121/GeoGround">zytx121/GeoGround</a></td>
+    </tr>
+    <tr>
+      <td>satvision</td>
+      <td>SatVision</td>
+      <td>2024-11</td>
+      <td>SATVISION-TOA: A GEOSPATIAL FOUNDATION MODEL FOR COARSE-RESOLUTION ALL-SKY REMOTE SENSING IMAGERY</td>
+      <td><a href="https://arxiv.org/pdf/2411.17000">arxiv.org</a></td>
+      <td><a href="https://github.com/nasa-nccs-hpda/pytorch-caney">nasa-nccs-hpda/pytorch-caney</a></td>
+    </tr>
+    <tr>
+      <td>cancerfoundation</td>
+      <td>CancerFoundation</td>
+      <td>2024-11</td>
+      <td>CancerFoundation: A single-cell RNA sequencing foundation model to decipher drug resistance in cancer</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2024.11.01.621087v1.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/BoevaLab/CancerFoundation">BoevaLab/CancerFoundation</a></td>
+    </tr>
+    <tr>
+      <td>biollm</td>
+      <td>BioLLM</td>
+      <td>2024-11</td>
+      <td>BioLLM: A Standardized Framework for Integrating and Benchmarking Single-Cell Foundation Models</td>
+      <td><a href="https://www.biorxiv.org/content/biorxiv/early/2024/11/22/2024.11.22.624786.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/BGIResearch/BioLLM">BGIResearch/BioLLM</a></td>
+    </tr>
+    <tr>
+      <td>rsunivlm</td>
+      <td>RSUniVLM</td>
+      <td>2024-12</td>
+      <td>RSUniVLM: A Unified Vision Language Model for Remote Sensing via Granularity-oriented Mixture of Experts</td>
+      <td><a href="https://arxiv.org/pdf/2412.05679">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>neoclip</td>
+      <td>NeoCLIP</td>
+      <td>2024-12</td>
+      <td>NeoCLIP: A Self-Supervised Foundation Model for the Interpretation of Neonatal Radiographs</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.12.03.24318410v1.full.pdf">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>procyon</td>
+      <td>ProCyon</td>
+      <td>2024-12</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.12.10.627665">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>aidodna</td>
+      <td>AIDODNA</td>
+      <td>2024-12</td>
+      <td>Accurate and General DNA Representations Emerge from Genome Foundation Models at Scale</td>
+      <td><a href="https://www.biorxiv.org/content/10.1101/2024.12.01.625444v1.full.pdf">biorxiv.org</a></td>
+      <td><a href="https://github.com/genbio-ai/AIDO">genbio-ai/AIDO</a>, <a href="https://github.com/genbio-ai/ModelGenerator">genbio-ai/ModelGenerator</a></td>
+    </tr>
+    <tr>
+      <td>videopanda</td>
+      <td>VideoPanda</td>
+      <td>2024-12</td>
+      <td>Video-Panda: Parameter-efficient Alignment for Encoder-free Video-Language Models</td>
+      <td><a href="http://arxiv.org/pdf/2412.18609v1">arxiv.org</a></td>
+      <td><a href="https://github.com/jh-yi/Video-Panda">jh-yi/Video-Panda</a></td>
+    </tr>
+    <tr>
+      <td>partgen</td>
+      <td>PartGen</td>
+      <td>2024-12</td>
+      <td>PartGen: Part-level 3D Generation and Reconstruction with Multi-View Diffusion Models</td>
+      <td><a href="http://arxiv.org/pdf/2412.18608v1">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>drivinggpt</td>
+      <td>DrivingGPT</td>
+      <td>2024-12</td>
+      <td>DrivingGPT: Unifying Driving World Modeling and Planning with Multi-modal Autoregressive Transformers</td>
+      <td><a href="http://arxiv.org/pdf/2412.18607v1">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>orientanything</td>
+      <td>OrientAnything</td>
+      <td>2024-12</td>
+      <td>Orient Anything: Learning Robust Object Orientation Estimation from Rendering 3D Models</td>
+      <td><a href="http://arxiv.org/pdf/2412.18605v1">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>speechssm</td>
+      <td>SpeechSSM</td>
+      <td>2024-12</td>
+      <td>Long-Form Speech Generation with Spoken Language Models</td>
+      <td><a href="http://arxiv.org/pdf/2412.18603v1">arxiv.org</a></td>
+      <td><a href="https://github.com/google-deepmind/librispeech-long">google-deepmind/librispeech-long</a></td>
+    </tr>
+    <tr>
+      <td>zerohsi</td>
+      <td>ZeroHSI</td>
+      <td>2024-12</td>
+      <td>ZeroHSI: Zero-Shot 4D Human-Scene Interaction by Video Generation</td>
+      <td><a href="http://arxiv.org/pdf/2412.18600v1">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>anysat</td>
+      <td>AnySat</td>
+      <td>2024-12</td>
+      <td>AnySat: An Earth Observation Model for Any Resolutions, Scales, and Modalities</td>
+      <td><a href="https://arxiv.org/pdf/2412.14123">arxiv.org</a></td>
+      <td><a href="https://github.com/gastruc/AnySat">gastruc/AnySat</a></td>
+    </tr>
+    <tr>
+      <td>gencast</td>
+      <td>GenCast</td>
+      <td>2024-12</td>
+      <td>Unknown</td>
+      <td><a href="https://deepmind.google/discover/blog/gencast-predicts-weather-and-the-risks-of-extreme-conditions-with-sota-accuracy/">deepmind.google</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pangaea</td>
+      <td>PANGAEA</td>
+      <td>2024-12</td>
+      <td>PANGAEA: A GLOBAL AND INCLUSIVE BENCHMARK FOR GEOSPATIAL FOUNDATION MODELS</td>
+      <td><a href="https://arxiv.org/pdf/2412.04204">arxiv.org</a></td>
+      <td><a href="https://github.com/VMarsocci/pangaea-bench">VMarsocci/pangaea-bench</a></td>
+    </tr>
+    <tr>
+      <td>zeroresourcespeechtranslationrecognition</td>
+      <td>ZeroResourceSpeechTranslationRecognition</td>
+      <td>2024-12</td>
+      <td>Zero-resource Speech Translation and Recognition with LLMs</td>
+      <td><a href="http://arxiv.org/pdf/2412.18566v1">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3denhancer</td>
+      <td>3DEnhancer</td>
+      <td>2024-12</td>
+      <td>3DENHANCER: Consistent Multi-View Diffusion for 3D Enhancement</td>
+      <td><a href="http://arxiv.org/pdf/2412.18565v1">arxiv.org</a></td>
+      <td><a href="https://github.com/3DTopia/OpenLRM">3DTopia/OpenLRM</a></td>
+    </tr>
+    <tr>
+      <td>procyon</td>
+      <td>ProCyon</td>
+      <td>2024-12</td>
+      <td>Unknown</td>
+      <td><a href="https://www.medrxiv.org/content/10.1101/2024.12.10.627665">medrxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>earthdial</td>
+      <td>EarthDial</td>
+      <td>2024-12</td>
+      <td>EarthDial: Turning Multi-sensory Earth Observations to Interactive Dialogues</td>
+      <td><a href="https://arxiv.org/pdf/2412.15190">arxiv.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>prithvieo2</td>
+      <td>PrithviEO2</td>
+      <td>2024-12</td>
+      <td>Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications</td>
+      <td><a href="https://arxiv.org/pdf/2412.02732">arxiv.org</a></td>
+      <td><a href="https://github.com/NASA-IMPACT/Prithvi-EO-2.0">NASA-IMPACT/Prithvi-EO-2.0</a></td>
+    </tr>
+    <tr>
+      <td>scientificknowledgemodelforchemistry</td>
+      <td>ScientificKnowledgeModelForChemistry</td>
+      <td>Unknown</td>
+      <td>Foundation Models of Scientific Knowledge for Chemistry: Opportunities, Challenges and Lessons Learned</td>
+      <td><a href="https://aclanthology.org/2022.bigscience-1.12.pdf">aclanthology.org</a></td>
+      <td><a href="https://github.com/EleutherAI/gpt-neox">EleutherAI/gpt-neox</a></td>
+    </tr>
+    <tr>
+      <td>evhfgcn</td>
+      <td>EVHF-GCN</td>
+      <td>Unknown</td>
+      <td>EVHF-GCN: An Emergency Vehicle Priority Scheduling Model based on Heterogeneous Feature Fusion with Graph Convolutional Networks</td>
+      <td><a href="https://ieeexplore.ieee.org/ielx7/6287639/6514899/10380592.pdf">ieeexplore.ieee.org</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>radioastronomyfm</td>
+      <td>RadioAstronomyFM</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td><a href="https://academic.oup.com/rasti/advance-article-pdf/doi/10.1093/rasti/rzad055/54757793/rzad055.pdf">academic.oup.com</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>femi</td>
+      <td>FEMI</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td><a href="https://academic.oup.com/humrep/article-pdf/39/Supplement_1/deae108.378/58399330/deae108.321.pdf">academic.oup.com</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>brainageestimationfm</td>
+      <td>BrainAgeEstimationFM</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td><a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.26625">onlinelibrary.wiley.com</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>aqresnetraqresnet</td>
+      <td>AQResNetRAQResNet</td>
+      <td>Unknown</td>
+      <td>Optimal Reusable Rocket Landing Guidance: A Cutting-Edge Approach Integrating Scientific Machine Learning and Enhanced Neural Networks</td>
+      <td><a href="https://ieeexplore.ieee.org/ielx7/6287639/6514899/10415408.pdf">ieeexplore.ieee.org</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>

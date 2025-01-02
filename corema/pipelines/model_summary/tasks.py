@@ -30,7 +30,6 @@ def get_publication_date(
     project_id: str, projects_data: Dict[str, Any]
 ) -> pd.Timestamp | None:
     """Get publication date from projects.yaml, paper metadata, or preprint URLs."""
-    dates = []
     logger.debug(f"\nProcessing {project_id}:")
 
     # Try projects.yaml
@@ -43,11 +42,11 @@ def get_publication_date(
                 if len(date_str.split("-")) == 2:
                     date = pd.to_datetime(date_str + "-01")
                     logger.debug(f"  Found date in projects.yaml: {date}")
-                    dates.append(date)
+                    return date
                 else:
                     date = pd.to_datetime(date_str)
                     logger.debug(f"  Found date in projects.yaml: {date}")
-                    dates.append(date)
+                    return date
             except Exception as e:
                 logger.debug(
                     f"  Could not parse date {date_str} from projects.yaml: {e}"
@@ -66,7 +65,7 @@ def get_publication_date(
                             date = pd.to_datetime(paper_data["publication_date"])
                             if pd.notna(date):
                                 logger.debug(f"  Found date in paper metadata: {date}")
-                                dates.append(date)
+                                return date
                         except Exception as e:
                             logger.debug(
                                 f"  Could not parse date from paper metadata: {e}"
@@ -93,7 +92,7 @@ def get_publication_date(
                         if 1 <= int(month) <= 12:
                             date = pd.to_datetime(f"{year}-{month}-01")
                             logger.debug(f"    Extracted date: {date}")
-                            dates.append(date)
+                            return date
 
                 # Handle bioRxiv/medRxiv URLs
                 elif any(x in url for x in ["biorxiv.org", "medrxiv.org"]):
@@ -106,16 +105,9 @@ def get_publication_date(
                             day = date_str[8:10]
                             date = pd.to_datetime(f"{year}-{month}-{day}")
                             logger.debug(f"    Extracted date: {date}")
-                            dates.append(date)
+                            return date
             except Exception as e:
                 logger.debug(f"    Error parsing URL: {e}")
-
-    # Filter out None values and get earliest date
-    valid_dates = [d for d in dates if pd.notna(d)]
-    if valid_dates:
-        earliest_date = min(valid_dates)
-        logger.debug(f"  Using earliest date: {earliest_date}")
-        return earliest_date
 
     logger.debug("  No date found")
     return None
@@ -134,8 +126,12 @@ def get_project_fields(df: pd.DataFrame) -> Dict[str, List[str]]:
     return project_fields
 
 
-def load_model_summary_dataset() -> Tuple[pd.DataFrame, Dict[str, List[str]]]:
-    """Load and prepare the model summary dataset for visualizations."""
+def load_model_summary_dataset() -> pd.DataFrame:
+    """Load and prepare the model summary dataset for visualizations.
+
+    Returns:
+        DataFrame with model summaries
+    """
     # Get config for data paths
     config = get_config()
     base_path = Path(config["storage"]["base_path"])
@@ -147,90 +143,144 @@ def load_model_summary_dataset() -> Tuple[pd.DataFrame, Dict[str, List[str]]]:
 
     model_summaries = pd.read_json(results_path, lines=True)
 
-    # Read projects.yaml
-    with open("projects.yaml", "r") as f:
-        projects_list = yaml.safe_load(f)
-        # Convert list to dict with project_id as key
-        projects = {get_project_id(p["project_name"]): p for p in projects_list}
-
-    # Add publication dates and project names
-    model_summaries["publication_date"] = model_summaries["project_id"].apply(
-        lambda x: get_publication_date(x, projects)
-    )
-    model_summaries["project_name"] = model_summaries["project_id"].apply(
-        lambda x: projects[x]["project_name"] if x in projects else x
-    )
-
-    # Get project fields
-    project_fields = get_project_fields(model_summaries)
-
-    # Sort by publication date
-    model_summaries = model_summaries.sort_values("publication_date")
-
-    return model_summaries, project_fields
-
-
-def load_paper_metadata() -> pd.DataFrame:
-    """Load paper metadata from all projects.
-
-    Returns:
-        pd.DataFrame: DataFrame containing paper metadata with columns:
-            - project_id: str
-            - project_name: str
-            - paper_url: str
-            - title: str
-            - doi: str
-            - publication_date: datetime
-            - journal: str
-            - authors: List[Dict] with keys 'name' and 'affiliations'
-    """
-    # Get config for data paths
-    config = get_config()
-    base_path = Path(config["storage"]["base_path"])
-
     # Read projects.yaml for project names
     with open("projects.yaml", "r") as f:
         projects_list = yaml.safe_load(f)
         # Convert list to dict with project_id as key
         projects = {get_project_id(p["project_name"]): p for p in projects_list}
 
-    # Collect all paper metadata
-    metadata_list = []
-    for project_id, project in projects.items():
-        paper_dir = base_path / "projects" / project_id / "paper"
-        if not paper_dir.exists():
-            continue
+    # Add project names
+    model_summaries["project_name"] = model_summaries["project_id"].apply(
+        lambda x: projects[x]["project_name"] if x in projects else x
+    )
 
-        # Find all JSON files in paper directory
-        json_files = list(paper_dir.glob("*.json"))
-        if not json_files:
-            continue
+    # Check for duplicate project IDs
+    duplicates = model_summaries[
+        model_summaries.duplicated(subset=["project_id"], keep=False)
+    ]
+    if not duplicates.empty:
+        logger.warning(
+            f"Found {len(duplicates)} duplicate entries in model_summaries.jsonl for project IDs: "
+            f"{duplicates['project_id'].unique().tolist()!r}"
+        )
 
-        # Read each JSON file
-        for json_file in json_files:
+    return model_summaries
+
+
+def load_project_metadata() -> pd.DataFrame:
+    """Load project metadata from all projects, one entry per project.
+
+    Builds metadata in layers:
+    1. Start with projects.yaml data
+    2. Add information from manifest.json files
+    3. Add information from paper metadata files
+
+    Returns:
+        DataFrame with columns:
+        - project_id: str
+        - project_name: str
+        - publication_date: datetime
+        - paper_urls: List[str]
+        - primary_paper_title: str
+        - primary_paper_url: str
+        - github_urls: List[str]
+        - authors: List[Dict] with keys 'name' and 'affiliations'
+    """
+    # 1. Start with projects.yaml
+    with open("projects.yaml", "r") as f:
+        projects_list = yaml.safe_load(f)
+
+    # Create initial DataFrame
+    df = pd.DataFrame(
+        [
+            {
+                "project_id": get_project_id(p["project_name"]),
+                "project_name": p["project_name"],
+                "paper_urls": p.get("paper_urls", []),
+                "github_urls": p.get("github_urls", []),
+                "primary_paper_url": p.get("paper_urls", [None])[0],
+            }
+            for p in projects_list
+        ]
+    )
+
+    # Check for duplicate project IDs
+    duplicates = df[df.duplicated(subset=["project_id"], keep=False)]
+    if not duplicates.empty:
+        logger.warning(
+            f"Found {len(duplicates)} duplicate entries in projects.yaml for project IDs: "
+            f"{duplicates['project_id'].unique().tolist()!r}"
+        )
+
+    # 2. Add/update information from manifest files
+    config = get_config()
+    base_path = Path(config["storage"]["base_path"])
+    projects_dir = base_path / "projects"
+
+    for idx, row in df.iterrows():
+        project_id = row["project_id"]
+        manifest_path = projects_dir / project_id / "manifest.json"
+
+        if manifest_path.exists():
             try:
-                with open(json_file, "r") as f:
-                    metadata = json.load(f)
+                with open(manifest_path) as f:
+                    manifest = json.load(f)
 
-                # Add project info
-                metadata["project_id"] = project_id
-                metadata["project_name"] = project["project_name"]
-                metadata["paper_url"] = json_file.stem  # URL hash is filename
+                # Get paper paths and URLs
+                paper_paths = manifest.get("paths", {}).get("papers", [])
+                if paper_paths:
+                    # Store first paper's URL and path for metadata lookup
+                    df.at[idx, "primary_paper_url"] = paper_paths[0]["url"]
+                    df.at[idx, "primary_paper_path"] = paper_paths[0]["path"]
 
-                metadata_list.append(metadata)
+                # Update GitHub URLs from manifest
+                github_urls = [
+                    repo["url"]
+                    for repo in manifest.get("paths", {}).get("github_repos", [])
+                ]
+                if github_urls:
+                    df.at[idx, "github_urls"] = github_urls
             except Exception as e:
-                logger.warning(f"Error reading {json_file}: {e}")
+                logger.error(f"Error reading manifest for project {project_id}: {e}")
 
-    # Convert to DataFrame
-    df = pd.DataFrame(metadata_list)
+    # 3. Add paper metadata
+    for idx, row in df.iterrows():
+        paper_path = row.get("primary_paper_path")
+        if pd.notna(paper_path):
+            metadata_path = Path(str(paper_path) + ".json")
+            if metadata_path.exists():
+                try:
+                    with open(metadata_path) as f:
+                        paper_metadata = json.load(f)
+                        df.at[idx, "primary_paper_title"] = paper_metadata.get("title")
+                        df.at[idx, "authors"] = paper_metadata.get("authors", [])
+                except Exception as e:
+                    logger.error(
+                        f"Error reading paper metadata for {metadata_path}: {e}"
+                    )
 
-    # Convert dates to datetime
-    if "publication_date" in df.columns:
-        df["publication_date"] = pd.to_datetime(df["publication_date"])
+    # 4. Resolve publication dates using get_publication_date
+    # Convert projects list to dict for get_publication_date
+    projects = {get_project_id(p["project_name"]): p for p in projects_list}
+    df["publication_date"] = df["project_id"].apply(
+        lambda x: get_publication_date(x, projects)
+    )
+
+    # Clean up
+    df = df.drop(columns=["primary_paper_path"], errors="ignore")
+
+    # Clean up lists by removing null elements
+    df["github_urls"] = df["github_urls"].apply(
+        lambda x: [url for url in (x if isinstance(x, list) else []) if pd.notna(url)]
+    )
+    df["authors"] = df["authors"].apply(
+        lambda x: [
+            author for author in (x if isinstance(x, list) else []) if pd.notna(author)
+        ]
+    )
 
     # Sort by publication date
-    if "publication_date" in df.columns:
-        df = df.sort_values("publication_date")
+    df = df.sort_values("publication_date")
 
     return df
 
@@ -239,81 +289,98 @@ def load_paper_metadata() -> pd.DataFrame:
 def visualize_model_summaries(
     allowlist: Optional[List[str]] = None,
     blocklist: Optional[List[str]] = None,
-    images_dir: Path = Path("docs") / "images",
+    results_dir: Path = Path("docs") / "results",
 ) -> None:
     """Generate all model summary visualizations.
 
     Args:
         allowlist: Optional list of visualizations to create. If provided, only these will be created.
         blocklist: Optional list of visualizations to skip. Only used if allowlist is None.
-        images_dir: Directory where visualization images will be saved. Defaults to docs/images.
+        results_dir: Directory where visualization results will be saved. Defaults to docs/results.
 
     Inputs:
         - data/results/model_summary/model_summaries.jsonl
         - resources/affiliations.csv
     Outputs:
-        - {images_dir}/model_table.svg
-        - {images_dir}/model_timeline.svg
-        - {images_dir}/preprocessing_wordclouds.svg
-        - {images_dir}/dataset_wordclouds.svg
-        - {images_dir}/scientific_fields_wordcloud.svg
-        - {images_dir}/training_details_wordclouds.svg
-        - {images_dir}/training_platform_wordclouds.svg
-        - {images_dir}/architecture_wordclouds.svg
-        - {images_dir}/compute_resources_wordclouds.svg
-        - {images_dir}/affiliations.svg
+        - {results_dir}/tables/model_table.md
+        - {results_dir}/tables/model_table.html
+        - {results_dir}/images/model_timeline.svg
+        - {results_dir}/images/preprocessing_wordclouds.svg
+        - {results_dir}/images/dataset_wordclouds.svg
+        - {results_dir}/images/scientific_fields_wordcloud.svg
+        - {results_dir}/images/training_details_wordclouds.svg
+        - {results_dir}/images/training_platform_wordclouds.svg
+        - {results_dir}/images/architecture_wordclouds.svg
+        - {results_dir}/images/compute_resources_wordclouds.svg
+        - {results_dir}/images/affiliations.svg
     Dependencies:
         - analyze_models
     """
-    # Create output directory
-    images_dir.mkdir(parents=True, exist_ok=True)
+    # Create output directories
+    results_dir.mkdir(parents=True, exist_ok=True)
+    (results_dir / "images").mkdir(parents=True, exist_ok=True)
+    (results_dir / "tables").mkdir(parents=True, exist_ok=True)
 
     # Set style and backend for SVG output
     plt.style.use("default")
     plt.switch_backend("svg")
 
     # Load datasets
-    model_summaries, project_fields = load_model_summary_dataset()
-    paper_metadata = load_paper_metadata()
+    model_summaries = load_model_summary_dataset()
+    project_metadata = load_project_metadata()
+
+    # Add publication dates from project_metadata
+    model_summaries = model_summaries.merge(
+        project_metadata[["project_id", "publication_date"]],
+        on="project_id",
+        how="left",
+    )
+    model_summaries = model_summaries.sort_values("publication_date")
+
+    # Get project fields
+    project_fields = get_project_fields(model_summaries)
 
     logger.info(f"Loaded {len(model_summaries)} models")
     logger.info(
         f"Models with publication dates: {model_summaries['publication_date'].notna().sum()}"
     )
-    logger.info(f"Loaded {len(paper_metadata)} papers")
+    logger.info(f"Loaded {len(project_metadata)} projects")
 
     # Define available visualizations with type hints
     all_viz: Dict[str, Tuple[Callable[..., None], List[Any]]] = {
-        "model_table": (create_model_table, [model_summaries, images_dir]),
+        "model_table": (create_model_table, [project_metadata, results_dir]),
         "timeline": (
             create_timeline_visualization,
-            [model_summaries, project_fields, images_dir],
+            [model_summaries, project_fields, results_dir],
         ),
         "preprocessing": (
             create_preprocessing_wordclouds,
-            [model_summaries, images_dir],
+            [model_summaries, results_dir],
         ),
-        "dataset": (create_dataset_wordclouds, [model_summaries, images_dir]),
+        "dataset": (create_dataset_wordclouds, [model_summaries, results_dir]),
         "scientific_fields": (
             create_scientific_fields_wordcloud,
-            [model_summaries, images_dir],
+            [model_summaries, results_dir],
         ),
         "training_details": (
             create_training_details_wordclouds,
-            [model_summaries, images_dir],
+            [model_summaries, results_dir],
         ),
         "training_platform": (
             create_training_platform_wordclouds,
-            [model_summaries, images_dir],
+            [model_summaries, results_dir],
         ),
-        "architecture": (create_architecture_wordclouds, [model_summaries, images_dir]),
+        "architecture": (
+            create_architecture_wordclouds,
+            [model_summaries, results_dir],
+        ),
         "compute_resources": (
             create_compute_resources_wordclouds,
-            [model_summaries, images_dir],
+            [model_summaries, results_dir],
         ),
         "affiliations": (
             create_affiliation_visualization,
-            [paper_metadata, images_dir],
+            [project_metadata, results_dir],
         ),
     }
 
@@ -339,4 +406,8 @@ def visualize_model_summaries(
     for name, (func, args) in viz_to_create.items():
         logger.info(f"Creating {name}...")
         func(*args)
-        logger.info(f"- Saved to '{images_dir / f'{name}.svg'}'")
+        if name == "model_table":
+            logger.info(f"- Saved to '{results_dir / 'tables' / 'model_table.md'}'")
+            logger.info(f"- Saved to '{results_dir / 'tables' / 'model_table.html'}'")
+        else:
+            logger.info(f"- Saved to '{results_dir / 'images' / f'{name}.svg'}'")
