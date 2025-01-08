@@ -97,6 +97,7 @@ def test_process_paper_llm(storage: Mock, tmp_path: Path) -> None:
                 }
             ]
         },
+        "metadata": {"project_name": "Test Project"},
     }
 
     # Set up project results directory

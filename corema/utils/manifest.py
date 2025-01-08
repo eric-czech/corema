@@ -21,6 +21,7 @@ class PathMapping(TypedDict):
 
 class ProjectMetadata(TypedDict):
     project_id: str
+    project_name: str
     paths: PathMapping
     metadata: Dict[str, Any]
 
@@ -46,8 +47,10 @@ class ManifestManager:
         """
         manifest = self.storage.load_manifest(project_id)
         if manifest is not None:
+            metadata = manifest.get("metadata", {})
             return ProjectMetadata(
                 project_id=project_id,
+                project_name=metadata.get("project_name", project_id),
                 paths=manifest.get(
                     "paths",
                     {
@@ -57,10 +60,11 @@ class ManifestManager:
                         "articles": [],
                     },
                 ),
-                metadata=manifest.get("metadata", {}),
+                metadata=metadata,
             )
         return ProjectMetadata(
             project_id=project_id,
+            project_name=project_id,
             paths={
                 "papers": [],
                 "github_repos": [],
@@ -90,6 +94,7 @@ class ManifestManager:
         project_id = get_project_id(project_name)
         paths = data.get("paths", {})
         metadata = data.get("metadata", {})
+        metadata["project_name"] = project_name
 
         # Ensure all path lists exist
         paths.setdefault("papers", [])
@@ -99,6 +104,7 @@ class ManifestManager:
 
         project_data = ProjectMetadata(
             project_id=project_id,
+            project_name=project_name,
             paths=paths,
             metadata=metadata,
         )

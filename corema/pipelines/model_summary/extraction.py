@@ -1,18 +1,90 @@
-from pathlib import Path
+"""Module for extracting model summary information from scientific papers."""
+
 from typing import List, Dict, Any
+from pathlib import Path
+import json
 from pydantic import BaseModel, Field
 import logging
+
 from corema.storage import LocalStorage
 from corema.utils.openai_api import get_structured_output
-from corema.config import get_config, get_openai_params
-from corema.resources.model_summary_prompts import (
-    MODEL_SUMMARY_SYSTEM_PROMPT,
-    MODEL_SUMMARY_USER_PROMPT,
-)
-from corema.utils.manifest import ManifestManager
-import json
+from corema.pipelines.common import PipelineBase, get_openai_pipeline_params
 
 logger = logging.getLogger(__name__)
+
+
+MODEL_SUMMARY_SYSTEM_PROMPT = """You are an expert at analyzing scientific papers about foundation models and extracting structured information about their training, architecture, and evaluation details.
+Your task is to extract detailed technical information ONLY about the primary model being introduced in the paper.
+Do not include information about baseline models, comparison models, or models used for context.
+Extract only factual information that is explicitly stated in the text about the main model being presented.
+If information for a field is not available, use empty arrays for lists.
+Be precise and comprehensive in extracting technical details.
+
+Important constraints:
+- Extract information ONLY about the primary model being introduced
+- No array should contain more than 10 items. If there are more, select only the most relevant/representative items.
+- No string value should be longer than 100 characters. If longer, truncate while preserving key information.
+
+Return your response as a JSON object with the following structure:
+- scientific_fields: array of strings (max 10 items)
+- preprocessing: object with:
+  - tools: array of strings (max 10 items)
+  - systems: array of strings (max 10 items)
+  - data_cleaning: array of strings (max 10 items)
+  - data_transformation: array of strings (max 10 items)
+  - data_augmentation: array of strings (max 10 items)
+  - normalization: array of strings (max 10 items)
+  - tokenization: array of strings (max 10 items)
+  - other_tools: array of strings (max 10 items)
+- compute_resources: object with:
+  - training_time: array of strings (max 10 items)
+  - cost_estimate: array of strings (max 10 items)
+  - gpu_count: array of integers (max 10 items)
+  - gpu_type: array of strings (max 10 items)
+  - other_hardware: array of strings (max 10 items)
+- training_platform: object with:
+  - cloud_provider: array of strings (max 10 items)
+  - hpc_system: array of strings (max 10 items)
+  - training_service: array of strings (max 10 items)
+  - other_platforms: array of strings (max 10 items)
+- architecture: object with:
+  - model_type: array of strings (max 10 items)
+  - parameter_count: array of integers (max 10 items)
+  - architecture_type: array of strings (max 10 items)
+  - key_components: array of strings (max 10 items)
+- training_stack: object with:
+  - frameworks: array of strings (max 10 items)
+  - libraries: array of strings (max 10 items)
+  - languages: array of strings (max 10 items)
+  - tools: array of strings (max 10 items)
+- training_details: object with:
+  - parallelization: array of strings (max 10 items)
+  - checkpointing: array of strings (max 10 items)
+  - optimization_methods: array of strings (max 10 items)
+  - regularization: array of strings (max 10 items)
+  - loss_functions: array of strings (max 10 items)
+  - training_techniques: array of strings (max 10 items)
+- dataset: object with:
+  - size: array of strings (max 10 items)
+  - modalities: array of strings (max 10 items)
+- evaluation: object with:
+  - datasets: array of strings (max 10 items)
+  - metrics: array of strings (max 10 items)
+  - key_results: object with string keys and array values (max 10 items per array)
+- use_cases: array of strings (max 10 items)"""
+
+MODEL_SUMMARY_USER_PROMPT = """The paper describes the {project_name} model. Extract structured information ONLY about this primary foundation model being introduced in the paper.
+Focus only on technical details related to the architecture, training process, computational resources, and evaluation of the {project_name} model.
+Do not include information about baseline models, comparison models, or models referenced for context.
+
+If information is not clearly stated, use null for scalar values or empty arrays for lists.
+
+Paper text:
+```
+{text}
+```
+
+Return your response as a JSON object."""
 
 
 class ModelDetails(BaseModel):
@@ -180,105 +252,38 @@ def combine_model_details(a: ModelDetails, b: ModelDetails) -> ModelDetails:
     return combined
 
 
-class ModelSummaryPipeline:
+class ModelSummaryPipeline(PipelineBase[ModelDetails]):
     """Pipeline for extracting structured information about foundation models from papers."""
 
     PIPELINE_NAME = "model_summary"
 
     def __init__(self, storage: LocalStorage):
-        self.storage = storage
-        self.config = get_config()
-        self.manifest = ManifestManager()
+        super().__init__(self.PIPELINE_NAME, storage)
 
-    def get_project_results_dir(self, project_name: str) -> Path:
-        """Get the directory for storing project-specific results."""
-        return (
-            self.storage.get_project_dir(project_name) / "results" / self.PIPELINE_NAME
-        )
+    def _flatten_results(self, results: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Flatten model details into a list of records."""
+        flattened = []
+        for paper_path, details in results.items():
+            record = {"paper_path": paper_path, **details}
+            flattened.append(record)
+        return flattened
 
-    def _get_project_results_path(self, project_name: str) -> Path:
-        """Get the path for storing project results."""
-        return self.get_project_results_dir(project_name) / f"{self.PIPELINE_NAME}.json"
-
-    def has_been_processed(self, project_id: str) -> bool:
-        """Check if a project has already been processed.
+    def process_paper(
+        self, project_id: str, project_name: str, paper_path: Path
+    ) -> ModelDetails:
+        """Process a single paper to extract model details.
 
         Args:
-            project_id: ID of the project to check
-
-        Returns:
-            True if the project has been processed, False otherwise.
+            project_id: ID of the project
+            project_name: Name of the project (used in prompts)
+            paper_path: Path to the paper text file
         """
-        results_path = (
-            self.get_project_results_dir(project_id) / f"{self.PIPELINE_NAME}.json"
-        )
-        return results_path.exists()
-
-    def _save_project_results(
-        self, project_name: str, results: Dict[str, ModelDetails]
-    ) -> None:
-        """Save project results to disk."""
-        results_path = self._get_project_results_path(project_name)
-        results_path.parent.mkdir(parents=True, exist_ok=True)
-
-        logger.info(
-            f"Saving model summaries for project {project_name} to {results_path}"
-        )
-        logger.debug(f"Results to save: {results}")
-
-        # Convert results to dict for JSON serialization
-        results_dict = {
-            paper_path: details.model_dump() for paper_path, details in results.items()
-        }
-        logger.debug(f"Serialized results: {results_dict}")
-
-        with open(results_path, "w") as f:
-            json.dump(results_dict, f, indent=2)
-        logger.debug("Successfully wrote results to file")
-
-    def load_results(self, project_name: str) -> Dict[str, ModelDetails]:
-        """
-        Load saved results for a project.
-
-        Args:
-            project_name: Name or ID of the project
-
-        Returns:
-            Dictionary mapping paper paths to their extracted model details
-        """
-        results_path = self._get_project_results_path(project_name)
-        logger.debug(f"Loading results from {results_path}")
-        if not results_path.exists():
-            logger.debug("Results file does not exist")
-            return {}
-
-        try:
-            with open(results_path) as f:
-                results_dict = json.load(f)
-            logger.debug(f"Loaded raw results: {results_dict}")
-
-            # Convert loaded dict back to ModelDetails objects
-            results = {
-                paper_path: ModelDetails(**details)
-                for paper_path, details in results_dict.items()
-            }
-            logger.debug(f"Converted results to ModelDetails: {results}")
-            return results
-        except Exception as e:
-            logger.error(f"Error loading results for project {project_name}: {e}")
-            logger.debug("Exception details:", exc_info=True)
-            return {}
-
-    def process_paper(self, project_name: str, paper_path: Path) -> ModelDetails:
-        """Process a single paper to extract model details."""
         # Read the paper text
         with open(paper_path, "r") as f:
             text = f.read()
 
-        # Get OpenAI parameters from pipeline/model_summary config
-        openai_params = get_openai_params(
-            self.config.get("pipeline", {}).get("model_summary", {}).get("openai", {})
-        )
+        # Get OpenAI parameters from pipeline config
+        openai_params = get_openai_pipeline_params("model_summary")
 
         # Get model details via LLM with chunking
         response = get_structured_output(
@@ -293,46 +298,22 @@ class ModelSummaryPipeline:
 
         return response
 
-    def process_project(self, project_name: str) -> Dict[str, ModelDetails]:
-        """Process all papers for a project and extract model details.
+    def load_results(self, project_id: str) -> Dict[str, ModelDetails]:
+        """Load project results from disk.
 
         Args:
-            project_name: Name of the project to process
+            project_id: ID of the project to load results for
 
         Returns:
             Dictionary mapping paper paths to their extracted model details
         """
-        try:
-            # Get project metadata from manifest
-            project = self.manifest.get_project(project_name)
-
-            results = {}
-            # Process each paper listed in the manifest
-            for paper in project["paths"]["papers"]:
-                # Add .txt suffix to the path
-                paper_path = Path(paper["path"]).with_suffix(".txt")
-
-                # Check if the text file exists
-                if not paper_path.exists():
-                    logger.warning(f"Text file not found for paper: {paper_path}")
-                    continue
-
-                try:
-                    model_details = self.process_paper(project_name, paper_path)
-                    results[paper_path.name] = model_details
-                except Exception as e:
-                    logger.error(f"Error processing paper {paper_path}: {e}")
-
-            if not results:
-                logger.warning(
-                    f"No papers were successfully processed for project {project_name}"
-                )
-            else:
-                # Save project results
-                self._save_project_results(project_name, results)
-
-            return results
-
-        except Exception as e:
-            logger.error(f"Error accessing project {project_name}: {e}")
+        results_path = self.get_project_results_path(project_id)
+        if not results_path.exists():
             return {}
+
+        with open(results_path) as f:
+            results_dict = json.load(f)
+            return {
+                path: ModelDetails.model_validate(details)
+                for path, details in results_dict.items()
+            }

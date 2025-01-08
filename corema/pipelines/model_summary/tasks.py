@@ -1,14 +1,18 @@
+"""Tasks for analyzing model details in scientific foundation models."""
+
 import json
-from pathlib import Path
-from typing import List, Optional, Dict, Tuple, Callable, Any
 import logging
-from matplotlib import pyplot as plt
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Tuple, Callable
+
 import numpy as np
 import pandas as pd
 import yaml
+from matplotlib import pyplot as plt
 
 from corema.config import get_config
 from corema.decorators import pipeline_task
+from corema.pipelines.model_summary.extraction import ModelSummaryPipeline
 from corema.pipelines.model_summary.visualization import (
     create_model_table,
     create_timeline_visualization,
@@ -21,6 +25,7 @@ from corema.pipelines.model_summary.visualization import (
     create_compute_resources_wordclouds,
     create_affiliation_visualization,
 )
+from corema.storage import LocalStorage
 from corema.utils.names import get_project_id
 
 logger = logging.getLogger(__name__)
@@ -411,3 +416,28 @@ def visualize_model_summaries(
             logger.info(f"- Saved to '{results_dir / 'tables' / 'model_table.html'}'")
         else:
             logger.info(f"- Saved to '{results_dir / 'images' / f'{name}.svg'}'")
+
+
+@pipeline_task
+def analyze_models(
+    projects: str = "",
+    overwrite: bool = False,
+    **kwargs: Any,
+) -> None:
+    """Extract model details from papers and save results.
+
+    Inputs:
+        - data/projects/*/papers/*.txt
+    Outputs:
+        - data/results/model_summary/model_summary.json
+    Dependencies:
+        - collect_data
+    """
+    # Initialize pipeline
+    pipeline = ModelSummaryPipeline(LocalStorage())
+
+    # Process projects
+    pipeline.process_projects(projects=projects, overwrite=overwrite)
+
+    # Consolidate and save results
+    pipeline.consolidate_results()

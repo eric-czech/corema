@@ -8,15 +8,13 @@ import shutil
 from pathlib import Path
 from typing import Any, Optional
 
-import pandas as pd
 import yaml
 from tqdm import tqdm
 from tqdm.contrib.concurrent import thread_map
 
-from corema.collector import DataCollector, ManifestManager
+from corema.collector import DataCollector
 from corema.config import get_config
 from corema.decorators import pipeline_task
-from corema.pipelines.model_summary.extraction import ModelSummaryPipeline
 from corema.storage import LocalStorage
 from corema.utils.names import get_project_id
 
@@ -112,106 +110,3 @@ def collect_data(
                 max_workers=max_workers,
                 desc="Processing projects",
             )
-
-
-@pipeline_task
-def analyze_models(
-    output_file: Optional[str] = None,
-    projects: str = "",
-    overwrite: bool = False,
-    **kwargs: Any,
-) -> None:
-    """Process all papers and extract model details, saving results to JSONL.
-
-    Inputs:
-        - data/results/model_summary/model_summaries.jsonl
-    Outputs:
-        - data/results/model_summary/analysis/
-    Dependencies:
-        - collect_data
-    """
-    # Initialize storage and config
-    storage = LocalStorage()
-    config = get_config()
-
-    # Initialize pipeline
-    pipeline = ModelSummaryPipeline(storage)
-
-    # Get list of projects to process
-    if projects:
-        projects_to_process = _normalize_projects(projects)
-    else:
-        manifest = ManifestManager(base_path=str(storage.base_path))
-        try:
-            projects_to_process = [p["project_id"] for p in manifest.list_projects()]
-        except Exception as e:
-            logger.error(f"Error listing projects: {e}")
-            return
-
-    if not projects_to_process:
-        logger.warning("No projects found to process")
-        return
-
-    # Get list of all projects for final aggregation
-    try:
-        all_projects = [p["project_id"] for p in manifest.list_projects()]
-    except Exception as e:
-        logger.error(f"Error listing all projects: {e}")
-        return
-
-    # Process each requested project
-    for project_id in tqdm(projects_to_process, desc="Processing projects"):
-        try:
-            logger.info(f"Processing project {project_id}")
-            if not overwrite and pipeline.has_been_processed(project_id):
-                logger.info(
-                    f"Skipping project {project_id} - already processed and overwrite=False"
-                )
-                continue
-
-            # Delete existing pipeline data if it exists
-            results_dir = pipeline.get_project_results_dir(project_id)
-            if results_dir.exists():
-                shutil.rmtree(results_dir)
-                logger.info(f"Removed existing model summary data at {results_dir}")
-
-            pipeline.process_project(project_id)
-        except Exception as e:
-            logger.error(f"Error processing project {project_id}: {e}")
-
-    # Load existing results for all projects
-    all_results = []
-    for project_id in all_projects:
-        try:
-            results = pipeline.load_results(project_id)
-            for paper_path, details in results.items():
-                record = details.model_dump()
-                record["project_id"] = project_id
-                record["paper_path"] = paper_path
-                all_results.append(record)
-        except Exception as e:
-            logger.error(
-                f"Error loading existing results for project {project_id}: {e}"
-            )
-
-    if not all_results:
-        logger.warning("No model details were extracted")
-        return
-
-    # Convert to DataFrame
-    df = pd.DataFrame(all_results)
-
-    # Determine output paths for combined results
-    results_dir = (
-        Path(config["storage"]["base_path"]) / "results" / pipeline.PIPELINE_NAME
-    )
-    results_dir.mkdir(parents=True, exist_ok=True)
-
-    # If output_file is provided, use it as the base name in the results directory
-    base_name = Path(output_file).name if output_file else "model_summaries"
-    base_path = results_dir / base_name
-
-    # Save as JSONL
-    jsonl_path = base_path.with_suffix(".jsonl")
-    df.to_json(jsonl_path, orient="records", lines=True)
-    logger.info(f"Saved combined model summaries to {jsonl_path!r}")

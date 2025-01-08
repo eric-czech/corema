@@ -4,35 +4,36 @@ This module provides a Fire CLI that exposes all pipeline tasks as commands.
 """
 
 import logging
-from typing import Any
+from typing import Any, Dict, Callable
 
 import fire
 
-# Import all tasks to register them
 from corema import tasks
-from corema.pipelines.model_summary import tasks as analysis_tasks
+from corema.pipelines.model_summary.tasks import (
+    analyze_models,
+    visualize_model_summaries,
+)
+from corema.pipelines.inductive_bias.tasks import analyze_inductive_biases
+
+logger = logging.getLogger(__name__)
 
 
-def setup_logging(log_level: str = "INFO") -> None:
-    """Configure logging.
-
-    Args:
-        log_level: Logging level to use. Defaults to INFO.
-    """
+def setup_logging() -> None:
+    """Set up logging configuration."""
     logging.basicConfig(
-        level=getattr(logging, log_level.upper()),
+        level=logging.INFO,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S",
     )
 
 
 def main() -> Any:
     """Main entry point for the CLI."""
     setup_logging()
-    commands = {
+    commands: Dict[str, Callable] = {
         "collect_data": tasks.collect_data,
-        "analyze_models": tasks.analyze_models,
-        "visualize_model_summaries": analysis_tasks.visualize_model_summaries,
+        "analyze_models": analyze_models,
+        "visualize_model_summaries": visualize_model_summaries,
+        "analyze_inductive_biases": analyze_inductive_biases,
     }
     return fire.Fire(commands)
 
